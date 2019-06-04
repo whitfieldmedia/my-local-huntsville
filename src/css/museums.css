@@ -1,0 +1,524 @@
+.museum-container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    height: 100%;
+    overflow: auto;
+    min-height: 100vh;
+}
+
+.museum-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+.title2 {
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.smallPar {
+    font-family: 'Open Sans', sans-serif;
+    color: #999999;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.title2:hover {
+    color: #21577D;
+}
+.title2:hover .learn-more .button {
+    display: inline-block;
+    position: absolute;
+}
+.small-photo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    margin: auto 25px;
+}
+.learn-more {
+    position: relative;
+    height: auto; 
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.button {
+    position: absolute;
+    border: none;
+    background: #21577D;
+    color: #f8f8f8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    height: auto;
+    padding: 0;
+    width: 100px;
+    display: none;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #21577D;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 120px;
+}
+
+.learn-more:hover .button {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 120px;
+    top: 40%;
+}
+.learn-more:hover {
+    filter: brightness(95%);
+    background: #e8e8e8;
+}
+.learn-more:hover .small-photo {
+    filter: brightness(90%);
+}
+
+
+.museum-wrapper .popup-container {
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+.popup-container {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #f2f3ee;
+    overflow-y: scroll;
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+.popup-wrapper {
+    display: block; 
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 90vh;
+    border: 1px solid #e8e8e8;
+    z-index: 1000;
+    background: #f2f3ee;
+}
+
+.popup-photo {
+    width: 45%;
+    height: auto;
+    float: left;
+    margin: auto 2.5%;
+}
+.popup-par {
+    width: 45%;
+    margin: auto 2.5%;
+    height: auto;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+ .popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: fixed;
+    top: 10px;
+    right: 3vw;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 500;
+}
+
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+
+.attraction-top {
+    height: 90vh;
+    width: 100vw;
+    background: url('../images/huntsvillebackground2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.header {
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Oxygen', sans-serif;
+    text-shadow: -4px -4px 10px #000, 4px 4px 10px #000;
+    text-align: center;
+}
+
+.attraction-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+}
+
+#scroll-container {
+    top: 80px;
+}
+.scroll {
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+    left: 0;
+    width: 100vw; 
+    height: auto;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    background: #e8e8e8;
+}
+.fa-circle {
+    font-size: .4em;
+    padding-right: 10px;
+}
+.scroll-link {
+    padding: 3px 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    color: #21577D;
+}
+.scroll-link:hover {
+    color: #000;
+}
+
+.attraction-container {
+    width: 100vw;
+    padding-top: 80px;
+}
+
+.header2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #4a4a4a;
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.header3 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;
+    margin: 20px 0;
+    padding: 0;
+    color: #313131;
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+}
+
+
+.attraction-photo {
+    width: 45vw;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    display: block;
+    padding-top: 10px;
+}
+
+.museum-row {
+    padding-top: 10px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+
+
+.textRow {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #616161;
+    padding: 5px 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+.museum-par {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    color: #515151;
+    text-align: left;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.admission {
+    height: auto;
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-align: left;
+}
+
+.hours {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-align: center;
+}
+
+.open-par {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #21577D;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-align: center;
+    width: auto;
+}
+
+.link {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    color: #21577D;
+    width: auto;
+    text-decoration: none;
+    padding: 6px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tickets {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    color: #21577D;
+    width: auto;
+    padding: 8px 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ticket-link:hover {
+    transform: scale(1.1);
+}
+
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.padding-top20 {
+    padding-top: 20px;
+}
+
+.slideshow-container {
+    height: auto;
+    max-width: 750px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 30px auto;
+}
+.mySlides {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.slide {
+    height: 400px;
+    max-width: 100%;
+    width: auto;
+}
+
+@media only screen and (max-width: 750px) {
+    .museum-container {
+        display: flex; 
+        flex-flow: row wrap;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header {
+        font-size: 50px;
+    }
+    .header2 {
+        font-size: 30px;
+    }
+    .header3 {
+        font-size: 25px;
+    }
+    .admission {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hours {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .par {
+        font-size: 17px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .open-par {
+        width: 200px;
+        font-size: 17px;
+    }
+    .link {
+        width: 200px;
+        font-size: 17px;
+    }
+    .tickets {
+        width: 200px;
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .header {
+        font-size: 40px;
+    }
+    .header2 {
+        font-size: 25px;
+    }
+    .header3 {
+        font-size: 22px;
+    }
+    .row {
+        text-align: left;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        flex-direction: column;
+        width: 200px; 
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header {
+        font-size: 35px;
+    }
+}
+
+#depot-popup {
+    display: block;
+}
+
+#art-popup {
+    display: block;
+}
+#lowe-popup {
+    display: block;
+}
+
+#veteran-popup {
+    display: block;
+}
+
+#rocket-popup {
+    display: block;
+}

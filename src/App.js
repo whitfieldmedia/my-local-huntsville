@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Nav from './Nav';
+import Home from './Home';
+import Museums from './Museums';
+import Partners from './Partners';
+import Contact from './Contact';
+import Hotels from './Hotels';
+import Nature from './Nature';
+import Footer from './Footer';
+import News from './News';
+import Events from './Events';
+import { Switch, Route } from 'react-router-dom';
+import './css/styles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  render() {
+    return (
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/museums" component={Museums} />
+          <Route path="/partners" component={Partners} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/hotels" component={Hotels} />
+          <Route path="/nature" component={Nature} />
+          <Route path="/news" component={News} />
+          <Route path="/events" component={Events} />
+        </Switch>
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default App;
