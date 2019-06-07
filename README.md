@@ -66,3 +66,82 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+// {this.state.done
+//     ? this.props.feed.items.map(item => (
+//         <div key={item.id}>
+//             <h1 className="event-title"> {item.title} </h1>
+//             {/* <p> {this.getDate(item.isoDate)} </p> */}
+//             {/* <div className="event-info" dangerouslySetInnerHTML={this.createMarkup(item.contentSnippet)} /> */}
+//             <div className="event-info"> {ReactHtmlParser(item.content)} </div>
+//             {/* <div className="event-info" dangerouslySetInnerHTML={this.createMarkup(item.content)} /> */}
+//         </div>
+//     ))
+//     : null}
+
+
+// {this.state.done
+//     ? 
+//     <div className="event-holder">
+//         {this.props.feed.items.map(item => (
+//             <a className="event-wrapper" key={item.id} href={item.url} target="_blank" rel="noopener noreferrer">
+//                 <h1 className="event-title"> {item.title} </h1>
+//                 <Moment className="event-date" format="dddd MMMM DD, YYYY" date={item.isoDate} />
+//                 <div className="event-info" dangerouslySetInnerHTML={this.sendData(item.content)}/>
+//             </a> 
+//         ))}
+//     </div>
+//     : null}
+
+
+//                        <Moment className="event-date" format="dddd MMMM DD, YYYY" date={data.start} />
+
+
+    // componentDidMount() {
+    //     this.props.getFeed();
+    // }
+
+    // componentDidUpdate() {
+    //     if(this.props.feed.items && !this.state.done) {
+    //         this.setState({
+    //             done: true
+    //         })
+    //     }
+    // }
+
+    // componentDidUpdate() {
+    //     const t = (entry, tname) => entry.getElementsByTagName(tname)[0];
+    //     const html2txt = html => html.replace(/<(?:.|\n)*?>/gm, '');
+    //     const content = entry => html2txt(t(entry, 'content').textContent).slice(0,200);
+    //     const image = html => html.replace("<![CDATA[", "");
+    //     fetch(CORS_PROXY + 'https://www.trumba.com/calendars/ourvalleyevents.xml')
+    //     .then(response => response.text())
+    //     .then(xml => {
+    //         const parser = new DOMParser();
+    //         const xmlDoc = parser.parseFromString(xml, "text/xml");
+    //         const html = Array.from(xmlDoc.getElementsByTagName('entry')).map(entry => 
+    //             `<div class="entry">
+    //                 <a href="${t(entry, 'link').getAttribute('href')}">
+    //                 <h2 class="entry-title">${t(entry, 'title').innerHTML}</h2>
+    //                 </a>
+    //                 <div class="content">${content(entry)}&hellip;</div>
+    //             </div>`
+    //             );
+    //         const data = html.join('');
+    //         console.log(html)
+    //         if(!this.state.data.includes(data)) {
+    //             this.setState({
+    //                 data: data,
+    //                 done: true
+    //             })
+    //         }
+    //     })
+    // }
+
+    // sendData = (data) => {
+    //     var feed = data.slice(0,400)
+    //     return {
+    //         __html: feed
+    //     }
+    // }

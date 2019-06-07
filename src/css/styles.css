@@ -19,6 +19,7 @@ body {
     background: url(../images/huntsvillebackground2.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     top: 0;
     left: 0;
@@ -26,13 +27,13 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
 }
 
 .top-container {
     position: absolute;
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     overflow-x: hidden;
     top: 0;

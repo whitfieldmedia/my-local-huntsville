@@ -1,63 +1,66 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { getFeed } from './redux/feed';
-// import moment from 'moment';
+import Client from 'predicthq';
 import './css/events.css';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+const moment = require('moment');
 
 class Events extends React.Component{
     constructor() {
         super()    
         this.state = {
-            done: false
-        }
-    }
-    componentDidMount() {
-        this.props.getFeed();
-    }
-    componentDidUpdate() {
-        if(this.props.feed.items && !this.state.done) {
-            this.setState({
-                done: true
-            })
-        }
-    }
-    createMarkup = (data) => {
-        return {
-            __html: data
+            done: false,
+            data: []
         }
     }
 
-    // getDate = (date) => {
-    //     return moment(date).format('LL')
-    //     // format("dddd, MMM DD at HH:mm a")
-    // }
-    transform = (node) => {
-        if(node.name === '""') {
-            node.type = 'tag';
-            node.name = 'par';
-            return convertNodeToElement(node);
-        }
+    getEvents = () => {
+        let phq = new Client({access_token:"nfFqp6j6LbGNRQw4Zp1NM8wp8U3dVc"})
+        let now = new Date();
+        let date = moment(now).format('YYYY-MM-DD')
+        phq.events.search({within:'50mi@34.729529,-86.586003', category:'concerts,festivals,performing-arts,sports,community,conferences,expos', country:'US', sort:'start', 'start.gte':`${date}`})
+            .then((results) => {
+                this.setState ({
+                    data: results,
+                    done: true
+                })
+            })
     }
+
+    getDate = (data) => {
+        return moment(data).format('dddd MMMM DD, YYYY')
+    }
+
  
     render() {
-        console.log(this.props.feed.items)
+        if(!this.state.done) {
+            this.getEvents()
+        }
+        if(this.state.done) {
+            console.log(this.state.data.result.results)
+        }
+
         return (
             <div className="events-page">
                 {this.state.done
-                ? this.props.feed.items.map(item => (
-                    <div key={item.id}>
-                        <h1 className="event-title"> {item.title} </h1>
-                        {/* <p> {this.getDate(item.isoDate)} </p> */}
-                        {/* <div className="event-info" dangerouslySetInnerHTML={this.createMarkup(item.contentSnippet)} /> */}
-                        <div className="event-info"> {ReactHtmlParser(item.content)} </div>
-                        {/* <div className="event-info" dangerouslySetInnerHTML={this.createMarkup(item.content)} /> */}
+                ? this.state.data.result.results.map(data => (
+                    <div key={data.id}>
+                        <h2> {data.title} </h2>
+                        <p> {this.getDate(data.start)} </p>
+                        <p> {data.description} </p>
+                        <p> {data.category} </p>
+                        {data.entities.map(place => (
+                            <div key={place.entity_id}>
+                                <p> {place.name} </p>
+                                <p> {place.formatted_address} </p>
+                            </div>
+
+                        ))}
                     </div>
                 ))
-                : null}
+                :null}
+
             </div>
         )
     }
 }
 
-export default connect(state => state, { getFeed })(Events);
+export default Events;

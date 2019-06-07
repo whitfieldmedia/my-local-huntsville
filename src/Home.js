@@ -76,32 +76,12 @@ class Home extends React.Component{
       <div>
         <div className="top-wrapper">
           <div className="top-container">
-            <h1 className="top-header"> My Local <br/> Huntsville </h1>
+            <h1 className="top-header"> My Local Huntsville </h1>
           </div>
         </div>
         <a className="weatherwidget-io" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" >HUNTSVILLE WEATHER</a>
         <div className="container">
-          <div className="button-wrapper">
-            <div className="column">
-              <a className="top-link" href="https://www.facebook.com/localgrenada/" rel="noopener noreferrer"> 
-                <i className="fab fa-facebook-f"></i> Follow Us!
-              </a>
-              <Link to="/contact" className="top-link" >
-                Partner With Us!
-              </Link>
-            </div>
-            <div className="main-video-holder">
-              <iframe src="https://player.vimeo.com/video/337344822" title="My Local Huntsville Promo Commercial" className="main-video" allowFullScreen frameBorder="0"></iframe>
-            </div>
-          </div>
-        </div>
-        <div className="line"></div>
-          <h2 className="header2"> News Articles </h2> 
-          <div className="page-link-holder">
-            <Link to="/news" className="page-link"> See More.. </Link>
-          </div>
-          <div className="line"></div>
-          <div className="home-news-wrapper">
+        <div className="home-news-wrapper">
             {this.state.news
             ? this.props.news.articles.filter(data => data.title).map(data => (
               <a className="home-article-wrapper" key={data.url} href={data.url} target="_blank" rel="noopener noreferrer">
@@ -115,6 +95,21 @@ class Home extends React.Component{
             ))
             :null}
           </div>
+          <div className="button-wrapper">
+            {/* <div className="column">
+              <a className="top-link" href="https://www.facebook.com/localgrenada/" rel="noopener noreferrer"> 
+                <i className="fab fa-facebook-f"></i> Follow Us!
+              </a>
+              <Link to="/contact" className="top-link" >
+                Partner With Us!
+              </Link>
+            </div> */}
+            <div className="main-video-holder">
+              <iframe src="https://player.vimeo.com/video/337344822" title="My Local Huntsville Promo Commercial" className="main-video" allowFullScreen frameBorder="0"></iframe>
+            </div>
+          </div>
+        </div>
+        
         <div className="line"></div>
         <h2 className="header2"> Restaurants & Breweries </h2>
         <div className="page-link-holder">

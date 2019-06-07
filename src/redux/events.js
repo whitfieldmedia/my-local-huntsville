@@ -1,10 +1,13 @@
 import axios from 'axios';
 const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-
+const token = 'nfFqp6j6LbGNRQw4Zp1NM8wp8U3dVc'
 
 export function getEvents() {
     return dispatch => {
-        axios.get(CORS_PROXY + 'https://www.trumba.com/calendars/ourvalleyevents.xml')
+        axios.get(CORS_PROXY + 'https://api.predicthq.com/v1/events/?within=50mi@34.729529,-86.586003', {
+            headers: { 'Authorization': `Bearer ${token}` }
+
+        })
         .then(response => {
             dispatch({
                 type: 'GET_EVENTS',
