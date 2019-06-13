@@ -8,7 +8,7 @@
 }
 
 .footer {
-    height: 60px;
+    height: 80px;
     width: 100%;
     border-top: 1px solid #515151;
     display: flex;
@@ -17,19 +17,23 @@
     align-content: center;
     justify-items: center;
     align-items: center;
-    background: #1F567C;
+    background: #454063;
 }
-.icon {
+.footer-icon {
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-items: center;
+    justify-content: baseline;
+    justify-items: baseline;
     align-items: center;
     align-content: center;
     text-decoration: none;
     color: #f8f8f8;
+    font-size: 20px;
+}
+.footer-icon:hover {
+    transform: scale(1.1);
 }
 
 .icon:hover {

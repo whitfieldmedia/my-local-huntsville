@@ -1,5 +1,5 @@
 .contact-top {
-    padding-top: 80px;
+    padding-top: 200px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -125,7 +125,7 @@
     border: none;
     height: 30px;
     font-size: 15px;
-    background: #f8f8f8;
+    background: #ECECEC;
 }
 
 input:focus {
@@ -164,7 +164,7 @@ input:focus {
     height: 30px;
     font-size: 15px;
     border: none;
-    background: #f8f8f8;
+    background: #ECECEC;
 }
 
 
@@ -179,6 +179,11 @@ input:focus {
 }
 #form-button:hover {
     cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+    .contact-top {
+        padding-top: 100px;
+    }
 }
 
 @media only screen and (max-width: 750px) {

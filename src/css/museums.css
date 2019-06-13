@@ -1,14 +1,14 @@
 .museum-container {
     width: 100vw;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
     padding-bottom: 30px;
     justify-content: space-evenly;
     justify-items: space-evenly;
     height: 100%;
     overflow: auto;
     min-height: 100vh;
+    padding-top: 200px;
 }
 
 .museum-wrapper {
@@ -17,6 +17,11 @@
     height: auto;
     width: auto;
     margin: auto;
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px #676767;
 }
 
 .title2 {
@@ -65,45 +70,29 @@
     justify-items: center;
     align-content: center;
     align-items: center;
+    background: #f8f8f8;
 }
 .button {
-    position: absolute;
+    position: relative;
     border: none;
     background: #21577D;
     color: #f8f8f8;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-size: 15px;
     height: auto;
     padding: 0;
+    margin: auto;
     width: 100px;
     display: none;
-}
-
-.button:hover {
-    background: #f8f8f8;
-    color: #21577D;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 120px;
 }
 
 .learn-more:hover .button {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    margin-left: 40px;
-    margin-right: 40px;
     width: 120px;
     top: 40%;
 }
-.learn-more:hover {
-    filter: brightness(95%);
-    background: #e8e8e8;
-}
-.learn-more:hover .small-photo {
-    filter: brightness(90%);
-}
-
 
 .museum-wrapper .popup-container {
     overflow: auto;
@@ -426,7 +415,11 @@
     max-width: 100%;
     width: auto;
 }
-
+@media only screen and (max-width: 1000px) {
+    .museum-container {
+        padding-top: 100px;
+    }
+}
 @media only screen and (max-width: 750px) {
     .museum-container {
         display: flex; 

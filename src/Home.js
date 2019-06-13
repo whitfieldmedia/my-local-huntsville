@@ -12,25 +12,19 @@ import Yellowhammer from './bars/Yellowhammer';
 import Boot from './restaurants/Boot';
 import BrokenEgg from './restaurants/BrokenEgg';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { getHomeNews } from './redux/news';
+import BackgroundSlideshow from 'react-background-slideshow';
+import News from './News';
+import HomeEvents from './HomeEvents';
 import './css/styles.css';
+import background from './ashleyPhotos/welcome_to_huntsville.png';
+import background3 from './ashleyPhotos/diners.png';
+import background2 from './ashleyPhotos/jefferson_st.png';
+import background1 from './ashleyPhotos/big_springs_park.png';
+import background5 from './ashleyPhotos/pond.png';
+import background6 from './ashleyPhotos/street_exposure.png';
+import background7 from './ashleyPhotos/washington_square.jpg';
 
 class Home extends React.Component{
-  constructor() {
-    super()
-    this.state = {
-      news: false
-    }
-  }
-  componentDidMount() {
-    this.props.getHomeNews();
-  }
-  componentDidUpdate() {
-    if(this.props.news.articles && this.state.news !== true) {
-        this.setState({ news: true })
-    }
-  }
   showRestaurants = () => {
     var places = [
       <Yellowhammer key="1"/>, <Brickhouse key="2"/>, <Btr key="3"/>, <Straight key="4"/>, <Boot key="5"/>, <BrokenEgg key="6"/>, <Poppy key="7"/>, <Otbx key="8"/>, <Bar805 key="9"/>
@@ -75,43 +69,22 @@ class Home extends React.Component{
     return (
       <div>
         <div className="top-wrapper">
+          <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6,background7 ]} />
           <div className="top-container">
             <h1 className="top-header"> My Local Huntsville </h1>
           </div>
         </div>
-        <a className="weatherwidget-io" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" >HUNTSVILLE WEATHER</a>
-        <div className="container">
+        <a className="weatherwidget-io" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>        
+        <h2 className="home-news-header"> Huntsville News </h2>
         <div className="home-news-wrapper">
-            {this.state.news
-            ? this.props.news.articles.filter(data => data.title).map(data => (
-              <a className="home-article-wrapper" key={data.url} href={data.url} target="_blank" rel="noopener noreferrer">
-                <p className="home-news-author"> { data.author } </p>
-                <h2 className="home-news-header2"> { data.title } </h2>
-                <img src={data.urlToImage} className="home-news-image" alt={data.description}/>
-                <p className="home-news-content"> { data.description } </p>
-
-                <div className="home-news-button"> read more </div>
-              </a>
-            ))
-            :null}
-          </div>
-          <div className="button-wrapper">
-            {/* <div className="column">
-              <a className="top-link" href="https://www.facebook.com/localgrenada/" rel="noopener noreferrer"> 
-                <i className="fab fa-facebook-f"></i> Follow Us!
-              </a>
-              <Link to="/contact" className="top-link" >
-                Partner With Us!
-              </Link>
-            </div> */}
-            <div className="main-video-holder">
-              <iframe src="https://player.vimeo.com/video/337344822" title="My Local Huntsville Promo Commercial" className="main-video" allowFullScreen frameBorder="0"></iframe>
-            </div>
-          </div>
+          <News />    
         </div>
-        
+        <div className="home-events">
+        <h2 className="home-news-header"> Upcoming Events </h2>
+          <HomeEvents />
+        </div>
         <div className="line"></div>
-        <h2 className="header2"> Restaurants & Breweries </h2>
+        <h2 className="header2"> Restaurants, Breweries, & Bars </h2>
         <div className="page-link-holder">
           <Link className="page-link" to="/partners"> SEE ALL </Link>
         </div>
@@ -120,7 +93,7 @@ class Home extends React.Component{
           {this.showRestaurants()}
         </div>
         <div className="line1"></div>
-        <h2 className="header2"> What to Do </h2>
+        <h2 className="header2"> Things to Do </h2>
         <div className="page-link-holder">
           <Link className="page-link" to="/partners"> SEE ALL </Link>
         </div>
@@ -133,4 +106,4 @@ class Home extends React.Component{
   }
 }
 
-export default connect(state => state, { getHomeNews })(Home)
+export default Home;

@@ -1,69 +1,39 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { getNews, getTimes, getCnn, getEspn, getNatGeo, getWash, getUsa, getWired, getTech, getLocal } from './redux/news';
 import './css/news.css';
+import affordableImage from './images/huntsville-affordable-news.jpeg';
+import growthImage from './images/huntsville-growing-news.jpg';
+import newRestaurants from './images/woman-at-small-business-entrance-EZ6X4CP.jpg';
 
 class News extends React.Component{
-    constructor() {
-        super()
-        this.state = {
-            news: false
-        }
-    }
-
-    componentWillMount() {
-        this.props.getLocal();
-    }
-    
-    componentDidUpdate() {
-        if(this.props.news.articles && this.state.news !== true) {
-            this.setState({ news: true })
-        }
-    }
-
-    axios = () => { this.props.getNews() }
-    nyTimes = () => { this.props.getTimes() }
-    cnn = () => { this.props.getCnn() }
-    espn = () => { this.props.getEspn() }
-    natGeo = () => { this.props.getNatGeo() }
-    wash = () => { this.props.getWash() }
-    usa = () => { this.props.getUsa() }
-    wired = () => { this.props.getWired() }
-    tech = () => { this.props.getTech() }
-    local = () => { this.props.getLocal() }
 
     render() {
+        console.log(this.props.news)
         return (
-            <div>
-                <div className="source-holder">
-                    <div className="source" onClick={this.axios}> Axios </div>
-                    <div className="source" onClick={this.nyTimes}> New York Times </div>
-                    <div className="source" onClick={this.cnn}> Cnn </div>
-                    <div className="source" onClick={this.espn}> Espn</div>
-                    <div className="source" onClick={this.natGeo}> National Geographic </div>
-                    <div className="source" onClick={this.wash}> Washington Post </div>
-                    <div className="source" onClick={this.usa}> Usa Today </div>
-                    <div className="source" onClick={this.wired}> Wired </div>
-                    <div className="source" onClick={this.tech}> Tech Radar </div>
-                    <div className="source" onClick={this.local}> Local News </div>
-                </div>
-                <div className="news-wrapper">
-                    {this.state.news
-                    ? this.props.news.articles.filter(data => data.urlToImage).map(data => (
-                        <a className="article-wrapper" key={data.url} href={data.url} target="_blank" rel="noopener noreferrer">
-                            <h2 className="news-header2"> { data.title } </h2>
-                            <img className="news-image" src={data.urlToImage} alt={data.description}/>
-                            <p className="news-content"> { data.description } </p>
-                            <p className="news-author" > { data.author } </p>
-                            <p className="news-author"> { data.source.id } </p>
-                            <div className="news-button"> read more </div>
-                        </a>
-                    ))
-                    : null }
-                </div>
+            <div className="news-container">
+                <a className="news-wrapper" href="https://realestate.usnews.com/real-estate/slideshows/best-affordable-places-to-live-in-the-us?slide=26&fbclid=IwAR0Zyuj1MLK2E99j_xXmc-gOh6CCYhvTvC-h4yLvuka6Sir4O9_cg_2KMx4" target="_blank" rel="noopener noreferrer">  
+                    <h2 className="news-title"> Huntsville is one of the most affordable cities in the U.S. </h2>
+                    <div className="news-img-par-wrapper">
+                        <img src={affordableImage} className="news-image" alt="Huntsville Alabama Big Springs Park"/>
+                        <p className="news-description"> Huntsville is the most affordable place to live out of the 125 most populous metro areas in the U.S... </p>
+                    </div>
+                </a>
+                <a className="news-wrapper" href="https://www.al.com/news/huntsville/2018/05/huntsville_keeps_growing_on_tr.html" target="_blank" rel="noopener noreferrer"> 
+                    <h2 className="news-title"> Huntsville Keeps growing, on track to become the state's largest city in six years </h2>
+                    <div className="news-img-par-wrapper">
+                        <img src={growthImage} className="news-image" alt="Huntsville Alabama Big Springs Park"/>
+                        <p className="news-description">The Rocket City continues to see a surge in population growth and is on track to become the state's largest city perhaps in as soon as five years...</p>
+                    </div>
+                </a>
+                <a className="news-wrapper" href="https://ourvalleyevents.com/5-new-huntsville-restaurants-coming-in-2019/" target="_blank" rel="noopener noreferrer">
+                    <h2 className="news-title"> 5 New Huntsville Restaurants Coming In 2019! </h2>
+                    <div className="news-img-par-wrapper">
+                        <img src={newRestaurants} className="news-image" alt="Huntsville Alabama New Restaurants 2019"/>
+                        <p className="news-description"> Huntsville has so many new restaurants opening soon that it's hard to keep track of what they are, where they're located, and when they're opening... </p>
+                    </div>
+                </a>
             </div>
         )
     }
 }
 
-export default connect(state => state, { getNews, getTimes, getCnn, getEspn, getNatGeo, getWash, getUsa, getWired, getTech, getLocal })(News);
+export default News;

@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background: #f8f8f8;
+    background: #ECECEC;
     scroll-behavior: smooth;
     overscroll-behavior-y: none;
 }
@@ -15,11 +15,8 @@ body {
     width: 100%;
 }
 
+
 .top-wrapper {
-    background: url(../images/huntsvillebackground2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
     top: 0;
     left: 0;
@@ -27,39 +24,58 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    min-height: 85vh;
+    height: auto;
     width: 100vw;
 }
 
 .top-container {
     position: absolute;
-    height: 70vh;
+    height: 85vh;
     width: 100vw;
     overflow-x: hidden;
+    background: none;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-    perspective: 500px;
+    z-index: 5;
 }
 
 .top-header {
-    color: #fff;
+    padding-top: 100px;
+    color: #f1f1f1;
     font-family: 'Oxygen', sans-serif;
     text-align: center;
+    background: 0;
     letter-spacing: 5px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 70px;
     text-shadow: -4px -4px 10px #000, 4px 4px 10px #000;
 }
+.home-news-header {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #313131;
+    font-weight: lighter;
+}
 
 .container {
     width: 100%;
     height: auto;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .button-wrapper {
@@ -205,16 +221,18 @@ body {
 }
 
 .home-video {
-    height: 24vw;
-    width: 100%;
+    height: 250px;
+    width: 90%;
+    min-height: 150px;
     max-width: 500px;
-    max-height: 350px;
+    max-height: 250px;
     padding: 0;
     margin: 0 auto;
+    min-width: 300px;
 }
 
 .video-holder {
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -248,17 +266,6 @@ body {
     font-weight: 300;
 }
 
-
-.attraction-photo {
-    width: 45vw;
-    min-width: 300px;
-    max-width: 1000px;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-    display: block;
-    padding-top: 10px;
-}
-
 .row {
     margin-top: 0;
     padding-top: 10px;
@@ -272,201 +279,6 @@ body {
     width: 100%;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    max-width: 1000px;
-    min-width: 300px;
-    width: auto;
-    height: auto;
-}
-
-.textRow {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    justify-items: space-evenly;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-}
-
-.text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: lighter;
-    color: #616161;
-    padding: 5px 10px;
-    margin: 0;
-    display: inline-block;
-}
-
-
-.learn-more {
-    position: relative;
-    height: auto;
-    width: 90%;
-    margin: auto;
-    cursor: pointer;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    padding-bottom: 75px;
-}
-
-.par {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 17px;
-    text-align: center;
-    color: #515151;
-}
-
-.mid-wrapper .popup-container {
-    overflow: auto;
-    overscroll-behavior: contain;
-}
-
-.popup-container {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100%;
-    overflow: auto;
-    border: 1px solid #e8e8e8;
-    z-index: 1000;
-    background: #f2f3ee;
-    overflow: auto;
-    overscroll-behavior: contain;
-}
-
- .popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-
-.row {
-    margin-top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    justify-items: space-evenly;
-    align-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.popup-par {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #515151;
-    text-align: left;
-    width: 90%;
-    margin: auto;
-}
-
-.admission {
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-}
-
-.hours {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-}
-
-.open-par {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #616161;
-    width: 300px;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-    width: auto;
-}
-
-.link {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #21577D;
-    width: 300px;
-    text-decoration: none;
-}
-
-.tickets {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #616161;
-    width: auto;
-    padding: 5px 0;
-    margin: 0;
-    text-align: left;
-}
-
-.link:hover {
-    color: #616161;
-    transform: scale(1.1);
-}
 
 .padding-top10 {
     padding-top: 10px;
@@ -476,205 +288,16 @@ body {
     padding-top: 20px;
 }
 
-.button {
-    position: absolute;
-    border: none;
-    background: #21577D;
-    color: #f8f8f8;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    top: 60px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 30px;
-    width: 100px;
-    display: none;
-}
-
-.button:hover {
-    background: #f8f8f8;
-    color: #21577D;
-}
-
-.learn-more:hover .button {
-    display: block;
-    cursor: pointer;
-}
-.learn-more:hover {
-    filter: brightness(95%);
-    background: #e8e8e8;
-}
-.learn-more:hover .small-photo {
-    filter: brightness(90%);
-}
-
-
-.slideshow-container {
-    height: auto;
-    max-width: 750px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 0 auto;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #4A4A4A;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background: #f2f3ee;
-  }
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .rocketSlides2 {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    justify-self: center;
-    align-self: center;
-}
-
-.mySlides2 {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    justify-self: center;
-    align-self: center;
-}
-.slide2 {
-    height: 400px;
-    max-width: 100%;
-    width: auto;
-}
-
-.rocketSlide2 {
-    height: 400px;
-    max-width: 100%;
-    width: auto;
-}
-.loweSlides2 {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    justify-self: center;
-    align-self: center;
-}
-.loweSlide2 {
-    height: 400px;
-    max-width: 100%;
-    width: auto;
-}
-.artSlides2 {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    justify-self: center;
-    align-self: center;
-}
-.artSlide2 {
-    height: 400px;
-    max-width: 100%;
-    width: auto;
-}
-.depotSlides2 {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    justify-self: center;
-    align-self: center;
-}
-.depotSlide2 {
-    height: 400px;
-    max-width: 100%;
-    width: auto;
-}
-
-.button-link {
-    font-family: 'Arvo', serif;
-    font-size: 18px;
-    padding: 3px 10px;
-    text-decoration: none;
-    color: #21577D;
-    display: block;
-    height: auto;
-    width: auto;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.button-link:hover {
-    color: #4a4a4a;
-    cursor: pointer;
-}
-
-
-
-@media only screen and (max-width: 815px) {
-    .button {
-        display: block;
-        position: relative;
-        top: auto;
-        height: 30px;
-        width: auto;
-        padding: 3px 5px;
-    }
-}
 
 @media only screen and (max-width: 700px) {
     .mid-wrapper {
-        grid-template-columns: 100vw;
-    }
-    .popup-container {
-        width: 100vw;
-        left: 0;
-        right: 0;
-        top: 0;
-    }
-    .home-video {
+        display: flex;
+        flex-flow: column;
         width: 100%;
-        height: 56vw;
-    }
-    .video-holder {
-        width: 100%;
-    }
-    .slide2 {
-        height: auto;
-        max-height: 300px;
-        width: auto;
-    }
-    .rocketSlide2 {
-        height: auto;
-        max-height: 300px;
-        width: auto;
-    }
-    .loweSlide2 {
-        height: auto;
-        max-height: 300px;
-        width: auto;
-    }
-    .depotSlide2 {
-        height: auto;
-        max-height: 300px;
-        width: auto;
-    }
-    .artSlide2 {
-        height: auto;
-        max-height: 300px;
-        width: auto;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
     }
 }
 
@@ -682,26 +305,12 @@ body {
     .top-header {
         font-size: 45px;
     }
-    .mid-header {
-        font-size: 35px;
-    }
     .partner-logo {
         max-width: 300px;
         width: auto;
         max-height: 100px;
         height: auto;
     }
-    .prev, .next {
-        padding: 5px;
-        margin-top: -22px;
-        color: #4A4A4A;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        background: #f2f3ee;
-      }
 }
 
 @media only screen and (max-width: 320px) {
@@ -823,82 +432,10 @@ body {
 }
 
 .home-news-wrapper {
-    display: grid;
-    grid-template-columns: 30vw 30vw 30vw;
-    grid-column-gap: 3.3vw;
-    justify-content: space-evenly;
-    justify-items: space-evenly;
-    left: 0;
-    right: 0;
-    margin: auto;
-    /* display: flex;
-    flex-flow: row;
-    align-content: space-between;
-    align-items: space-between;
-    justify-content: space-evenly;
-    justify-items: space-evenly;
-    width: 100%; */
+    width: 100%;
 }
-
-.home-article-wrapper {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    align-items: center;
-    width: 80%;
-    padding: 0px 10px;
-    margin: 20px 10px;
-    min-width: 250px;
-    max-width: 500px;
-    text-decoration: none;
-    object-fit: contain;
-    box-shadow: 0px 0px 3px #4a4a4a;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-}
-
-.home-news-header2 {
-    font-family: 'Oxygen', sans-serif;
-    color: #313131;
-    font-size: 28px;
-}
-.home-news-author {
-    font-family: 'Oxygen', sans-serif;
-    text-align: left;
-    color: #414141;
-    margin-right: auto;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.home-news-content {
-    font-family: 'Arvo', serif;
-    font-size: 20px;
-    color: #313131;
-    padding-bottom: 20px;
-}
-
-.home-news-image {
-    width: auto;
-    object-fit: contain;
-    width: 110%;
+.home-events {
+    width: 100%;
     height: auto;
-    max-width: 500px;
-    min-width: 250px;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.home-news-button {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 25px;
-    font-weight: lighter;
-    color: #515151;
-    position: absolute;
-    bottom: 0;
-}
-
-.home-news-button:hover {
-    transform: scale(1.1);
+    display: block;
 }
