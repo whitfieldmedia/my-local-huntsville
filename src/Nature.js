@@ -11,7 +11,7 @@ class Nature extends React.Component {
             <div className="nature-top">
                 <div className="nature-wrapper">
                     <div className="nature-container">
-                        <h2 className="header2"> Madison County Nature Trail - Huntsville, Al </h2>
+                        <h2 className="nature-header2"> Madison County Nature Trail - Huntsville, Al </h2>
                         <a className="directions" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Madison+County+Nature+Trail/@34.5988298,-86.5209938,15.58z/data=!4m5!3m4!1s0x88620dcbc793dd79:0x253e1686137c1ade!8m2!3d34.598093!4d-86.517315"> 
                             5000 Nature Trail Td SE, Huntsville, AL 35803 
                         </a>
@@ -30,7 +30,7 @@ class Nature extends React.Component {
                     </div>
                     <div className="line"></div>
                     <div className="nature-container">
-                        <h2 className="header2"> Huntsville Botanical Garden - Huntsville, AL </h2>
+                        <h2 className="nature-header2"> Huntsville Botanical Garden - Huntsville, AL </h2>
                         <a className="directions" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Huntsville+Botanical+Garden/@34.7063492,-86.6368178,16.19z/data=!4m5!3m4!1s0x88626c6e9ec1e7c5:0x9cecb08319fc29da!8m2!3d34.7074956!4d-86.6340375"> 
                             4747 Bob Wallace Ave SW, Huntsville, AL 35805
                         </a>
@@ -50,7 +50,7 @@ class Nature extends React.Component {
                     </div>
                     <div className="line"></div>
                     <div className="nature-container"> 
-                        <h2 className="header2"> Big Spring Park - Huntsville, AL </h2>
+                        <h2 className="nature-header2"> Big Spring Park - Huntsville, AL </h2>
                         <a className="directions" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Big+Spring+Park/@34.7273798,-86.590333,17z/data=!3m1!4b1!4m5!3m4!1s0x8862148fffffffff:0x3edc6fc5867c764!8m2!3d34.7273798!4d-86.5881443">
                             Church St SW, Huntsville, AL 35801
                         </a>
@@ -64,7 +64,7 @@ class Nature extends React.Component {
 
                     <div className="line"></div>
                     <div className="nature-container">
-                        <h2 className="header2"> Monte Sano State Park - Huntsville, AL </h2>
+                        <h2 className="nature-header2"> Monte Sano State Park - Huntsville, AL </h2>
                         <a className="directions" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Monte+Sano+State+Park/@34.7451078,-86.5204114,15z/data=!4m8!1m2!2m1!1smonte+Sano+State+Park!3m4!1s0x8862146d0e36ee4b:0x3b30f262cc8ef0dc!8m2!3d34.7399425!4d-86.5118155">
                             5105 Nolen Ave SE, Huntsville, AL 35801
                         </a>

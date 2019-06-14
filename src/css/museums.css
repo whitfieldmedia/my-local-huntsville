@@ -231,7 +231,7 @@
     padding-top: 80px;
 }
 
-.header2 {
+.museum-header2 {
     font-family: 'Arvo', sans-serif;
     font-size: 40px;
     font-weight: lighter;
@@ -240,7 +240,7 @@
     margin-bottom: 0;
     text-align: center;
 }
-.header3 {
+.museum-header3 {
     font-family: 'Oxygen', sans-serif;
     font-size: 30px;
     margin: 20px 0;
@@ -265,11 +265,10 @@
 .museum-row {
     padding-top: 10px;
     padding-bottom: 100px;
-    display: grid;
-    grid-template-columns: auto auto auto; 
+    display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    justify-items: center;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
     align-content: flex-start;
     align-items: flex-start;
     width: auto;
@@ -323,10 +322,10 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-self: flex-start;
-    padding-left: 10px; 
-    padding-right: 10px;
+    margin-left: 10px; 
+    margin-right: 10px;
     text-align: left;
+    max-width: 200px;
 }
 
 .hours {
@@ -335,8 +334,8 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    padding-left: 10px; 
-    padding-right: 10px;
+    margin-left: 10px; 
+    margin-right: 10px;
     text-align: center;
 }
 
@@ -353,10 +352,11 @@
 .contact {
     display: flex;
     flex-direction: column;
-    padding-left: 10px; 
-    padding-right: 10px;
+    margin-left: 10px; 
+    margin-right: 10px;
     text-align: center;
     width: auto;
+    max-width: 200px;
 }
 
 .link {
@@ -431,10 +431,10 @@
     .header {
         font-size: 50px;
     }
-    .header2 {
+    .museum-header2 {
         font-size: 30px;
     }
-    .header3 {
+    .museum-header3 {
         font-size: 25px;
     }
     .admission {
@@ -473,10 +473,10 @@
     .header {
         font-size: 40px;
     }
-    .header2 {
+    .museum-header2 {
         font-size: 25px;
     }
-    .header3 {
+    .museum-header3 {
         font-size: 22px;
     }
     .row {

@@ -3,6 +3,9 @@ import './css/events.css';
 import moment from 'moment';
 import { getFeed } from './redux/feed';
 import { connect } from 'react-redux';
+import guitar from './ashleyPhotos/guitar_black_white.jpg';
+import wallArt from './ashleyPhotos/wall_art.png';
+import runway from './ashleyPhotos/hsv_runway.png';
 
 class Events extends React.Component{
     constructor() {
@@ -24,8 +27,8 @@ class Events extends React.Component{
             })
         }
     }
-
     sendData = (data) => {
+        console.log(data);
         return {
             __html: data
         }
@@ -41,9 +44,15 @@ class Events extends React.Component{
         })
     }
     render() {
-        console.log(this.props.feed.items)
         return (
-            <div className="events-page">
+            <div className="events-container">
+                <h1 className="event-header"> Upcoming Events </h1>
+                <div className="event-top-wrapper">
+                    <img className="event-top-img" src={guitar} alt=""/>
+                    <img className="event-top-img" src={wallArt} alt=""/>
+                    <img className="event-top-img" src={runway} alt=""/>
+                </div>
+                <div className="events-page">
                 {this.state.done
                 ? this.props.feed.items.map((event, index) => (
                     <div className="event-holder" key={index} onClick={(e) => this.handleClick(index, e)}>
@@ -59,6 +68,7 @@ class Events extends React.Component{
                     </div>
                 ))
                 : null}
+                </div>
             </div>
         )
     }

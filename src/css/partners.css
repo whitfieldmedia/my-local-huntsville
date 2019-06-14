@@ -1,15 +1,15 @@
 .header-wrapper {
     width: 100vw;
     height: auto;
-    top: 70vh;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-
+    background: #454063;
 }
+
 .header1 {
     text-align: center;
     font-size: 45px;
@@ -17,7 +17,7 @@
     letter-spacing: 4px;
     color: #f8f8f8;
     font-weight: bolder;
-    background: rgba(31, 86, 124, .9);
+    background: #454063;
     width: auto;
     height: auto;
     padding: 10px;
@@ -27,25 +27,24 @@
 #top-image {
     background: url(../ashleyPhotos/diners.png);
     width: 100vw;
-    height: 90vh;
+    height: 70vh;
+    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
     top: 0;
 }
 
 .display-wrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: 100%;
     margin: 0 auto;
-    margin-top: 90vh;
     justify-content: space-evenly;
     padding-bottom: 0;
-    background: #1F567C;
+    background: #454063;
     z-index: 100;
+    border-top: 1px solid #e8e8e8;
 }
 .display {
     font-family: "Arvo" serif;

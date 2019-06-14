@@ -29,7 +29,7 @@
     flex-flow: row;
 }
 
-.header2 {
+.hotel-header2 {
     font-size: 23px;
     font-family: 'Oxygen', sans-serif;
     color: #212121;
@@ -47,7 +47,7 @@
     margin: 0;
 }
 
-.header3 {
+.hotel-header3 {
     font-size: 22px;
     font-family: 'Oxygen', sans-serif;
     color: #313131;
@@ -56,7 +56,7 @@
     margin: 0;
 }
 
-.header4 {
+.hotel-header4 {
     font-size: 18px;
     font-family: 'Arvo', serif;
     color: #4a4a4a;
@@ -219,7 +219,7 @@
     .link-row {
         width: 250px;
     }
-    .header2 {
+    .hotel-header2 {
         width: 300px;
     }
     .hotel-video {

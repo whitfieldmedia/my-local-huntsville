@@ -135,7 +135,7 @@ class Museums extends React.Component {
                     ?
                     <div className="popup-container" id="rocket-popup">
                         <div className="popupCloseButton" onClick={this.closeRocket}>X</div>
-                        <h2 className="header2"> U.S. Space and Rocket Center </h2>
+                        <h2 className="museum-header2"> U.S. Space and Rocket Center </h2>
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
                                 <div>
@@ -160,19 +160,19 @@ class Museums extends React.Component {
                         </p>
                         <div className="museum-row">
                             <div className="admission">
-                                <h3 className="header3"> Admission </h3>
+                                <h3 className="museum-header3"> Admission </h3>
                                 <a className="tickets ticket-link" href="https://shop-rocketcenter.tamretail.net/Events.aspx"> Adults (13 and up) - $25 </a>
                                 <a className="tickets ticket-link" href="https://shop-rocketcenter.tamretail.net/Events.aspx"> Children (5 to 12 ) - $17 </a> 
                                 <a className="tickets ticket-link" href="https://shop-rocketcenter.tamretail.net/Events.aspx"> Children 4 and under - FREE </a>
                             </div>
                             <div className="hours">
-                                <h3 className="header3"> Hours </h3>
+                                <h3 className="museum-header3"> Hours </h3>
                                 <p className="open-par"> 
                                     Everyday <br/> 9 a.m. - 5 p.m.
                                 </p>
                             </div>
                             <div className="contact">
-                                <h3 className="header3"> Contact </h3>
+                                <h3 className="museum-header3"> Contact </h3>
                                 <a className="tickets ticket-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/U.S.+Space+%26+Rocket+Center/@34.7111455,-86.6561125,17z/data=!3m1!4b1!4m5!3m4!1s0x88626c10a5eae5d7:0x3e32325e196cc12e!8m2!3d34.7111411!4d-86.6539238"> 
                                     1 Tranquility Base, <br/> Huntsvillle, AL 35805
                                 </a> 
@@ -187,7 +187,7 @@ class Museums extends React.Component {
                     ? <div className="popup-container" id="veteran-popup">
                         <div className="popup-content">
                         <div className="popupCloseButton" onClick={this.closeVeteran}>X</div>
-                        <h2 className="header2"> U.S. Veterans Memorial Museum </h2>
+                        <h2 className="museum-header2"> U.S. Veterans Memorial Museum </h2>
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
                                 <div>
@@ -212,7 +212,7 @@ class Museums extends React.Component {
                         </p>
                         <div className="museum-row">
                             <div className="admission">
-                                <h3 className="header3"> Admission </h3>
+                                <h3 className="museum-header3"> Admission </h3>
                                 <p className="tickets"> $5 Donation for Adults </p>
                                 <p className="tickets"> $4 Donation for Seniors </p>
                                 <p className="tickets"> $4 Donation for Seniors </p>
@@ -220,13 +220,13 @@ class Museums extends React.Component {
                                 <p className="tickets"> Active Duty in Uniform and Guests Free </p>
                             </div>
                             <div className="hours">
-                                <h3 className="header3"> Hours </h3>
+                                <h3 className="museum-header3"> Hours </h3>
                                 <p className="open-par">
                                     Wed.-Sat. 10 a.m - 4 p.m.
                                 </p>
                             </div>
                             <div className="contact">
-                                <h3 className="header3"> Contact </h3>
+                                <h3 className="museum-header3"> Contact </h3>
                                 <a className="tickets ticket-link" href="https://www.google.com/maps/dir//34.6920737,-86.5862128/@34.692074,-86.586213,15z?hl=en-US" target="_blank" rel="noopener noreferrer"> 
                                     2060A Airport Road, <br/> Huntsville, AL 35801
                                 </a> 
@@ -241,7 +241,7 @@ class Museums extends React.Component {
                 {this.state.open3
                     ? <div className="popup-container" id="lowe-popup">
                         <div className="popupCloseButton" onClick={this.closeLowe}>X</div>
-                        <h2 className="header2">Lowe Mill Arts & Entertainment</h2>
+                        <h2 className="museum-header2">Lowe Mill Arts & Entertainment</h2>
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
                                 <div>
@@ -265,7 +265,7 @@ class Museums extends React.Component {
                         </p>
                         <div className="museum-row">
                             <div className="hours">
-                                <h3 className="header3"> Hours </h3>
+                                <h3 className="museum-header3"> Hours </h3>
                                 <p className="open-par">
                                     Wednesday: 12 pm - 6 pm 
                                 </p>
@@ -280,7 +280,7 @@ class Museums extends React.Component {
                                 </p>
                             </div>
                             <div className="contact">
-                                <h3 className="header3"> Contact </h3>
+                                <h3 className="museum-header3"> Contact </h3>
                                 <a className="tickets ticket-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Lowe+Mill+ARTS+%26+Entertainment/@34.715145,-86.5992317,17z/data=!3m1!4b1!4m5!3m4!1s0x88626cbcc84ca9cb:0xdc939ac21cd9db2f!8m2!3d34.715145!4d-86.597043"> 
                                     2211 Seminole Dr SW, <br/> Huntsville, AL 35805 
                                 </a> 
@@ -294,7 +294,7 @@ class Museums extends React.Component {
                 {this.state.open4
                     ? <div className="popup-container" style={{display: 'block'}} id="art-popup">
                         <div className="popupCloseButton" onClick={this.closeArt}> X </div>
-                        <h2 className="header2"> Huntsville Museum of Art </h2>
+                        <h2 className="museum-header2"> Huntsville Museum of Art </h2>
 
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
@@ -320,7 +320,7 @@ class Museums extends React.Component {
                         </p>
                         <div className="museum-row">
                             <div className="admission">
-                                <h3 className="header3"> Admission </h3>
+                                <h3 className="museum-header3"> Admission </h3>
                                 <p className="tickets"> $12 Adults </p>
                                 <p className="tickets"> $5 Children (Ages 6-11) </p>
                                 <p className="tickets"> $5 Students </p>
@@ -329,7 +329,7 @@ class Museums extends React.Component {
                                 <p className="tickets"> Children under 6 are FREE </p>
                             </div>
                             <div className="hours">
-                                <h3 className="header3"> Hours </h3>
+                                <h3 className="museum-header3"> Hours </h3>
                                 <p className="open-par">
                                     <strong>Sunday: </strong> 12 p.m. - 5 p.m. <br/>
                                     <strong>Monday:</strong> closed <br/>
@@ -341,7 +341,7 @@ class Museums extends React.Component {
                                 </p>
                             </div>
                             <div className="contact">
-                                <h3 className="header3"> Contact </h3>
+                                <h3 className="museum-header3"> Contact </h3>
                                 <a className="tickets  ticket-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Huntsville+Museum+of+Art/@34.727147,-86.589421,17z/data=!4m5!3m4!1s0x88626b565417d617:0xf8a215b610c54699!8m2!3d34.7271426!4d-86.5872323"> 
                                     300 Church St SW, <br/> Huntsville, AL 35801 
                                 </a>
@@ -355,7 +355,7 @@ class Museums extends React.Component {
                 {this.state.open5 
                     ? <div className="popup-container" id="depot-popup">
                         <div className="popupCloseButton" onClick={this.closeDepot}> X </div>
-                        <h2 className="header2"> Huntsville Depot Museum </h2>
+                        <h2 className="museum-header2"> Huntsville Depot Museum </h2>
 
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
@@ -382,19 +382,19 @@ class Museums extends React.Component {
                         </p>
                         <div className="museum-row">
                             <div className="admission">
-                                <h3 className="header3"> Admission </h3>
+                                <h3 className="museum-header3"> Admission </h3>
                                 <p className="tickets"> Grounds Pass <strong> ~ $5 </strong> </p>
                                 <p className="tickets"> Tour <strong> ~ $10 </strong> </p>
                             </div>
                             <div className="hours">
-                                <h3 className="header3"> Hours </h3>
+                                <h3 className="museum-header3"> Hours </h3>
                                 <p className="open-par">
                                     <strong>Wednesday-Saturday</strong> 
                                     <br/> 10 a.m. - 3 p.m.
                                 </p>
                             </div>
                             <div className="contact">
-                                <h3 className="header3"> Contact </h3>
+                                <h3 className="museum-header3"> Contact </h3>
                                 <a className="tickets ticket-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Huntsville+Depot+Museum/@34.7345082,-86.5929602,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b50ecbe5519:0xf330839d70fe7457!8m2!3d34.7345038!4d-86.5907715">
                                     320 Church St NW, <br/> Huntsville, AL 35801
                                 </a> 

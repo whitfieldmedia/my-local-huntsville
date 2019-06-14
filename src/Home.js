@@ -23,8 +23,37 @@ import background1 from './ashleyPhotos/big_springs_park.png';
 import background5 from './ashleyPhotos/pond.png';
 import background6 from './ashleyPhotos/street_exposure.png';
 import background7 from './ashleyPhotos/washington_square.jpg';
+import smallBack from './ashleyPhotos/lowe_mill.png';
+import smallBack2 from './ashleyPhotos/usa_rocket.png';
+import smallBack3 from './ashleyPhotos/soldier_statue.png';
+import smallBack4 from './ashleyPhotos/clinton_row.jpg';
 
 class Home extends React.Component{
+  constructor() {
+    super()
+    this.state = {
+      isBig: true
+    }
+    this.findWidth = this.findWidth.bind(this)
+  }
+  componentDidMount() {
+    this.findWidth();
+    window.addEventListener('resize', this.findWidth);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.findWidth);
+  }
+  findWidth = () => {
+    if(window.innerWidth > 420 && !this.state.isBig) {
+      this.setState({
+        isBig: true
+      })
+    } else if(window.innerWidth <= 420 && this.state.isBig) {
+      this.setState({
+        isBig: false
+      })
+    }
+  }
   showRestaurants = () => {
     var places = [
       <Yellowhammer key="1"/>, <Brickhouse key="2"/>, <Btr key="3"/>, <Straight key="4"/>, <Boot key="5"/>, <BrokenEgg key="6"/>, <Poppy key="7"/>, <Otbx key="8"/>, <Bar805 key="9"/>
@@ -41,9 +70,16 @@ class Home extends React.Component{
     var second = r[1]
     var third = r[2]
     var fourth = r[3]
-    return [
-      places[first], places[second], places[third], places[fourth]
-    ]
+    let width = window.innerWidth;
+    if(width <= 1250) {
+      return [places[first], places[second]]
+    }else if (width <= 1650) {
+      return [places[first], places[second], places[third]]
+    } else {
+      return [
+        places[first], places[second], places[third], places[fourth]
+      ]
+    } 
   }
   showActivities = () => {
     var places = [
@@ -69,7 +105,9 @@ class Home extends React.Component{
     return (
       <div>
         <div className="top-wrapper">
-          <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6,background7 ]} />
+          {this.state.isBig
+          ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6,background7 ]} />
+          : <BackgroundSlideshow images={[smallBack, smallBack2, smallBack3, smallBack4]} />}
           <div className="top-container">
             <h1 className="top-header"> My Local Huntsville </h1>
           </div>
