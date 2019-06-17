@@ -81,24 +81,14 @@ class Home extends React.Component{
       ]
     } 
   }
-  showActivities = () => {
-    var places = [
-      <Bullet key="bullet & barrel"/>, <ArtTrail key="trail"/>, <Gardens key="botanical gardens"/>
-    ];
-    let one = Math.floor(Math.random() * 3);
-    let two = Math.floor(Math.random() * 3);
-    if(one !== two) {
-      return [ places[one], places[two] ]
-    } else {
-      if(one >= 2) {
-        one = 0
-      } else {
-        one++
-      }
+
+  showThings = () => {
+    let width = window.innerWidth;
+    if(width <= 1250) {
+      return [ <Gardens key="Botanical_Gardens"/>, <Bullet key="Bullet & Barrel" /> ]
+    } else if(width <= 1650) {
+      return [<Gardens key="Botanical_Gardens"/>, <Bullet key="Bullet & Barrel" />, <ArtTrail key="Secret_Art_Trail" />]
     }
-    return [
-      places[one], places[two]
-    ]
   }
 
   render() {
@@ -113,7 +103,7 @@ class Home extends React.Component{
           </div>
         </div>
         <a className="weatherwidget-io" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>        
-        <h2 className="home-news-header"> Huntsville News </h2>
+        <h2 className="home-news-header"> This is Huntsville. </h2>
         <div className="home-news-wrapper">
           <News />    
         </div>
@@ -137,7 +127,7 @@ class Home extends React.Component{
         </div>
         <div className="line"></div>
         <div className="mid-wrapper">
-          {this.showActivities()}
+            {this.showThings()}
         </div>
       </div>
     )

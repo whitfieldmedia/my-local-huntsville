@@ -1,0 +1,26 @@
+.eats-page {
+    padding-top: 200px;
+}
+
+.eats-partner-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width: 1250px ){
+    .eats-partner-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .eats-page {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .eats-partner-wrapper {
+        grid-template-columns: auto;
+    }
+}

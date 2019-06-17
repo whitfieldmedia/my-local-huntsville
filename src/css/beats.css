@@ -1,0 +1,26 @@
+.beats-page {
+    padding-top: 200px;
+}
+
+.bars-wrapper {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width: 1250px) {
+    .bars-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .beats-page {
+        padding-top: 100px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .bars-wrapper {
+        grid-template-columns: auto;
+    }
+}

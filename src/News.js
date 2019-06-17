@@ -14,7 +14,7 @@ class News extends React.Component{
                     <h2 className="news-title"> Huntsville is one of the most affordable cities in the U.S. </h2>
                     <div className="news-img-par-wrapper">
                         <img src={affordableImage} className="news-image" alt="Huntsville Alabama Big Springs Park"/>
-                        <p className="news-description"> Huntsville is the most affordable place to live out of the 125 most populous metro areas in the U.S... </p>
+                        <p className="news-description"> Huntsville is the most affordable place to live out of the 125 most populous metro areas in the U.S. for a second year in a row. An above-average..  </p>
                     </div>
                 </a>
                 <a className="news-wrapper" href="https://www.al.com/news/huntsville/2018/05/huntsville_keeps_growing_on_tr.html" target="_blank" rel="noopener noreferrer"> 

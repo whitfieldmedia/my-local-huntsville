@@ -4,7 +4,7 @@ const token = 'nfFqp6j6LbGNRQw4Zp1NM8wp8U3dVc'
 
 export function getEvents() {
     return dispatch => {
-        axios.get(CORS_PROXY + 'https://api.predicthq.com/v1/events/?within=50mi@34.729529,-86.586003', {
+        axios.get(CORS_PROXY + 'https://api.predicthq.com/v1/events/?within=50mi@34.729529,-86.586003&category=concerts', {
             headers: { 'Authorization': `Bearer ${token}` }
 
         })
