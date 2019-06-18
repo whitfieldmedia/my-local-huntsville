@@ -1,12 +1,93 @@
 .beats-page {
     padding-top: 200px;
 }
+.beats-bars-header {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 50px;
+    color: #313131;
+    text-align: center;
+    font-weight: lighter;
+}
+.concert-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.songkick-header {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 35px;
+    color: #212121;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.songkick-logo {
+    height: 50px;
+}
+
+.concert-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.concert-holder {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: #4a4a4a;
+    width: 300px;
+    margin: 10px 15px;
+    background: #f8f8f8;
+    border: 1px solid #454063;
+    border-radius: 15px;
+}
+.artist-name {
+    color: #313131;
+    font-family: 'Oxygen', sans-serif;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.concert-venue {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 5px 0;
+}
+.concert-date {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 5px 0;
+}
+
 
 .bars-wrapper {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: auto auto auto;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.beats-bar-holder {
+    margin: 10px 20px;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -22,5 +103,10 @@
 @media only screen and (max-width: 850px) {
     .bars-wrapper {
         grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width: 665px) {
+    .concert-holder {
+        width: 90vw;
     }
 }

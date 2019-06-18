@@ -1,34 +1,33 @@
-.eats-page {
+.streets-page {
     padding-top: 200px;
 }
 
-.eats-header {
+.streets-header {
     font-family: 'Oxygen', sans-serif;
     font-size: 50px;
     color: #313131;
     text-align: center;
     font-weight: lighter;
 }
-
-.eats-partner-wrapper {
+.streets-things-wrapper {
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
-@media only screen and (max-width: 1250px ){
-    .eats-partner-wrapper {
+@media only screen and (max-width: 1250px) {
+    .streets-things-wrapper {
         grid-template-columns: auto auto;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .eats-page {
+    .streets-page {
         padding-top: 100px;
     }
 }
 
 @media only screen and (max-width: 850px) {
-    .eats-partner-wrapper {
+    .streets-things-wrapper {
         grid-template-columns: auto;
     }
 }

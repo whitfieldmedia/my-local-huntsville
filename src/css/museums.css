@@ -9,6 +9,10 @@
     overflow: auto;
     min-height: 100vh;
     padding-top: 200px;
+    background: url('../ashleyPhotos/white_building.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .museum-wrapper {
@@ -44,7 +48,7 @@
     padding-top: 0;
 }
 .title2:hover {
-    color: #21577D;
+    color: #454063;
 }
 .title2:hover .learn-more .button {
     display: inline-block;
@@ -75,7 +79,7 @@
 .button {
     position: relative;
     border: none;
-    background: #21577D;
+    background: #454063;
     color: #f8f8f8;
     font-family: 'Oxygen', sans-serif;
     font-size: 15px;
@@ -220,7 +224,7 @@
     align-items: center;
     font-size: 18px;
     font-family: 'Oxygen', sans-serif;
-    color: #21577D;
+    color: #454063;
 }
 .scroll-link:hover {
     color: #000;
@@ -362,7 +366,7 @@
 .link {
     font-family: 'Oxygen', sans-serif;
     font-size: 18px;
-    color: #21577D;
+    color: #454063;
     width: auto;
     text-decoration: none;
     padding: 6px 0;
@@ -373,7 +377,7 @@
 .tickets {
     font-family: 'Oxygen', sans-serif;
     font-size: 18px;
-    color: #21577D;
+    color: #454063;
     width: auto;
     padding: 8px 0;
     margin: 0;
@@ -397,8 +401,6 @@
     height: auto;
     max-width: 750px;
     width: auto;
-    display: flex;
-    flex-direction: column;
     position: relative;
     margin: 30px auto;
 }
@@ -418,6 +420,7 @@
 @media only screen and (max-width: 1000px) {
     .museum-container {
         padding-top: 100px;
+        background-image: url('../ashleyPhotos/soldier_statue.png');
     }
 }
 @media only screen and (max-width: 750px) {

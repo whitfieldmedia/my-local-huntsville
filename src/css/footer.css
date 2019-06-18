@@ -43,3 +43,19 @@
     padding-left: 10px;
     font-size: 20px;
 }
+
+@media only screen and (max-width: 661px) {
+    .footer {
+        height: 180px;
+        flex-flow: column;
+        align-content: center;
+        align-items: center;
+    }
+    .footer-icon {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        text-align: left;
+        width: 200px;
+    }
+}

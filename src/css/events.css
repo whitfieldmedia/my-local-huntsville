@@ -81,10 +81,30 @@
     display: none;
 }
 
+@media only screen and (max-width: 1000px) {
+    .events-container {
+        padding-top: 100px;
+    }
+}
 
 @media only screen and (max-width: 950px) {
     .events-page {
         display: flex;
         flex-flow: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #gone {
+        display: none;
+    }
+    .event-top-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .event-container {
+        padding: 5px;
     }
 }

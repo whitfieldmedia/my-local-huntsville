@@ -50,7 +50,7 @@ class Events extends React.Component{
                 <div className="event-top-wrapper">
                     <img className="event-top-img" src={guitar} alt=""/>
                     <img className="event-top-img" src={wallArt} alt=""/>
-                    <img className="event-top-img" src={runway} alt=""/>
+                    <img id="gone" className="event-top-img" src={runway} alt=""/>
                 </div>
                 <div className="events-page">
                 {this.state.done

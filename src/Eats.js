@@ -11,6 +11,7 @@ class Eats extends React.Component{
     render() {
         return (
             <div className="eats-page">
+                <h1 className="eats-header"> Our Favorite Eats </h1>
                 <div className="eats-partner-wrapper">
                     <Brickhouse />
                     <BrokenEgg />

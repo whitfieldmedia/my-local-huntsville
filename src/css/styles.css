@@ -14,7 +14,24 @@ body {
     height: auto;
     width: 100%;
 }
-
+.menu-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+}
+.beer-menu {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    color: #4a4a4a;
+    margin: 5px 10px;
+}
+.beer-menu:hover {
+    transform: scale(1.1);
+    color: #5a5a5a;
+}
 
 .top-wrapper {
     position: relative;
@@ -116,7 +133,7 @@ body {
     align-items: center;
     margin-bottom: 0;
     padding-bottom: 0;
-    color: #21577D;
+    color: #454063;
     font-size: 30px;
 }
 
@@ -171,7 +188,7 @@ body {
     padding-bottom: 10px;
 }
 .page-link:hover {
-    color: #21577D;
+    color: #454063;
 }
 
 .header2 {

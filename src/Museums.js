@@ -137,7 +137,7 @@ class Museums extends React.Component {
                         <div className="popupCloseButton" onClick={this.closeRocket}>X</div>
                         <h2 className="museum-header2"> U.S. Space and Rocket Center </h2>
                         <div className="slideshow-container">
-                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
+                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
                                     <img src={space1} alt="U.S. Space and Rocket Center " /> 
                                 </div>
@@ -189,7 +189,7 @@ class Museums extends React.Component {
                         <div className="popupCloseButton" onClick={this.closeVeteran}>X</div>
                         <h2 className="museum-header2"> U.S. Veterans Memorial Museum </h2>
                         <div className="slideshow-container">
-                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
+                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
                                     <img src={vet1} alt="U.S. Veterans Memorial Museum Jeep with Trailer" />
                                 </div>
@@ -243,7 +243,7 @@ class Museums extends React.Component {
                         <div className="popupCloseButton" onClick={this.closeLowe}>X</div>
                         <h2 className="museum-header2">Lowe Mill Arts & Entertainment</h2>
                         <div className="slideshow-container">
-                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
+                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
                                     <img src={lowe1} alt="Lowe Slide 1"/>
                                 </div>
@@ -297,7 +297,7 @@ class Museums extends React.Component {
                         <h2 className="museum-header2"> Huntsville Museum of Art </h2>
 
                         <div className="slideshow-container">
-                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
+                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
                                     <img src={art1} alt="U.S. Space and Rocket Center " />
                                 </div>
@@ -358,7 +358,7 @@ class Museums extends React.Component {
                         <h2 className="museum-header2"> Huntsville Depot Museum </h2>
 
                         <div className="slideshow-container">
-                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={3000}>
+                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
                                     <img src={depot1} alt="Depot Slide"/>
                                 </div>

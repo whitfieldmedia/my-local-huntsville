@@ -36,26 +36,26 @@ class Contact extends React.Component{
                 <form id="formContainer" action="https://formspree.io/steve@wemakeads.com" method="POST">
                     <div className="contactRow">
                         <div className="contactColumn">
-                            <label for="form_name" className="form_label"><i className="far fa-user"></i></label>
+                            <label htmlFor="form_name" className="form_label"><i className="far fa-user"></i></label>
                             <input type="text" name="name" className="input" placeholder="NAME*"/>
                         </div>
                         <div className="contactColumn">
-                            <label for="form_email" className="form_label"><i className="far fa-envelope"></i></label>
+                            <label htmlFor="form_email" className="form_label"><i className="far fa-envelope"></i></label>
                             <input type="text" name="email" className="input" placeholder="EMAIL*"/>
                         </div>
                     </div>
                     <div className="contactRow">
                         <div className="contactColumn">
-                            <label for="form_date" className="form_label"><i className="fas fa-briefcase"></i></label>
+                            <label htmlFor="form_date" className="form_label"><i className="fas fa-briefcase"></i></label>
                             <input type="text" name="company" className="input" placeholder="COMPANY" />
                         </div>
                         <div className="contactColumn">
-                            <label for="form_number" className="form_label"><i className="fas fa-phone"></i></label>
+                            <label htmlFor="form_number" className="form_label"><i className="fas fa-phone"></i></label>
                             <input type="tel" name="phone" className="input" placeholder="PHONE NUMBER" />
                         </div>
                     </div>
                     <div className="message_row">
-                        <label for="form_message" className="form_label"><i className="fas fa-envelope"></i></label>
+                        <label htmlFor="form_message" className="form_label"><i className="fas fa-envelope"></i></label>
                         <input type="text" name="message" className="message_input" placeholder="MESSAGE*" />
                     </div>
                     <div className="contactRow">

@@ -121,6 +121,7 @@
 
 .dropdown {
     display: flex;
+    float: none;
     flex-flow: column;
     height: auto;
     min-height: 80px;
@@ -138,11 +139,13 @@
 .dropbtn {
     text-decoration: none;
     background: inherit;
+    display: block;
     color: #F8F8F8;
     font-size: 20px;
-    height: auto;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
     position: relative;
-    padding: 0;
     margin: 0;
     font-family: 'Oxygen', sans-serif;
     align-self: center;
@@ -151,7 +154,7 @@
 
 .dropdown-content {
     display: none; 
-    position: absolute;
+    position: relative;
     background: none;
     width: 200px;
     top: 0;
@@ -188,16 +191,17 @@
 .dropdown-link {
     color: #454063;
     position: relative;
+    display: block;
     text-decoration: none;
-    padding: 12px 16px;
-    height: 30px;
+    height: auto;
+    padding: 10px 0;
     width: 100%;
-    display: inline-block;
     font-size: 20px;
     font-family: 'Arvo', serif;
     background: #F8F8F8;
     z-index: 100;
     margin-top: 0;
+    border-top: 1px solid #454063;
 }
 
 .dropdown:hover .dropbtn {
@@ -258,13 +262,12 @@
     position: relative;
     align-content: center;
     align-items: center;
+    text-align: center;
     width: 200px;
-    right: 0;
-    top: 80px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #454063;
-    height: auto;
+    height: 100%;
 }
 .dropdown4-open {
     list-style-type: none;
@@ -273,13 +276,12 @@
     position: relative;
     align-content: center;
     align-items: center;
+    text-align: center;
     width: 200px;
-    right: 0;
-    top: 80px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #454063;
-    height: auto;
+    height: 100%;
 }
 .dropdown5-open {
     list-style-type: none;
@@ -288,13 +290,12 @@
     position: relative;
     align-content: center;
     align-items: center;
+    text-align: center;
     width: 200px;
-    right: 0;
-    top: 80px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #454063;
-    height: auto;
+    height: 100%;
 }
 .dropdown6-open {
     list-style-type: none;
@@ -303,13 +304,12 @@
     position: relative;
     align-content: center;
     align-items: center;
+    text-align: center;
     width: 200px;
-    right: 0;
-    top: 80px;
-    height: auto;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #454063;
+    height: 100%;
 }
 .open {
     list-style-type: none;
@@ -324,12 +324,13 @@
     margin: 0;
     padding: 0;
     background: #454063;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 
 .nav-link {
     display: flex;
-    flex-flow: column;
     height: 80px;
     background: inherit;
     position: relative;
@@ -346,12 +347,9 @@
     font-size: 20px;
     justify-self: center;
     align-self: center;
-    font-family: 'Oxygen', sans-serif;
-}
-
-.main-nav li {
     text-align: center;
-    margin: 15px auto;
+    width: 100%;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .navbar-toggle {
@@ -384,10 +382,17 @@
 .active {
     display: block;
 }
-.main-nav li {
-    text-align: center;
-    margin: 15px auto;
-    width: 100%;
+
+
+.nav-x {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;
+    top: -30px;
+    right: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #F8F8F8;
+    z-index: 105;
 }
 
 .logo:hover {
@@ -404,11 +409,8 @@
 .nav-link:hover .nav-links {
     color: #454063;
 }
-
-
 .dropdown-link:hover {
-    color: #f8f8f8;
-    background: #454063;
+    background: #e8e8e8;
 }
 
 
@@ -489,9 +491,8 @@
     .dropdown-content {
         display: none; 
         position: absolute;
-        left: 0;
         width: 100%;
-        top: 30px;
+        padding-top: 80px;
         z-index: 10;
         background: none;
     }
@@ -502,17 +503,17 @@
         position: relative;
         text-decoration: none;
         background: #f2f2f2;
-        padding: 14px 20px;
         height: auto;
         display: block;
         text-align: center;
+        width: 100%;
     }
     .dropdown:hover {
         cursor: pointer;
     }
 
     .dropdown:hover .dropdown-content {
-        display: flex;
+        display: block;
         flex-flow: column;
         cursor: pointer;
     }

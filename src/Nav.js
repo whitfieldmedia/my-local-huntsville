@@ -75,7 +75,10 @@ class Nav extends React.Component{
     if(!this.state.isClicked3) {
       this.setState({
         isClicked3: true,
-        dropdown3: 'dropdown3-open'
+        dropdown3: 'dropdown3-open',
+        dropdown4: 'dropdown4-closed',
+        dropdown5: 'dropdown5-closed',
+        dropdown6: 'dropdown6-closed',
       })
     } else {
       this.setState({
@@ -88,7 +91,10 @@ class Nav extends React.Component{
     if(!this.state.isClicked4) {
       this.setState({
         isClicked4: true,
-        dropdown4: 'dropdown4-open'
+        dropdown4: 'dropdown4-open',
+        dropdown5: 'dropdown5-closed',
+        dropdown6: 'dropdown6-closed',
+        dropdown3: 'dropdown3-closed'
       })
     } else {
       this.setState({
@@ -101,7 +107,10 @@ class Nav extends React.Component{
     if(!this.state.isClicked5) {
       this.setState({
         isClicked5: true,
-        dropdown5: 'dropdown5-open'
+        dropdown5: 'dropdown5-open',
+        dropdown6: 'dropdown6-closed',
+        dropdown4: 'dropdown4-closed',
+        dropdown3: 'dropdown3-closed'
       })
     } else {
       this.setState({
@@ -114,7 +123,10 @@ class Nav extends React.Component{
     if(!this.state.isClicked6) {
       this.setState({
         isClicked6: true,
-        dropdown6: 'dropdown6-open'
+        dropdown6: 'dropdown6-open',
+        dropdown5: 'dropdown5-closed',
+        dropdown4: 'dropdown4-closed',
+        dropdown3: 'dropdown3-closed'
       })
     } else {
       this.setState({
@@ -147,12 +159,12 @@ class Nav extends React.Component{
         <header className="navbar nav-down" style={{ transform: `translate(0, ${this.state.slide})`, transition: 'transform 200ms linear' }} id="navbar">
           <div className="nav-top-row">
             <div className="nav-top-column">
-              <img className="nav-top-logo" src={logo} alt="My Local Huntsville"/>
+              <Link to="/"><img className="nav-top-logo" src={logo} alt="My Local Huntsville"/></Link>
             </div>
             <div className="nav-top-column2">
               <a className="top-nav-icon" href="tel:6623907878"> <i className="fas fa-phone fa-lg"></i> (662) 390-7878 </a>
               <a className="top-nav-icon" href="mailto:steve@wemakeads.com"> <i className="far fa-envelope fa-lg"></i> steve@wemakeads.com </a>
-              <a className="top-nav-icon" href="https://www.facebook.com/My-Local-Huntsville-663263420788574"> <i className="fab fa-facebook-square fa-lg"></i> Follow Us! </a>
+              <a className="top-nav-icon" href="https://www.facebook.com/My-Local-Huntsville-663263420788574" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square fa-lg"></i> Follow Us! </a>
             </div>
           </div>
           <div className="nav-row">
@@ -162,12 +174,12 @@ class Nav extends React.Component{
               <li className="nav-link">
                 <Link className="nav-links" id="homeLink" to="/"> HOME </Link>
               </li>
-              <li className="dropdown">
+              {/* <li className="dropdown">
                 <div className="dropbtn"> LIVE </div>
                 <div className="dropdown-content">
                   <div className="dropdown-link"> REAL ESTATE </div>
                 </div>
-              </li>
+              </li> */}
               <li className="dropdown">
                 <div className="dropbtn"> PLAY </div>
                 <div className="dropdown-content" id="dropdown-content">
@@ -185,12 +197,12 @@ class Nav extends React.Component{
                   <Link className="dropdown-link" to="/nature"> NATURE </Link>
                 </div>
               </li>
-              <li className="dropdown">
+              {/* <li className="dropdown">
                 <div className="dropbtn"> WORK </div>
                 <div className="dropdown-content">
                   <div className="dropdown-link">  </div>
                 </div>
-              </li>
+              </li> */}
               <li className="nav-link">
                 <Link className="nav-links" id="contactLink" to="/contact"> CONTACT </Link>
               </li>
@@ -201,17 +213,17 @@ class Nav extends React.Component{
             <Link className="logo2-holder" onClick={this.handleClose} to="/"> 
               <img src={logo} className="nav-top-logo2" alt="My Local Huntsville"/>
             </Link>
-            <span className={this.state.class2} id="js-navbar-toggle" onClick={this.handleClick}> <i id="open" className="fas fa-bars"></i></span>
+            <span className={this.state.class2} id="js-navbar-toggle" onClick={this.handleClick}> {this.state.isClicked ? <p className="nav-x"> X </p> : <i id="open" className="fas fa-bars"></i> }</span>
             <ul className={this.state.class} id="js-menu">
               <li onClick={this.handleClose} className="nav-link">
                 <Link onClick={this.handleClose} className="nav-links" id="homeLink" to="/"> HOME </Link>
               </li>
-              <li className="dropdown">
+              {/* <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick3}> LIVE </div>
                 <div className={this.state.dropdown3}>
                   <div onClick={this.handleClose} className="dropdown-link"> REAL ESTATE </div>
                 </div>
-              </li>
+              </li> */}
               <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick4}> PLAY </div>
                 <div className={this.state.dropdown4}>
@@ -229,12 +241,12 @@ class Nav extends React.Component{
                   <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
                 </div>
               </li>
-              <li className="dropdown">
+              {/* <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick6}> WORK </div>
                 <div className={this.state.dropdown6}>
                   <div onClick={this.handleClose} className="dropdown-link">  </div>
                 </div>
-              </li>
+              </li> */}
               <li onClick={this.handleClose} className="nav-link">
                 <Link onClick={this.handleClose} className="nav-links" id="contactLink" to="/contact"> CONTACT </Link>
               </li>

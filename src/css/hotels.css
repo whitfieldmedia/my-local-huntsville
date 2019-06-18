@@ -74,7 +74,7 @@
 .link {
     font-family: 'Arvo', serif;
     font-size: 18px;
-    color: #22577D;
+    color: #454063;
     text-decoration: none;
     text-align: center;
     padding: 0;
@@ -178,6 +178,9 @@
     flex-flow: row;
     justify-content: space-evenly;
     justify-items: space-evenly;
+    align-content: space-evenly;
+    align-items: space-evenly;
+    width: 100%;
 }
 
 .video-column {
@@ -188,6 +191,7 @@
     justify-items: space-evenly;
     align-content: center;
     align-items: center;
+    padding: 0px 15px;
 }
 
 @media only screen and (max-width: 1000px) {
