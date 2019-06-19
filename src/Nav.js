@@ -5,6 +5,8 @@ import './css/nav.css';
 
 class Nav extends React.Component{
   state = {
+    didScroll: true,
+    lastScrollTop: 0,
     slide: 0,
     slide2: 0,
     lastScrollY: 0,
@@ -23,20 +25,23 @@ class Nav extends React.Component{
     dropdown6: 'dropdown6-closed'
   }
 
-  componentWillMount() {
+  componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
-  handleScroll = () => {
-    let { lastScrollY } = this.state;
-    let currentScrollY = window.scrollY;
 
-    if ( currentScrollY > lastScrollY ) {
+  handleScroll = () => {
+    const lastScrollY = this.state.lastScrollY;
+    const currentScrollY = window.scrollY;
+    const totalHeight = (document.documentElement.scrollHeight - window.innerHeight)
+    if ( currentScrollY > lastScrollY && window.scrollY > 50) {
       this.setState({ slide: '-180px', slide2: '-80px' })
     } else {
+      if( currentScrollY < totalHeight ) {
       this.setState({ slide: '0px', slide2: '0' })
+      }
     }
     this.setState({ lastScrollY: currentScrollY });
   }
@@ -212,7 +217,7 @@ class Nav extends React.Component{
             </ul>
           </div>
         </header>
-        <header className="navbar2 nav-down2" style={{ transform: `translate(0, ${this.state.slide2})`, transition: 'transform 200ms linear' }}>
+        <header className="navbar2 nav-down2" id="navbar2" style={{ transform: `translate(0, ${this.state.slide2})`, transition: 'transform 200ms linear' }}>
             <Link className="logo2-holder" onClick={this.handleClose} to="/"> 
               <img src={logo} className="nav-top-logo2" alt="My Local Huntsville"/>
             </Link>
