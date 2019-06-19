@@ -4,11 +4,18 @@ import garden from './images/garden.png';
 import bigSprings from './images/big-springs.png';
 import monteSano from './images/monte-sano-state-park.png';
 import './css/nature.css';
+import { Helmet } from 'react-helmet';
 
 class Nature extends React.Component {
     render() {
         return (
             <div className="nature-top">
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title> Huntsville Alabama Best Trails and Parks </title>
+                    <link rel="canonical" href="https://www.mylocalhuntsville.com/nature"/>
+                    <meta name="description" content="Huntsville Alabama is beautiful. If you're a outdoor enthusiast or a family looking to spend a day in the great outdoors Huntsville has you covered." />
+                </Helmet>
                 <div className="nature-wrapper">
                     <div className="nature-container">
                         <h2 className="nature-header2"> Madison County Nature Trail - Huntsville, Al </h2>

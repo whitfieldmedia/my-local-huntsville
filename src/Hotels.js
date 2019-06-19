@@ -7,11 +7,18 @@ import dog from './icons/dog.svg';
 import wine from './icons/wine.svg';
 import bus from './icons/bus.svg';
 import './css/hotels.css';
+import { Helmet } from 'react-helmet';
 
 class Hotels extends React.Component{
     render() {
         return (
             <div className="hotel-page">
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title> Hotels in Huntsville Alabama </title>
+                    <link rel="canonical" href="https://www.mylocalhuntsville.com/hotels"/>
+                    <meta name="description" content="Visiting Huntsville Alabama? We have partnered with Hilton to provide you the best stay while you're in town." />
+                </Helmet>
                 <div className="hotel-mid">
                     <div className="video-wrapper">
                         <div className="hotel-row">

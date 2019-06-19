@@ -1,11 +1,18 @@
 import React from 'react';
 import logo from './images/whitfieldMediaLogo.png';
 import './css/contact.css';
+import { Helmet } from 'react-helmet';
 
 class Contact extends React.Component{
     render() {
         return (
             <div>
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title> Contact My Local Huntsville </title>
+                    <link rel="canonical" href="https://www.mylocalhuntsville.com/contact"/>
+                    <meta name="description" content="Have any question or want to partner with us? Give us a call or fill out the contact form and we will get back to you as soon as possible." />
+                </Helmet>
                 <div className="contact-top">
                     <div className="contact-top-row">
                         <div className="contact-column1">

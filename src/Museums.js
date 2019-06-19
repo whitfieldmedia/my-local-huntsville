@@ -26,7 +26,8 @@ import depot3 from './images/depot3.png';
 import depot4 from './images/depot-museum.png';
 import './css/museums.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel'
+import { Carousel } from 'react-responsive-carousel';
+import { Helmet } from 'react-helmet';
 
 
 class Museums extends React.Component {
@@ -74,6 +75,12 @@ class Museums extends React.Component {
         console.log(this.state)
         return (
             <div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title> Museums in Huntsville Alabama </title>
+                    <link rel="canonical" href="https://www.mylocalhuntsville.com/museums"/>
+                    <meta name="description" content="Huntsville known as Rocket City has some awesome museums! If you're interesed in what museums to go to while you're in town check out our top choices." />
+                </Helmet>
                 <div className="museum-container">
                     <div className="museum-wrapper">
                         <div className="learn-more" onClick={this.openRocket}>

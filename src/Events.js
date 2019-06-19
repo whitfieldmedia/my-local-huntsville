@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import guitar from './ashleyPhotos/guitar_black_white.jpg';
 import wallArt from './ashleyPhotos/wall_art.png';
 import runway from './ashleyPhotos/hsv_runway.png';
+import { Helmet } from 'react-helmet';
 
 class Events extends React.Component{
     constructor() {
@@ -46,6 +47,12 @@ class Events extends React.Component{
     render() {
         return (
             <div className="events-container">
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title> Upcoming Events in Huntsville Alabama </title>
+                    <link rel="canonical" href="https://www.mylocalhuntsville.com/events"/>
+                    <meta name="description" content="Stay in the loop and see upcoming events in Huntsville Alabama. There are lots of free events happening in Huntsville don't miss out." />
+                </Helmet>
                 <h1 className="event-header"> Upcoming Events </h1>
                 <div className="event-top-wrapper">
                     <img className="event-top-img" src={guitar} alt=""/>

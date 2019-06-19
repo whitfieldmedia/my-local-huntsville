@@ -6,7 +6,8 @@ import './css/beats.css';
 import { connect } from 'react-redux';
 import { getEvents } from './redux/events';
 import bySongkick from './icons/by-songkick-black.svg';
-import moment from 'moment'
+import moment from 'moment';
+import { Helmet } from 'react-helmet';
 
 class Beats extends React.Component{
     constructor() {
@@ -37,6 +38,12 @@ class Beats extends React.Component{
         }
         return(
             <div className="beats-page">
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title> Beats in Huntsville, Alabama </title>
+                    <link rel="canonical" href="https://www.mylocalhuntsville.com/beats"/>
+                    <meta name="description" content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
+                </Helmet>
                 <h1 className="beats-bars-header"> Our Favorite Bars </h1>
                 <div className="bars-wrapper">
                     <div className="beats-bar-holder">

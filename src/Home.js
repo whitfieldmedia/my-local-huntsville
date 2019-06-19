@@ -27,6 +27,7 @@ import smallBack from './ashleyPhotos/lowe_mill.png';
 import smallBack2 from './ashleyPhotos/usa_rocket.png';
 import smallBack3 from './ashleyPhotos/soldier_statue.png';
 import smallBack4 from './ashleyPhotos/clinton_row.jpg';
+import { Helmet } from 'react-helmet';
 
 class Home extends React.Component{
   constructor() {
@@ -94,6 +95,12 @@ class Home extends React.Component{
   render() {
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8"/>
+          <title> My Local Huntsville </title>
+          <link rel="canonical" href="https://www.mylocalhuntsville.com/"/>
+          <meta name="description" content="My Local Huntsville is a all around guide to Huntsville Alabama. Whether you are in town visiting or a local we keep up to date with whats happening and the best things to do in Huntsville Alabama." />
+        </Helmet>
         <div className="top-wrapper">
           {this.state.isBig
           ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6,background7 ]} />
