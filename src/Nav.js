@@ -30,8 +30,8 @@ class Nav extends React.Component{
     window.removeEventListener('scroll', this.handleScroll);
   }
   handleScroll = () => {
-    const { lastScrollY } = this.state;
-    const currentScrollY = window.scrollY;
+    let { lastScrollY } = this.state;
+    let currentScrollY = window.scrollY;
 
     if ( currentScrollY > lastScrollY ) {
       this.setState({ slide: '-180px', slide2: '-80px' })
@@ -197,6 +197,9 @@ class Nav extends React.Component{
                   <Link className="dropdown-link" to="/nature"> NATURE </Link>
                 </div>
               </li>
+              <li className="nav-link">
+                <Link className="nav-links" to="/gallery"> GALLERY </Link>
+              </li>
               {/* <li className="dropdown">
                 <div className="dropbtn"> WORK </div>
                 <div className="dropdown-content">
@@ -240,6 +243,9 @@ class Nav extends React.Component{
                   <Link onClick={this.handleClose} className="dropdown-link" to="/museums"> MUSEUMS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
                 </div>
+              </li>
+              <li className="nav-link">
+                <Link onClick={this.handleClose} className="nav-links" to="/gallery"> GALLERY </Link>
               </li>
               {/* <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick6}> WORK </div>
