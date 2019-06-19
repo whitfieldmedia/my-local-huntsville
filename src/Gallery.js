@@ -84,7 +84,7 @@ class Gallery extends React.Component {
                 </Helmet>
                 <h1 className="gallery-header"> Huntsville Alabama Photo Gallery </h1>
                 <p className="gallery-thanks"> A big shoutout to Ashley Davis for the awesome pictures! </p>
-                <GridGallery id="grid-gallery" images={this.state.images} />
+                <GridGallery id="grid-gallery" images={this.state.images} enableImageSelection={false} />
             </div>
         )
     }
