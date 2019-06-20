@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './images/mlhlogo.png';
 import './css/nav.css';
-import bannerSmall from './bannerAd/320x100raypearman copy.jpg';
 import banner from './bannerAd/930x180raypearman.jpg';
 
 class Nav extends React.Component{
@@ -181,12 +180,15 @@ class Nav extends React.Component{
               <li className="nav-link">
                 <Link className="nav-links" id="homeLink" to="/"> HOME </Link>
               </li>
-              {/* <li className="dropdown">
+              <li className="dropdown">
                 <div className="dropbtn"> LIVE </div>
                 <div className="dropdown-content">
-                  <div className="dropdown-link"> REAL ESTATE </div>
+                  <Link className="dropdown-link" to="/gallery"> GALLERY </Link>
                 </div>
-              </li> */}
+              </li>
+              <li className="nav-link">
+                <Link className="nav-links" to="#"> WORK </Link>
+              </li>
               <li className="dropdown">
                 <div className="dropbtn"> PLAY </div>
                 <div className="dropdown-content" id="dropdown-content">
@@ -205,15 +207,6 @@ class Nav extends React.Component{
                 </div>
               </li>
               <li className="nav-link">
-                <Link className="nav-links" to="/gallery"> GALLERY </Link>
-              </li>
-              {/* <li className="dropdown">
-                <div className="dropbtn"> WORK </div>
-                <div className="dropdown-content">
-                  <div className="dropdown-link">  </div>
-                </div>
-              </li> */}
-              <li className="nav-link">
                 <Link className="nav-links" id="contactLink" to="/contact"> CONTACT </Link>
               </li>
             </ul>
@@ -231,12 +224,15 @@ class Nav extends React.Component{
               <li onClick={this.handleClose} className="nav-link">
                 <Link onClick={this.handleClose} className="nav-links" id="homeLink" to="/"> HOME </Link>
               </li>
-              {/* <li className="dropdown">
+              <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick3}> LIVE </div>
                 <div className={this.state.dropdown3}>
-                  <div onClick={this.handleClose} className="dropdown-link"> REAL ESTATE </div>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/gallery"> GALLERY </Link>
                 </div>
-              </li> */}
+              </li>
+              <li className="nav-link">
+                <Link onClick={this.handleClose} className="nav-links" to="#"> WORK </Link>
+              </li>
               <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick4}> PLAY </div>
                 <div className={this.state.dropdown4}>
@@ -254,15 +250,6 @@ class Nav extends React.Component{
                   <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
                 </div>
               </li>
-              <li className="nav-link">
-                <Link onClick={this.handleClose} className="nav-links" to="/gallery"> GALLERY </Link>
-              </li>
-              {/* <li className="dropdown">
-                <div className="dropbtn" onClick={this.handleClick6}> WORK </div>
-                <div className={this.state.dropdown6}>
-                  <div onClick={this.handleClose} className="dropdown-link">  </div>
-                </div>
-              </li> */}
               <li onClick={this.handleClose} className="nav-link">
                 <Link onClick={this.handleClose} className="nav-links" id="contactLink" to="/contact"> CONTACT </Link>
               </li>
