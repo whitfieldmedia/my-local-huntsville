@@ -41,6 +41,9 @@ class Museums extends React.Component {
             open5: false
         }
     }
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     openRocket = () => {
         this.setState({ open1: true })
     }

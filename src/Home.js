@@ -38,6 +38,7 @@ class Home extends React.Component{
     this.findWidth = this.findWidth.bind(this)
   }
   componentDidMount() {
+    window.scrollTo(0,0);
     this.findWidth();
     window.addEventListener('resize', this.findWidth);
   }

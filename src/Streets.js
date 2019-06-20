@@ -6,6 +6,9 @@ import './css/streets.css';
 import { Helmet } from 'react-helmet';
 
 class Streets extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     render() {
         return (
             <div className="streets-page">

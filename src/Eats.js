@@ -9,6 +9,9 @@ import './css/eats.css'
 import { Helmet } from 'react-helmet';
 
 class Eats extends React.Component{
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     render() {
         return (
             <div className="eats-page">

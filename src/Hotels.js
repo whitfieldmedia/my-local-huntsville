@@ -10,6 +10,9 @@ import './css/hotels.css';
 import { Helmet } from 'react-helmet';
 
 class Hotels extends React.Component{
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     render() {
         return (
             <div className="hotel-page">
