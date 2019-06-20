@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './images/mlhlogo.png';
 import './css/nav.css';
+import bannerSmall from './bannerAd/320x100raypearman copy.jpg';
+import banner from './bannerAd/930x180raypearman.jpg';
 
 class Nav extends React.Component{
   state = {
@@ -216,6 +218,9 @@ class Nav extends React.Component{
               </li>
             </ul>
           </div>
+          <a className="nav-bottom-row" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
+            <img src={banner} href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer" className="banner" alt="ray pearman banner ad"/>
+          </a>
         </header>
         <header className="navbar2 nav-down2" id="navbar2" style={{ transform: `translate(0, ${this.state.slide2})`, transition: 'transform 200ms linear' }}>
             <Link className="logo2-holder" onClick={this.handleClose} to="/"> 
@@ -262,6 +267,9 @@ class Nav extends React.Component{
                 <Link onClick={this.handleClose} className="nav-links" id="contactLink" to="/contact"> CONTACT </Link>
               </li>
             </ul>
+            <a className="nav-bottom-row" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
+              <img src={banner} href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer" className="banner" alt="ray pearman banner ad"/>
+            </a>
         </header>
       </div>
     )
