@@ -4,7 +4,7 @@
     height: 100%;
     overflow-x: hidden;
     margin: 0;
-    padding: 200px 0 0 0;
+    padding: 300px 0 0 0;
     scroll-behavior: smooth;
 }
 
@@ -13,6 +13,7 @@
     flex-direction: column;
     margin: auto;
     width: 95%;
+    padding-bottom: 50px;
 }
 
 .video-wrapper {
@@ -196,7 +197,7 @@
 
 @media only screen and (max-width: 1000px) {
     .hotel-page {
-        padding-top: 100px;
+        padding-top: 175px;
     }
     .hotel-row {
         display: flex;

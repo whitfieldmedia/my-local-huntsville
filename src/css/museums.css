@@ -8,7 +8,7 @@
     height: 100%;
     overflow: auto;
     min-height: 100vh;
-    padding-top: 200px;
+    padding-top: 300px;
     background: url('../ashleyPhotos/white_building.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -419,7 +419,7 @@
 }
 @media only screen and (max-width: 1000px) {
     .museum-container {
-        padding-top: 100px;
+        padding-top: 175px;
         background-image: url('../ashleyPhotos/soldier_statue.png');
     }
 }

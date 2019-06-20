@@ -1,7 +1,7 @@
 .nav-bottom-row {
     position: fixed;
     top: 80px;
-    z-index: 100;
+    z-index: 80;
     display: flex;
     height: auto;
     width: 100vw;
@@ -443,7 +443,7 @@
     .nav-bottom-row {
         position: fixed;
         top: 180px;
-        z-index: 100;
+        z-index: 80;
         display: flex;
         height: auto;
         width: 100vw;
