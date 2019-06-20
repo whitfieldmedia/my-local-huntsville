@@ -83,7 +83,7 @@ class Gallery extends React.Component {
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/gallery"/>
                 </Helmet>
                 <h1 className="gallery-header"> Huntsville Alabama Photo Gallery </h1>
-                <p className="gallery-thanks"> A big shoutout to Ashley Davis for the awesome pictures! </p>
+                <p className="gallery-thanks"> A big shoutout to Ashley Davis for the photos! </p>
                 <GridGallery id="grid-gallery" images={this.state.images} enableImageSelection={false} />
                 <div className="gallery-bottom-spacer"></div>
             </div>
