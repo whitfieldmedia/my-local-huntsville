@@ -7,8 +7,8 @@
     justify-items: center;
 }
 .beats-bars-header {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
     color: #313131;
     text-align: center;
     font-weight: lighter;
@@ -22,8 +22,9 @@
     align-items: center;
 }
 .songkick-header {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: lighter;
     color: #212121;
     text-align: center;
     padding-bottom: 0;
@@ -62,19 +63,19 @@
 }
 .artist-name {
     color: #313131;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Playfair Display', serif;
     padding: 0;
     margin: 5px 0;
 }
 
 .concert-venue {
-    font-family: 'Arvo', serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
     padding: 0;
     margin: 5px 0;
 }
 .concert-date {
-    font-family: 'Arvo', serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
     padding: 0;
     margin: 5px 0;

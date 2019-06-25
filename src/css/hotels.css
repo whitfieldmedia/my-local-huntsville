@@ -31,75 +31,53 @@
 }
 
 .hotel-header2 {
-    font-size: 23px;
-    font-family: 'Oxygen', sans-serif;
-    color: #212121;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    color: #4a4a4a;
+    font-weight: lighter;
     text-align: center;
     padding: 10px 0 2px 0;
     margin: 0;
 }
 
-.subHeader {
-    font-size: 23px;
-    font-family: 'Oxygen', sans-serif;
-    color: #313131;
-    text-align: center;
-    padding: 0 0 10px 0;
-    margin: 0;
-}
-
-.hotel-header3 {
-    font-size: 22px;
-    font-family: 'Oxygen', sans-serif;
-    color: #313131;
-    text-align: center;
-    padding: 20px 0 0 0;
-    margin: 0;
-}
-
 .hotel-header4 {
-    font-size: 18px;
-    font-family: 'Arvo', serif;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
     color: #4a4a4a;
+    font-weight: lighter;
     margin-top: 0;
     padding-top: 0;
     text-align: center;
 }
 
-.par {
-    font-size: 18px;
-    font-family: 'Arvo', serif;
-    color: #4a4a4a;
-}
-
-.link {
-    font-family: 'Arvo', serif;
-    font-size: 18px;
-    color: #454063;
+.hotel-address-link {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
     text-decoration: none;
     text-align: center;
     padding: 0;
     margin: 0;
 }
-.button-link {
-    font-family: 'Arvo', serif;
-    font-size: 17px;
-    padding: 3px 10px;
+.hotel-address-link:hover {
+    text-decoration: underline;
+    color: #454064;
+    transform: scale(1.05);
+}
+
+.hotel-website-link {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
     text-decoration: none;
-    color: #f9f9f9;
-}
-.button {
-    width: auto;
-    border: none;
-    background: #4a4a4a;
-    position: relative;
-    justify-self: center;
-    align-self: center;
+    text-align: center;
+    padding: 0;
     margin: 0;
-    padding: 3px 10px;
+    color: #5a5a5a;
 }
-.button:hover {
-    cursor: pointer;
+.hotel-website-link:hover {
+    text-decoration: underline;
+    color: #454064;
+    transform: scale(1.05);
 }
 
 .included-holder {

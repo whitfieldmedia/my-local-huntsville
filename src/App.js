@@ -2,7 +2,6 @@ import React from 'react';
 import Nav from './Nav';
 import Home from './Home';
 import Museums from './Museums';
-import Partners from './Partners';
 import Contact from './Contact';
 import Hotels from './Hotels';
 import Nature from './Nature';
@@ -25,7 +24,6 @@ class App extends React.Component{
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/museums" component={Museums} />
-          <Route path="/partners" component={Partners} />
           <Route path="/contact" component={Contact} />
           <Route path="/hotels" component={Hotels} />
           <Route path="/nature" component={Nature} />

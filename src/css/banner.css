@@ -14,22 +14,6 @@
     background: #454062f1;
 }
 
-.nav-bottom-row {
-    position: fixed;
-    top: 80px;
-    z-index: 80;
-    display: flex;
-    height: auto;
-    width: 100vw;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    background: rgba(12,12,12,0.8);
-}
-.nav-bottom-row:hover {
-    cursor: pointer;
-}
 .banner {
     width: auto;
     height: auto;
@@ -38,16 +22,18 @@
     display: block;
 }
 
-.nav-bottom-row {
-    position: fixed;
-    top: 180px;
-    z-index: 80;
-    display: flex;
-    height: auto;
-    width: 100vw;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    background: rgba(12,12,12,0.8);
+@media only screen and (max-width: 520px) {
+    .banner {
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .banner {
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 362px) {
+    .banner {
+        height: 65px;
+    }
 }

@@ -22,14 +22,12 @@ class Nav extends React.Component{
 
   handleClick = () => {
     if(!this.state.isClicked) {
-      console.log('open')
       this.setState({
         isClicked: true,
         class: 'open',
         class2: 'toggle-open'
       })
     } else {
-      console.log('closed')
       this.setState({
         isClicked: false,
         class: 'closed',
@@ -38,19 +36,19 @@ class Nav extends React.Component{
     }
   }
 
-  handleClick2 = () => {
-    if(!this.state.isClicked2) {
-      this.setState({
-        isClicked2: true,
-        dropdown: 'dropdown-open'
-      })
-    } else {
-      this.setState({
-        isClicked2: false,
-        dropdown: 'dropdown-closed'
-      })
-    }
-  }
+  // handleClick2 = () => {
+  //   if(!this.state.isClicked2) {
+  //     this.setState({
+  //       isClicked2: true,
+  //       dropdown: 'dropdown-open'
+  //     })
+  //   } else {
+  //     this.setState({
+  //       isClicked2: false,
+  //       dropdown: 'dropdown-closed'
+  //     })
+  //   }
+  // }
   handleClick3 = () => {
     if(!this.state.isClicked3) {
       this.setState({
@@ -99,22 +97,22 @@ class Nav extends React.Component{
       })
     }
   }
-  handleClick6 = () => {
-    if(!this.state.isClicked6) {
-      this.setState({
-        isClicked6: true,
-        dropdown6: 'dropdown6-open',
-        dropdown5: 'dropdown5-closed',
-        dropdown4: 'dropdown4-closed',
-        dropdown3: 'dropdown3-closed'
-      })
-    } else {
-      this.setState({
-        isClicked6: false,
-        dropdown6: 'dropdown6-closed'
-      })
-    }
-  }
+  // handleClick6 = () => {
+  //   if(!this.state.isClicked6) {
+  //     this.setState({
+  //       isClicked6: true,
+  //       dropdown6: 'dropdown6-open',
+  //       dropdown5: 'dropdown5-closed',
+  //       dropdown4: 'dropdown4-closed',
+  //       dropdown3: 'dropdown3-closed'
+  //     })
+  //   } else {
+  //     this.setState({
+  //       isClicked6: false,
+  //       dropdown6: 'dropdown6-closed'
+  //     })
+  //   }
+  // }
   handleClose = () => {
     this.setState({
       isClicked: false,

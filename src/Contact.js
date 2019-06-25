@@ -20,7 +20,7 @@ class Contact extends React.Component{
                     <div className="contact-top-row">
                         <div className="contact-column1">
                             <a href="http://www.wemakeads.com" className="header-holder">
-                                <h1 className="contact-header"> WHITFIELD MEDIA </h1>
+                                <h1 className="contact-header"> Whitfield Media </h1>
                             </a>
                             <a href="http://www.wemakeads.com">
                                 <img src={logo} className="contact-logo" alt="Whitfield Media Logo"/>

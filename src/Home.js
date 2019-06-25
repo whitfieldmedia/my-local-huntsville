@@ -14,7 +14,6 @@ import BrokenEgg from './restaurants/BrokenEgg';
 import { Link } from 'react-router-dom';
 import BackgroundSlideshow from 'react-background-slideshow';
 import News from './News';
-import HomeEvents from './HomeEvents';
 import './css/styles.css';
 import background from './ashleyPhotos/welcome_to_huntsville.png';
 import background3 from './ashleyPhotos/diners.png';
@@ -27,6 +26,12 @@ import smallBack2 from './ashleyPhotos/usa_rocket.png';
 import smallBack3 from './ashleyPhotos/soldier_statue.png';
 import smallBack4 from './ashleyPhotos/clinton_row.jpg';
 import { Helmet } from 'react-helmet';
+import rightArrow from './icons/right-arrow.png';
+import street from './ashleyPhotos/jeff_st2.png';
+import food from './ashleyPhotos/food.png';
+import beats from './ashleyPhotos/guitar_black_white2.jpg';
+import nature from './ashleyPhotos/stream.png';
+import museum from './ashleyPhotos/white_building.png';
 
 class Home extends React.Component{
   constructor() {
@@ -112,32 +117,115 @@ class Home extends React.Component{
         </div>
         <a className="weatherwidget-io" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>        
         <div className="spacer"></div>
+        <h2 className="home-news-header"> This is Huntsville Alabama. </h2>
+        <div className="spacer"></div>
         <div className="home-news-wrapper">
           <News />    
         </div>
-        <h2 className="home-news-header"> Upcoming Events </h2>
-        <div className="home-events">
-          <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameborder="0" allowFullScreen></iframe>
-          <HomeEvents />
-        </div>
         <div className="line"></div>
+        <div className="main-events-container">
+          <div className="main-events-column">
+            <Link className="home-event-link" to="/events">
+              <h2 className="home-events-header"> Upcoming Events </h2>
+              <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/> 
+            </Link>
+            <p className="main-event-par"> Looking for something to do? <br/> Check out upcoming events in Huntsville! </p>
+          </div>
+          <div className="main-events-column">
+            <div className="home-events">
+              <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameBorder="0" allowFullScreen></iframe>
+              {/* <HomeEvents /> */}
+            </div>
+          </div>
+        </div>
+
+
+        <div className="line"></div>
+        <div className="streets-eats-beats-container">
+          <div className="home-streets-container">
+            <div className="home-streets-column">
+              <img src={street} className="home-street-image" alt="Jefferson Street"/>
+            </div>
+            <div className="home-streets-column">
+              <Link to="/streets" className="home-streets-link">
+                <h2 className="home-streets-header"> Streets </h2>
+                <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
+              </Link>
+              <p className="home-streets-par"> Go out on the streets of Huntsville to see what's going on. Find out about new stores, upcoming events, and more! </p>
+            </div>
+          </div>
+          <div className="home-eats-container">
+            <div className="home-eats-column">
+              <Link to="/eats" className="home-eats-link">
+                <h2 className="home-eats-header"> Eats </h2>
+                <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
+              </Link>
+              <p className="home-eats-par"> Huntsville Alabama is full of great places to eat and enjoy. Watch as we go to local restaurants try the food and see what they are all about. </p>
+            </div>
+            <div className="home-eats-column">
+              <img src={food} className="home-eats-image" alt="Food"/>
+            </div>
+          </div>
+          <div className="home-beats-container">
+            <div className="home-beats-column">
+              <img src={beats} className="home-beats-image" alt="Person playing guitar"/>
+            </div>
+            <div className="home-beats-column">
+              <Link to="/beats" className="home-beats-link">
+                <h2 className="home-beats-header"> Beats </h2>
+                <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
+              </Link>
+              <p className="home-beats-par"> Huntsville's music scene is a one of a kind expeirence. Check out what it has to offer. </p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="line"></div>
         <h2 className="header2"> Restaurants, Breweries, & Bars </h2>
         <div className="page-link-holder">
-          <Link className="page-link" to="/partners"> SEE ALL </Link>
+          <Link className="page-link" to="/partners">
+            <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
+          </Link>
         </div>
-        <div className="line"></div>
         <div className="mid-wrapper">
           {this.showRestaurants()}
-        </div>
+        </div> */}
         <div className="line1"></div>
-        <h2 className="header2"> Things to Do </h2>
-        <div className="page-link-holder">
-          <Link className="page-link" to="/partners"> SEE ALL </Link>
+        <h2 className="things-to-do-header"> Things to Do </h2>
+        <div className="things-to-do-container">
+          <div className="things-to-do-column">
+            <Link to="/nature" className="home-nature-link">
+              <h2 className="home-nature-header"> Nature </h2>
+              <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
+            </Link>
+            <div className="spacer"></div>
+            <img src={nature} className="home-nature-image" alt="Stream"/>
+          </div>
+          <div className="things-to-do-column">
+            <Link to="/museums" className="home-museum-link">
+              <h2 className="home-museums-header"> Museums </h2>
+              <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
+            </Link>
+            <div className="spacer"></div>
+            <img src={museum} className="home-museum-image" alt="The Eloise McDonald Propst Guest Center"/>
+          </div>
         </div>
         <div className="line"></div>
+        <div className="where-to-stay-container">
+          <Link to="/hotels" className="home-hotel-link">
+            <h2 className="home-hotel-header"> Where to Stay </h2>
+            <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
+          </Link>
+          <p className="home-hotel-par"> Visiting Huntsville? Let us help you find the perfect place to stay. </p>
+        </div>
+
+        {/* <div className="page-link-holder">
+          <Link className="page-link" to="/partners"> 
+            <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
+          </Link>
+        </div>
         <div className="mid-wrapper">
             {this.showThings()}
-        </div>
+        </div> */}
       </div>
     )
   }

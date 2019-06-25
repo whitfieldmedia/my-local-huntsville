@@ -68,11 +68,11 @@
     margin-right: 40px;
 }
 .contact-header {
-    font-size: 30px; 
-    font-family: 'Oxygen', sans-serif;
+    font-size: 40px; 
+    font-family: 'Playfair Display', serif;
     margin: 0 0 0 0; 
     padding: 0 0 0 0;
-    font-weight: 400px;
+    font-weight: lighter;
     color: #4a4a4a;
     text-decoration: none;
     text-align: left;
@@ -81,22 +81,22 @@
 .contact-header3 {
     font-size: 25px; 
     text-decoration: none;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Playfair Display', serif;
     margin: 0; 
     padding: 0 0 10px 15px;
-    font-weight: 400;
+    font-weight: lighter;
     color: #4a4a4a;
 }
 
 .contact-header2 {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     font-size: 25px;
     color: #4a4a4a;
     text-align: center;
+    font-weight: lighter;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    font-weight: 400;
 }
 
 

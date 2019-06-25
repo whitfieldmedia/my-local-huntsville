@@ -3,7 +3,7 @@
 }
 .top-nav-header {
     color: #ffffff;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -22,8 +22,8 @@
 .navbar2 {
     background: linear-gradient(
         to bottom,
-        #000000 40%,
-        #000000c4,
+        #454063 40%,
+        #454063c4,
         transparent
     );
     position: fixed;
@@ -82,7 +82,7 @@
     justify-items: baseline;
     align-items: center;
     align-content: center;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
@@ -127,7 +127,7 @@
 .logo {
     height: 50px;
     font-size: 40px;
-    font-family: 'Oxygen', serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-weight: bold;
     color: #ffffff;
     width: auto;
@@ -145,7 +145,7 @@
     float: none;
     flex-flow: column;
     height: auto;
-    min-height: 80px;
+    min-height: 60px;
     background: inherit;
     position: relative;
     justify-content: center;
@@ -164,11 +164,11 @@
     color: #ffffff;
     font-size: 18px;
     width: 100%;
-    padding: 25px 0;
+    padding: 15px 0;
     text-align: center;
     position: relative;
     margin: 0;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-weight: 800;
     align-self: center;
     justify-self: center;
@@ -218,12 +218,13 @@
     height: auto;
     padding: 10px 0;
     width: 100%;
-    font-size: 16px;
-    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
     background: #F8F8F8;
     z-index: 100;
     margin-top: 0;
     border-top: 1px solid #454063;
+    font-weight: bold;
 }
 
 .dropdown:hover .dropbtn {
@@ -352,7 +353,7 @@
 
 .nav-link {
     display: flex;
-    height: 80px;
+    height: 60px;
     background: inherit;
     position: relative;
     justify-content: center;
@@ -378,7 +379,7 @@
     align-self: center;
     text-align: center;
     width: 100%;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-weight: 800;
 }
 
@@ -420,12 +421,13 @@
 
 
 .nav-x {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 30px;
     position: relative;
     cursor: pointer;
     color: #ffffff;
     z-index: 105;
+    font-weight: bolder;
 }
 
 .logo:hover {
@@ -486,7 +488,7 @@
     .nav-links {
         margin-left: 20px;
         margin-right: 20px;
-        font-family: 'Oxygen', sans-serif;
+        font-family: 'Merriweather Sans', sans-serif;
         font-weight: 800;
         font-size: 18px;
     }
@@ -514,7 +516,7 @@
         background: none;
         color: #ffffff;
         font-size: 18px;
-        font-family: 'Oxygen', sans-serif;
+        font-family: 'Merriweather Sans', sans-serif;
         margin: 0;
         font-weight: 800;
         letter-spacing: 1px;

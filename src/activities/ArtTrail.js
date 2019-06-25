@@ -25,8 +25,7 @@ class ArtTrail extends React.Component{
             <div className="video-holder">
                     <img src={logo} className="partner-logo" alt="Secret Art Trail ~ Huntsville Alabama"/>
                     <h2 className="video-header"> Secret Art Trail </h2>
-                    <div className="map-link" onClick={this.showMap}> View Trail </div>
-                    <div></div>
+                    <div className="art-map-link" onClick={this.showMap}> View Trail </div>
                     <iframe className="home-video" src="https://player.vimeo.com/video/336637837" title="Secret Art Trail ~ Huntsville Alabama" frameBorder="0" allowFullScreen></iframe>
                 {this.state.show
                 ? <div className="popup-container" id="map-popup"> 

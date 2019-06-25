@@ -30,9 +30,9 @@
 }
 
 .news-title {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: lighter;
     color: #212121;
 }
 .news-image {
@@ -43,8 +43,9 @@
     justify-self: center;
 }
 .news-description {
-    font-family: 'Arvo', serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
+    font-weight: lighter;
     color: #4a4a4a;
 }
 

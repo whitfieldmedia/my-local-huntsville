@@ -8,9 +8,9 @@
     text-align: center;
 }
 .gallery-header {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 50px;
-    color: #3a3a3a;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #4a4a4a;
     font-weight: lighter;
     text-align: center;
     padding-bottom: 0;
@@ -19,7 +19,7 @@
     margin-right: 5px;
 }
 .gallery-thanks {
-    font-family: 'Arvo', serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 25px;
     color: #4a4a4a;
     font-weight: lighter;
