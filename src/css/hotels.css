@@ -4,7 +4,7 @@
     height: 100%;
     overflow-x: hidden;
     margin: 0;
-    padding: 300px 0 0 0;
+    padding: 120px 0 0 0;
     scroll-behavior: smooth;
 }
 
@@ -196,9 +196,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .hotel-page {
-        padding-top: 175px;
-    }
     .hotel-row {
         display: flex;
         flex-direction: column;

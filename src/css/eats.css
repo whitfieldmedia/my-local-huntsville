@@ -1,7 +1,10 @@
 .eats-page {
-    padding-top: 300px;
+    padding-top: 140px;
 }
-
+.eats-video-wrapper {
+    display: flex;
+    justify-content: center;
+}
 .eats-header {
     font-family: 'Oxygen', sans-serif;
     font-size: 50px;
@@ -18,12 +21,6 @@
 @media only screen and (max-width: 1250px ){
     .eats-partner-wrapper {
         grid-template-columns: auto auto;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .eats-page {
-        padding-top: 175px;
     }
 }
 

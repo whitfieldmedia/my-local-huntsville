@@ -1,0 +1,53 @@
+.banner-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background: #454062f1;
+}
+
+.nav-bottom-row {
+    position: fixed;
+    top: 80px;
+    z-index: 80;
+    display: flex;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    background: rgba(12,12,12,0.8);
+}
+.nav-bottom-row:hover {
+    cursor: pointer;
+}
+.banner {
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    max-width: 100vw;
+    display: block;
+}
+
+.nav-bottom-row {
+    position: fixed;
+    top: 180px;
+    z-index: 80;
+    display: flex;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    background: rgba(12,12,12,0.8);
+}

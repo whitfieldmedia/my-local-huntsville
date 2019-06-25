@@ -45,6 +45,9 @@ class Beats extends React.Component{
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/beats"/>
                     <meta name="description" content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
                 </Helmet>
+                <div className="beats-video-holder">
+                    <iframe className="home-video" title="The Rhapsody Kim Scott" src="https://player.vimeo.com/video/344066874" frameborder="0" allowFullScreen></iframe>
+                </div>
                 <h1 className="beats-bars-header"> Our Favorite Bars </h1>
                 <div className="bars-wrapper">
                     <div className="beats-bar-holder">

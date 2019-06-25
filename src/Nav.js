@@ -1,16 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './images/mlhlogo.png';
+import logo from './images/HSV.png';
 import './css/nav.css';
-import banner from './bannerAd/930x180raypearman.jpg';
 
 class Nav extends React.Component{
   state = {
-    didScroll: true,
-    lastScrollTop: 0,
-    slide: 0,
-    slide2: 0,
-    lastScrollY: 0,
     isClicked: false,
     class: 'closed',
     class2: 'toggle-closed',
@@ -26,26 +20,6 @@ class Nav extends React.Component{
     dropdown6: 'dropdown6-closed'
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = () => {
-    const lastScrollY = this.state.lastScrollY;
-    const currentScrollY = window.scrollY;
-    const totalHeight = (document.documentElement.scrollHeight - window.innerHeight)
-    if ( currentScrollY > lastScrollY && window.scrollY > 50) {
-      this.setState({ slide: '-180px', slide2: '-80px' })
-    } else {
-      if( currentScrollY < totalHeight ) {
-      this.setState({ slide: '0px', slide2: '0' })
-      }
-    }
-    this.setState({ lastScrollY: currentScrollY });
-  }
   handleClick = () => {
     if(!this.state.isClicked) {
       console.log('open')
@@ -164,19 +138,21 @@ class Nav extends React.Component{
       <div>
         <header className="navbar nav-down" style={{ transform: `translate(0, ${this.state.slide})`, transition: 'transform 200ms linear' }} id="navbar">
           <div className="nav-top-row">
-            <div className="nav-top-column">
-              <Link to="/"><img className="nav-top-logo" src={logo} alt="My Local Huntsville"/></Link>
-            </div>
             <div className="nav-top-column2">
-              <a className="top-nav-icon" href="tel:6623907878"> <i className="fas fa-phone fa-lg"></i> (662) 390-7878 </a>
-              <a className="top-nav-icon" href="mailto:steve@wemakeads.com"> <i className="far fa-envelope fa-lg"></i> steve@wemakeads.com </a>
-              <a className="top-nav-icon" href="https://www.facebook.com/My-Local-Huntsville-663263420788574" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square fa-lg"></i> Follow Us! </a>
+              <a className="top-nav-icon" href="tel:6623907878"> <i className="fas fa-phone"></i></a>
+              <a className="top-nav-icon" href="mailto:steve@wemakeads.com"> <i className="far fa-envelope"></i> </a>
+              <a className="top-nav-icon" href="https://www.facebook.com/My-Local-Huntsville-663263420788574" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square"></i> </a>
             </div>
           </div>
+          <div className="nav-line"></div>
           <div className="nav-row">
           <Link className="logo" to="/"> My Local Huntsville </Link>
-            <span className="navbar-toggle" id="js-navbar-toggle"> <i id="open" className="fas fa-bars"></i> </span>
             <ul className="main-nav" id="js-menu">
+              <li className="logo-link">
+                <Link className="logo-holder" to="/" onClick={this.handleClose}>
+                  <img className="nav-top-logo" src={logo} alt="Huntsville Alabama"/>
+                </Link>
+              </li>
               <li className="nav-link">
                 <Link className="nav-links" id="homeLink" to="/"> HOME </Link>
               </li>
@@ -211,16 +187,16 @@ class Nav extends React.Component{
               </li>
             </ul>
           </div>
-          <a className="nav-bottom-row" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
-            <img src={banner} href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer" className="banner" alt="ray pearman banner ad"/>
-          </a>
         </header>
         <header className="navbar2 nav-down2" id="navbar2" style={{ transform: `translate(0, ${this.state.slide2})`, transition: 'transform 200ms linear' }}>
-            <Link className="logo2-holder" onClick={this.handleClose} to="/"> 
-              <img src={logo} className="nav-top-logo2" alt="My Local Huntsville"/>
+            <span className={this.state.class2} id="js-navbar-toggle" onClick={this.handleClick}> {!this.state.isClicked ? <i id="open" className="fas fa-bars"></i> : null }</span>
+            <Link className="logo-holder2" to="/" onClick={this.handleClose}>
+              <img className="nav-top-logo2" src={logo} alt="Huntsville Alabama"/>
             </Link>
-            <span className={this.state.class2} id="js-navbar-toggle" onClick={this.handleClick}> {this.state.isClicked ? <p className="nav-x"> X </p> : <i id="open" className="fas fa-bars"></i> }</span>
             <ul className={this.state.class} id="js-menu">
+              <li onClick={this.handleClose}>
+                <p className="nav-x"> X </p>
+              </li>
               <li onClick={this.handleClose} className="nav-link">
                 <Link onClick={this.handleClose} className="nav-links" id="homeLink" to="/"> HOME </Link>
               </li>
@@ -254,9 +230,6 @@ class Nav extends React.Component{
                 <Link onClick={this.handleClose} className="nav-links" id="contactLink" to="/contact"> CONTACT </Link>
               </li>
             </ul>
-            <a className="nav-bottom-row" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
-              <img src={banner} href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer" className="banner" alt="ray pearman banner ad"/>
-            </a>
         </header>
       </div>
     )

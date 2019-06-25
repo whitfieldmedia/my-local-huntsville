@@ -22,7 +22,6 @@ import background2 from './ashleyPhotos/jefferson_st.png';
 import background1 from './ashleyPhotos/big_springs_park.png';
 import background5 from './ashleyPhotos/pond.png';
 import background6 from './ashleyPhotos/street_exposure.png';
-import background7 from './ashleyPhotos/washington_square.jpg';
 import smallBack from './ashleyPhotos/lowe_mill.png';
 import smallBack2 from './ashleyPhotos/usa_rocket.png';
 import smallBack3 from './ashleyPhotos/soldier_statue.png';
@@ -104,19 +103,21 @@ class Home extends React.Component{
         </Helmet>
         <div className="top-wrapper">
           {this.state.isBig
-          ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6,background7 ]} />
+          ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6]} />
           : <BackgroundSlideshow images={[smallBack, smallBack2, smallBack3, smallBack4]} />}
-          <div className="top-container">
-            <h1 className="top-header"> My Local Huntsville </h1>
-          </div>
+        </div>
+        <div className="top-container">
+          <h2 className="top-header2"> MY LOCAL</h2>
+          <h1 className="top-header"> HUNTSVILLE </h1>
         </div>
         <a className="weatherwidget-io" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>        
-        <h2 className="home-news-header"> This is Huntsville. </h2>
+        <div className="spacer"></div>
         <div className="home-news-wrapper">
           <News />    
         </div>
-        <div className="home-events">
         <h2 className="home-news-header"> Upcoming Events </h2>
+        <div className="home-events">
+          <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameborder="0" allowFullScreen></iframe>
           <HomeEvents />
         </div>
         <div className="line"></div>

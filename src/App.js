@@ -13,6 +13,7 @@ import Beats from './Beats';
 import Eats from './Eats';
 import Streets from './Streets';
 import Gallery from './Gallery';
+import Banner from './Banner';
 import { Switch, Route } from 'react-router-dom';
 import './css/styles.css';
 
@@ -35,6 +36,7 @@ class App extends React.Component{
           <Route path="/streets" component={Streets} />
           <Route path="/gallery" component={Gallery} />
         </Switch> 
+        <Banner />
         <Footer />
       </div>
     )

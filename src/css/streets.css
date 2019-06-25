@@ -1,5 +1,16 @@
 .streets-page {
-    padding-top: 300px;
+    padding-top: 140px;
+}
+.streets-video-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.streets-video-holder iframe {
+    padding: 20px;
 }
 
 .streets-header {
@@ -20,11 +31,6 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .streets-page {
-        padding-top: 175px;
-    }
-}
 
 @media only screen and (max-width: 850px) {
     .streets-things-wrapper {
