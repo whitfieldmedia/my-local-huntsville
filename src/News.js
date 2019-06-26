@@ -5,9 +5,7 @@ import growthImage from './images/huntsville-growing-news.jpg';
 import newRestaurants from './images/woman-at-small-business-entrance-EZ6X4CP.jpg';
 
 class News extends React.Component{
-
     render() {
-        console.log(this.props.news)
         return (
             <div className="news-container">
                 <a className="news-wrapper" href="https://realestate.usnews.com/real-estate/slideshows/best-affordable-places-to-live-in-the-us?slide=26&fbclid=IwAR0Zyuj1MLK2E99j_xXmc-gOh6CCYhvTvC-h4yLvuka6Sir4O9_cg_2KMx4" target="_blank" rel="noopener noreferrer">  
