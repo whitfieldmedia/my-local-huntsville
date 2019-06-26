@@ -143,13 +143,9 @@
 }
 @media only screen and (max-width: 460px) {
     .festival-event-holder {
-        width: 400px;
-    }
-}
-@media only screen and (max-width: 400px) {
-    .fesitval-event-holder {
-        width: 98%;
-        margin: auto;
+        background: inherit;
+        box-shadow: none;
+        border-radius: 0;
     }
 }
 
