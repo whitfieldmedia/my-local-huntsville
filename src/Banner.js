@@ -5,9 +5,9 @@ import './css/banner.css'
 class Banner extends React.Component {
     render() {
         return (
-            <div className="banner-container">
+            <a className="banner-container" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
                 <img className="banner" src={banner} alt="Ray Pearman Lincoln Dealer Huntsville Alabaman"/>
-            </div>
+            </a>
         )
     }
 }
