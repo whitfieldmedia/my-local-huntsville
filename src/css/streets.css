@@ -38,6 +38,11 @@
     }
 }
 
+@media only screen and (max-width: 890px) {
+    .streets-video-holder {
+        grid-template-columns: auto;
+    }
+}
 
 @media only screen and (max-width: 850px) {
     .streets-things-wrapper {

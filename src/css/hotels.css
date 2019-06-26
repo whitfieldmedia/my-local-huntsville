@@ -208,6 +208,12 @@
         margin-left: 10px; 
         margin-right: 10px;
     }
+    .hotel-address-link {
+        margin: 5px;
+    }
+    .hotel-website-link {
+        margin: 5px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
