@@ -88,8 +88,6 @@ class Home extends React.Component{
             </div>
           </div>
         </div>
-
-
         <div className="line"></div>
         <div className="streets-eats-beats-container">
           <div className="home-streets-container">
@@ -129,16 +127,6 @@ class Home extends React.Component{
             </div>
           </div>
         </div>
-        {/* <div className="line"></div>
-        <h2 className="header2"> Restaurants, Breweries, & Bars </h2>
-        <div className="page-link-holder">
-          <Link className="page-link" to="/partners">
-            <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
-          </Link>
-        </div>
-        <div className="mid-wrapper">
-          {this.showRestaurants()}
-        </div> */}
         <div className="line1"></div>
         <h2 className="things-to-do-header"> Things to Do </h2>
         <div className="things-to-do-container">
@@ -167,18 +155,10 @@ class Home extends React.Component{
           </Link>
           <p className="home-hotel-par"> Visiting Huntsville? Let us help you find the perfect place to stay. </p>
         </div>
-
-        {/* <div className="page-link-holder">
-          <Link className="page-link" to="/partners"> 
-            <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
-          </Link>
-        </div>
-        <div className="mid-wrapper">
-            {this.showThings()}
-        </div> */}
       </div>
     )
   }
 }
 
 export default Home;
+
