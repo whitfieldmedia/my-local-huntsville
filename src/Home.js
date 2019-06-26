@@ -66,7 +66,7 @@ class Home extends React.Component{
           <h2 className="top-header2"> MY LOCAL</h2>
           <h1 className="top-header"> HUNTSVILLE </h1>
         </div>
-        <a className="weatherwidget-io" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>        
+        <a className="weatherwidget-io" title="Weather Widget Huntsville Alabama" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>        
         <div className="spacer"></div>
         <h2 className="home-news-header"> This is Huntsville Alabama. </h2>
         <div className="spacer"></div>
