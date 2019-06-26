@@ -161,7 +161,7 @@ class Nav extends React.Component{
                 </div>
               </li>
               <li className="nav-link">
-                <Link className="nav-links" to="#"> WORK </Link>
+                <Link className="nav-links" to="/work"> WORK </Link>
               </li>
               <li className="dropdown">
                 <div className="dropbtn"> PLAY </div>
@@ -205,7 +205,7 @@ class Nav extends React.Component{
                 </div>
               </li>
               <li className="nav-link">
-                <Link onClick={this.handleClose} className="nav-links" to="#"> WORK </Link>
+                <Link onClick={this.handleClose} className="nav-links" to="/work"> WORK </Link>
               </li>
               <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick4}> PLAY </div>

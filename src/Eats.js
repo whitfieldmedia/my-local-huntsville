@@ -5,6 +5,7 @@ import Boot from './restaurants/Boot';
 import Straight from './bars/Straight';
 import Yellowhammer from './bars/Yellowhammer';
 import Btr from './bars/Btr';
+import Waltons from './restaurants/Waltons';
 import './css/eats.css'
 import { Helmet } from 'react-helmet';
 
@@ -32,6 +33,7 @@ class Eats extends React.Component{
                     <Straight />
                     <Yellowhammer />
                     <Btr />
+                    <Waltons />
                 </div>
             </div>
         )

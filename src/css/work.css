@@ -1,0 +1,22 @@
+.work-page {
+    padding-top: 140px;
+    min-height: 60vh;
+}
+.work-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #4a4a4a;
+    text-align: center;
+    font-weight: lighter;
+}
+.work-video-holder {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.work-video-holder iframe {
+    padding: 20px;
+}

@@ -24,8 +24,6 @@ class Streets extends React.Component {
                     <iframe className="home-video" title="Woman Can Change the World" src="https://player.vimeo.com/video/344116679" frameborder="0" allowFullScreen></iframe> */}
                     <iframe className="home-video" title="MCS Moores Mill School Longest Human Pi Chain" src="https://player.vimeo.com/video/323832818" frameborder="0" allowFullScreen></iframe>
                     <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameborder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="CFD Research Ribbon Cutting" src="https://player.vimeo.com/video/344128970" frameborder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="Hair Queen Beauty Ribbon Cutting" src="https://player.vimeo.com/video/306376134" frameborder="0" allowFullScreen></iframe>
                 </div>
 
                 <h2 className="fav-activities-header"> Our Favorite Activities </h2>
