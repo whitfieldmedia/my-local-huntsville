@@ -85,7 +85,6 @@ class Home extends React.Component{
           <div className="main-events-column">
             <div className="home-events">
               <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameBorder="0" allowFullScreen></iframe>
-              {/* <HomeEvents /> */}
             </div>
           </div>
         </div>

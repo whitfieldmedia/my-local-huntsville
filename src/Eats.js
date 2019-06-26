@@ -21,9 +21,9 @@ class Eats extends React.Component{
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/eats" />
                     <meta name="description" content="Huntsville Alabama has a ton of good places to eat. Whether you want some breakfast or are looking to watch a football game with some good wings and beer we have you covered." />
                 </Helmet>
-                <div className="eats-video-wrapper">
+                {/* <div className="eats-video-wrapper">
                     <iframe className="home-video" title="Urban Cookout" src="https://player.vimeo.com/video/344125254" frameborder="0" allowFullScreen></iframe>
-                </div>
+                </div> */}
                 <h1 className="eats-header"> Our Favorite Eats </h1>
                 <div className="eats-partner-wrapper">
                     <Brickhouse />

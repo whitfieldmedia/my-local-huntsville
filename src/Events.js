@@ -60,6 +60,12 @@ class Events extends React.Component{
                     <img className="event-top-img" src={wallArt} alt=""/>
                     <img id="gone" className="event-top-img" src={runway} alt=""/>
                 </div>
+                <div className="festival-event-holder">
+                    <h2 className="festival-header"> The Crush Wine Festival </h2>
+                    <p className="festival-dates"> September 25-29, 2019 </p>
+                    <p className="festival-location"> Big Springs Park </p>
+                    <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameBorder="0" allowFullScreen></iframe>
+                </div>
                 <div className="events-page">
                 {this.state.done
                 ? this.props.feed.items.map((event, index) => (

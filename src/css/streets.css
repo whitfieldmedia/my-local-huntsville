@@ -2,10 +2,10 @@
     padding-top: 140px;
 }
 .streets-video-holder {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    justify-items: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
     align-content: center;
     align-items: center;
 }
@@ -16,9 +16,16 @@
 .streets-header {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
-    color: #313131;
+    color: #4a4a4a;
     text-align: center;
     font-weight: lighter;
+}
+.fav-activities-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #4a4a4a;
+    font-weight: lighter;
+    text-align: center;
 }
 .streets-things-wrapper {
     display: grid;
