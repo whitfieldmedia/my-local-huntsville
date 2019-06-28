@@ -47,22 +47,25 @@ body {
 .top-header2 {
     color: #ffffff;
     text-align: center;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-family: 'Alegreya SC', serif;
+    padding: 0 5px;
+    margin: 0;
+    font-family: 'playfair display', serif;
     font-size: 35px;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
 .top-header {
+    position: relative;
     color: #fff;
-    font-family: 'Alegreya SC', serif;
+    font-family: 'playfair display', sans-serif;
     text-align: center;
+    font-weight: 400;
     background: 0;
-    padding: 0 10px;
+    padding: 0 5px;
     margin: 0;
-    font-size: 45px;
-    letter-spacing: 1px;
+    font-size: 50px;
+    letter-spacing: 3px;
 }
 
 .weatherwidget-io {

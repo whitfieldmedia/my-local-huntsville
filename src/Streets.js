@@ -20,10 +20,10 @@ class Streets extends React.Component {
                 </Helmet>
                 <h1 className="streets-header"> Streets </h1>
                 <div className="streets-video-holder">
-                    {/* <iframe className="home-video" title="Trash Pandas' Uniform Unveiling" src="https://player.vimeo.com/video/344028210" frameborder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="Woman Can Change the World" src="https://player.vimeo.com/video/344116679" frameborder="0" allowFullScreen></iframe> */}
+                    <iframe className="home-video" title="Trash Pandas' Uniform Unveiling" src="https://player.vimeo.com/video/344604925" frameborder="0" allowFullScreen></iframe>
+                    <iframe className="home-video" title="Woman Can Change the World" src="https://player.vimeo.com/video/344846982" frameborder="0" allowFullScreen></iframe>
                     <iframe className="home-video" title="MCS Moores Mill School Longest Human Pi Chain" src="https://player.vimeo.com/video/323832818" frameborder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameborder="0" allowFullScreen></iframe>
+                    <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344874010" frameborder="0" allowFullScreen></iframe>
                 </div>
 
                 <h2 className="fav-activities-header"> Our Favorite Activities </h2>

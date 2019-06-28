@@ -63,10 +63,10 @@ class Home extends React.Component{
           : <BackgroundSlideshow images={[smallBack, smallBack2, smallBack3, smallBack4]} />}
         </div>
         <div className="top-container">
-          <h2 className="top-header2"> MY LOCAL</h2>
-          <h1 className="top-header"> HUNTSVILLE </h1>
+          <h2 className="top-header2"> My Local </h2>
+          <h1 className="top-header"> Huntsville </h1>
         </div>
-        <a className="weatherwidget-io" title="Weather Widget Huntsville Alabama" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>        
+        {/* <a className="weatherwidget-io" title="Weather Widget Huntsville Alabama" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>         */}
         <div className="spacer"></div>
         <h2 className="home-news-header"> This is Huntsville Alabama. </h2>
         <div className="spacer"></div>
@@ -84,7 +84,7 @@ class Home extends React.Component{
           </div>
           <div className="main-events-column">
             <div className="home-events">
-              <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameBorder="0" allowFullScreen></iframe>
+              <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344874010" frameBorder="0" allowFullScreen></iframe>
             </div>
           </div>
         </div>
