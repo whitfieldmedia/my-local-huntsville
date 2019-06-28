@@ -64,7 +64,7 @@ class Events extends React.Component{
                     <h2 className="festival-header"> The Crush Wine Festival </h2>
                     <p className="festival-dates"> September 25-29, 2019 </p>
                     <p className="festival-location"> Big Springs Park </p>
-                    <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344067489" frameBorder="0" allowFullScreen></iframe>
+                    <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344874010" frameBorder="0" allowFullScreen></iframe>
                 </div>
                 <div className="events-page">
                 {this.state.done
