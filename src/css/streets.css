@@ -1,51 +1,55 @@
 .streets-page {
-    padding-top: 140px;
+  padding-top: 140px;
 }
+
 .streets-video-holder {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
 }
+
 .streets-video-holder iframe {
-    padding: 20px;
+  padding: 20px;
 }
 
 .streets-header {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    color: #4a4a4a;
-    text-align: center;
-    font-weight: lighter;
+  font-family: garamond-premier-pro, serif;
+  font-size: 45px;
+  color: #F5F7F6;
+  text-align: center;
+  font-weight: 600;
 }
+
 .fav-activities-header {
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    color: #4a4a4a;
-    font-weight: lighter;
-    text-align: center;
+  font-family: garamond-premier-pro, serif;
+  font-size: 40px;
+  color: #F5F7F6;
+  font-weight: 600;
+  text-align: center;
 }
+
 .streets-things-wrapper {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 @media only screen and (max-width: 1250px) {
-    .streets-things-wrapper {
-        grid-template-columns: auto auto;
-    }
+  .streets-things-wrapper {
+    grid-template-columns: auto auto;
+  }
 }
-
-@media only screen and (max-width: 890px) {
-    .streets-video-holder {
-        grid-template-columns: auto;
-    }
+@media only screen and (max-width: 880px) {
+  .streets-video-holder {
+    grid-template-columns: auto;
+  }
 }
-
 @media only screen and (max-width: 850px) {
-    .streets-things-wrapper {
-        grid-template-columns: auto;
-    }
+  .streets-things-wrapper {
+    grid-template-columns: auto;
+  }
 }
+
+/*# sourceMappingURL=streets.css.map */

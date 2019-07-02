@@ -1,0 +1,333 @@
+@import 'assets';
+
+.museum-container {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    height: 100%;
+    overflow: auto;
+    min-height: 100vh;
+    padding-top: 140px;
+}
+
+.museum-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    width: auto;
+    margin: auto;
+    background: $background-hover;
+    padding: 15px;
+    margin: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px #676767;
+}
+.museum-image {
+    max-height: 400px;
+    height: auto;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.title2 {
+    font-family: $serif;
+    font-size: 23px;
+    font-weight: $medium;
+    cursor: pointer;
+    color: $dark-font;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.smallPar {
+    font-family: $sans;
+    color: $light-font;
+    text-align: left;
+    font-weight: $normal;
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.title2:hover .learn-more .button {
+    display: inline-block;
+    position: absolute;
+}
+.small-photo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    margin: auto 25px;
+}
+.learn-more {
+    position: relative;
+    height: auto; 
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background: $background-hover;
+}
+.button {
+    position: relative;
+    border: none;
+    background: $black;
+    color: $white;
+    font-family: $sans;
+    font-size: 18px;
+    height: auto;
+    padding: 5px 8px;
+    margin: auto;
+    width: auto;
+    display: none;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+
+.learn-more:hover .button {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    width: 120px;
+    top: 40%;
+}
+
+.museum-wrapper .popup-container {
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+.popup-container {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: $background-hover;
+    overflow-y: scroll;
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+ .popupCloseButton {
+    background-color: $white;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $serif;
+    font-weight: bold;
+    position: fixed;
+    top: 10px;
+    right: 3vw;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 500;
+}
+
+.popupCloseButton:hover {
+    background-color: $background-hover;
+}
+
+.museum-header2 {
+    font-family: $serif;
+    font-size: 40px;
+    font-weight: $medium;
+    color: $dark-font;
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.museum-header3 {
+    font-family: $serif;
+    font-size: 35px;
+    margin: 20px 0;
+    font-weight: lighter;
+    padding: 0;
+    color: $dark-font;
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+}
+
+.museum-row {
+    padding-top: 10px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.museum-par {
+    font-family: $sans;
+    font-size: 20px;
+    font-weight: $normal;
+    color: $light-font;
+    text-align: left;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.admission {
+    height: auto;
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+    margin-right: 10px;
+    text-align: left;
+    max-width: 200px;
+}
+
+.hours {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px; 
+    margin-right: 10px;
+    text-align: center;
+}
+
+.open-par {
+    font-family: $sans;
+    font-size: 20px;
+    font-weight: $normal;
+    color: $light-font;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+    margin-right: 10px;
+    text-align: center;
+    width: auto;
+    max-width: 200px;
+}
+
+.tickets {
+    font-family: $sans;
+    font-size: 20px;
+    color: $light-font;
+    font-weight: $normal;
+    width: auto;
+    padding: 8px 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ticket-link:hover {
+    transform: scale(1.1);
+}
+
+.slideshow-container {
+    height: auto;
+    max-width: 750px;
+    width: auto;
+    position: relative;
+    margin: 30px auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .museum-container {
+        background-image: url('../ashleyPhotos/soldier_statue.png');
+    }
+}
+@media only screen and (max-width: 750px) {
+    .museum-container {
+        display: flex; 
+        flex-flow: row wrap;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .museum-header2 {
+        font-size: 30px;
+    }
+    .museum-header3 {
+        font-size: 25px;
+    }
+    .admission {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hours {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .open-par {
+        width: 200px;
+        font-size: 17px;
+    }
+    .tickets {
+        width: 200px;
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .museum-header2 {
+        font-size: 25px;
+    }
+    .museum-header3 {
+        font-size: 22px;
+    }
+}
+
+#depot-popup {
+    display: block;
+}
+
+#art-popup {
+    display: block;
+}
+#lowe-popup {
+    display: block;
+}
+
+#veteran-popup {
+    display: block;
+}
+
+#rocket-popup {
+    display: block;
+}

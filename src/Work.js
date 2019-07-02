@@ -1,6 +1,8 @@
 import React from 'react';
-import './css/work.css';
+import Cfd from './videos/CFD';
+import HairQueen from './videos/HairQueen';
 import { Helmet } from 'react-helmet';
+import './css/work.css';
 
 class Work extends React.Component {
     componentDidMount() {
@@ -17,8 +19,8 @@ class Work extends React.Component {
                 </Helmet>
                 <h1 className="work-header"> Work </h1>
                 <div className="work-video-holder">
-                    <iframe className="home-video" title="CFD Research Ribbon Cutting" src="https://player.vimeo.com/video/344847523" frameBorder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="Hair Queen Beauty Ribbon Cutting" src="https://player.vimeo.com/video/306376134" frameBorder="0" allowFullScreen></iframe>
+                    <Cfd />
+                    <HairQueen />
                 </div>
             </div>
         )

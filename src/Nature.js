@@ -1,10 +1,10 @@
 import React from 'react';
 import madisonNature from './images/madison-nature-trail.png';
 import garden from './images/garden.png';
-import bigSprings from './images/big-springs.png';
+import bigSprings from './ashleyPhotos/big_springs_park.png';
 import monteSano from './images/monte-sano-state-park.png';
-import './css/nature.css';
 import { Helmet } from 'react-helmet';
+import './css/nature.css';
 
 class Nature extends React.Component {
     componentDidMount() {

@@ -1,103 +1,115 @@
 .news-container {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    margin: auto;
-    justify-content: space-evenly;
-    justify-items: space-evenly;
-    align-content: flex-start;
-    align-items: flex-start;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: space-evenly;
+  justify-items: space-evenly;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 .news-wrapper {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    box-shadow: 0px 0px 3px #676767;
-    border-radius: 10px;
-    text-align: center;
-    background: #f8f8f8;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #F5F7F6;
+  background: #e8e8e8;
 }
-.news-wrapper:hover {
-    transform: scale(1.02);
+
+.news-wrapper:hover .news-title {
+  text-decoration: underline;
+  transform: scale(1.02);
 }
 
 .news-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    font-weight: lighter;
-    color: #212121;
+  font-family: garamond-premier-pro, serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #212121;
 }
+
 .news-image {
-    width: auto;
-    height: auto;
-    max-width: 300px;
-    align-self: center;
-    justify-self: center;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  align-self: center;
+  justify-self: center;
 }
+
 .news-description {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #4a4a4a;
+  font-family: gitan-latin, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4a4a4a;
 }
 
 @media only screen and (max-width: 1000px) {
-    .news-container {
-        display: flex;
-        flex-flow: column;
-    }
-    .news-wrapper {
-        width: 90%;
-        margin: 5px auto;
-        padding: 0 10px;
-        text-align: left;
-    }
-    .news-title {
-        text-align: left;
-        padding-top: 5px;
-        margin-top: 0;
-        padding-bottom: 5px;
-        margin-bottom: 0;
-    }
-    .news-img-par-wrapper {
-        display: flex;
-        flex-flow: row;
-        padding-bottom: 5px;
-        margin-bottom: 0;
-    }
-    .news-image {
-        float: left;
-        width: 200px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    .news-description {
-        float: right;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        padding-top: 5px;
-        margin-top: 0;
-        padding-left: 10px;
-        text-align: left;
-    }
+  .news-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .news-wrapper {
+    width: 90%;
+    margin: 5px auto;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .news-title {
+    text-align: left;
+    padding-top: 5px;
+    margin-top: 0;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+
+  .news-img-par-wrapper {
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+
+  .news-image {
+    float: left;
+    width: 200px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .news-description {
+    float: right;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    margin-top: 0;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .news-img-par-wrapper {
+    flex-flow: column;
+  }
+
+  .news-image {
+    display: none;
+  }
+
+  .news-description {
+    padding-left: 0;
+  }
 }
 
-@media only screen and (max-width: 500px) {
-    .news-img-par-wrapper {
-        flex-flow: column;
-    }
-    .news-image {
-        display: none;
-    }
-    .news-description {
-        padding-left: 0;
-    }
-}
+/*# sourceMappingURL=news.css.map */

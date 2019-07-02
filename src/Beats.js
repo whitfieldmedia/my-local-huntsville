@@ -1,13 +1,14 @@
 import React from 'react';
-import Poppy from './bars/Poppy';
 import Bar805 from './bars/Bar805';
 import Otbx from './bars/Otbx';
-import './css/beats.css';
+import Poppy from './bars/Poppy';
+import Rhapsody from './videos/Rhapsody';
+import bySongkick from './icons/by-songkick-white.svg';
+import moment from 'moment';
 import { connect } from 'react-redux';
 import { getEvents } from './redux/events';
-import bySongkick from './icons/by-songkick-black.svg';
-import moment from 'moment';
 import { Helmet } from 'react-helmet';
+import './css/beats.css';
 
 class Beats extends React.Component{
     constructor() {
@@ -45,8 +46,9 @@ class Beats extends React.Component{
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/beats"/>
                     <meta name="description" content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
                 </Helmet>
+                <h1 className="beats-header"> Beats </h1>
                 <div className="beats-video-holder">
-                    <iframe className="home-video" title="The Rhapsody Kim Scott" src="https://player.vimeo.com/video/344771354" frameborder="0" allowFullScreen></iframe>
+                    <Rhapsody />
                 </div>
                 <h1 className="beats-bars-header"> Our Favorite Bars </h1>
                 <div className="bars-wrapper">

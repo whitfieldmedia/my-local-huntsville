@@ -1,0 +1,53 @@
+@import 'assets';
+
+.streets-page {
+    padding-top: 140px;
+}
+.streets-video-holder {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.streets-video-holder iframe {
+    padding: 20px;
+}
+
+.streets-header {
+    font-family: $serif;
+    font-size: 45px;
+    color: $white;
+    text-align: center;
+    font-weight: $semibold;
+}
+.fav-activities-header {
+    font-family: $serif;
+    font-size: 40px;
+    color: $white;
+    font-weight: $semibold;
+    text-align: center;
+}
+.streets-things-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width: 1250px) {
+    .streets-things-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .streets-video-holder {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .streets-things-wrapper {
+        grid-template-columns: auto;
+    }
+}

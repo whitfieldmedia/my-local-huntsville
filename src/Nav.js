@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './images/HSV.png';
 import './css/nav.css';
 
 class Nav extends React.Component{
@@ -146,11 +145,11 @@ class Nav extends React.Component{
           <div className="nav-row">
           <Link className="logo" to="/"> My Local Huntsville </Link>
             <ul className="main-nav">
-              <li className="logo-link">
+              {/* <li className="logo-link">
                 <Link className="logo-holder" to="/" onClick={this.handleClose}>
                   <img className="nav-top-logo" src={logo} alt="Huntsville Alabama"/>
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-link">
                 <Link className="nav-links" to="/"> HOME </Link>
               </li>
@@ -188,8 +187,12 @@ class Nav extends React.Component{
         </header>
         <header className="navbar2 nav-down2" style={{ transform: `translate(0, ${this.state.slide2})`, transition: 'transform 200ms linear' }}>
             <span className={this.state.class2} onClick={this.handleClick}> {!this.state.isClicked ? <i id="open" className="fas fa-bars"></i> : null }</span>
-            <Link className="logo-holder2" to="/" onClick={this.handleClose}>
+            {/* <Link className="logo-holder2" to="/" onClick={this.handleClose}>
               <img className="nav-top-logo2" src={logo} alt="Huntsville Alabama"/>
+            </Link> */}
+            <Link className="logo-holder2" to="/" onClick={this.handleClose}>
+              <h2 className="nav-header2"> My Local </h2> 
+              <h1 className="nav-header"> Huntsville </h1>
             </Link>
             <ul className={this.state.class}>
               <li onClick={this.handleClose}>

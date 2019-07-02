@@ -6,8 +6,8 @@ import Straight from './bars/Straight';
 import Yellowhammer from './bars/Yellowhammer';
 import Btr from './bars/Btr';
 import Waltons from './restaurants/Waltons';
-import './css/eats.css'
 import { Helmet } from 'react-helmet';
+import './css/eats.css'
 
 class Eats extends React.Component{
     componentDidMount() {

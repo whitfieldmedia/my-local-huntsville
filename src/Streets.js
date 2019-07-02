@@ -2,8 +2,12 @@ import React from 'react';
 import ArtTrail from './activities/ArtTrail';
 import Bullet from './activities/Bullet';
 import Gardens from './activities/Gardens';
-import './css/streets.css';
+import TrashPandas from './videos/TrashPandas';
+import WomanChangeTheWorld from './videos/WomanChangeTheWorld';
+import LongestPi from './videos/LongestPi';
+import CrushWineFestival from './videos/CrushWineFestival';
 import { Helmet } from 'react-helmet';
+import './css/streets.css';
 
 class Streets extends React.Component {
     componentDidMount() {
@@ -20,12 +24,11 @@ class Streets extends React.Component {
                 </Helmet>
                 <h1 className="streets-header"> Streets </h1>
                 <div className="streets-video-holder">
-                    <iframe className="home-video" title="Trash Pandas' Uniform Unveiling" src="https://player.vimeo.com/video/344604925" frameborder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="Woman Can Change the World" src="https://player.vimeo.com/video/344846982" frameborder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="MCS Moores Mill School Longest Human Pi Chain" src="https://player.vimeo.com/video/323832818" frameborder="0" allowFullScreen></iframe>
-                    <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344874010" frameborder="0" allowFullScreen></iframe>
+                    <TrashPandas />
+                    <WomanChangeTheWorld />
+                    <LongestPi />
+                    <CrushWineFestival />
                 </div>
-
                 <h2 className="fav-activities-header"> Our Favorite Activities </h2>
                 <div className="streets-things-wrapper">
                     <ArtTrail />

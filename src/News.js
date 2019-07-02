@@ -1,8 +1,8 @@
 import React from 'react';
-import './css/news.css';
 import affordableImage from './images/huntsville-affordable-news.jpeg';
 import growthImage from './images/huntsville-growing-news.jpg';
 import newRestaurants from './images/woman-at-small-business-entrance-EZ6X4CP.jpg';
+import './css/news.css';
 
 class News extends React.Component{
     render() {

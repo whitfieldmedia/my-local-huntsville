@@ -1,0 +1,33 @@
+@import 'assets';
+
+.eats-page {
+    padding-top: 140px;
+}
+.eats-video-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.eats-header {
+    font-family: $serif;
+    font-size: 40px;
+    color: $white;
+    text-align: center;
+    font-weight: $semibold;
+}
+
+.eats-partner-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width: 1250px ){
+    .eats-partner-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .eats-partner-wrapper {
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,124 @@
+@import 'assets';
+
+.beats-page {
+    padding-top: 140px;
+}
+.beats-header {
+    font-family: $serif;
+    font-size: 45px;
+    color: $white;
+    text-align: center;
+    font-weight: $semibold;
+}
+.beats-video-holder {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.beats-bars-header {
+    font-family: $serif;
+    font-size: 40px;
+    color: $white;
+    text-align: center;
+    font-weight: $semibold;
+}
+.concert-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.songkick-header {
+    font-family: $serif;
+    font-size: 40px;
+    font-weight: $medium;
+    color: $white;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.songkick-logo {
+    height: 50px;
+}
+
+.concert-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.concert-holder {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: $light-font;
+    width: 300px;
+    margin: 10px 15px;
+    background: $background-hover;
+    border: 1px solid $white;
+    border-radius: 15px;
+}
+.artist-name {
+    color: $dark-font;
+    font-family: $serif;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.concert-venue {
+    font-family: $sans;
+    color: $light-font;
+    font-size: 20px;
+    padding: 0;
+    margin: 5px 0;
+}
+.concert-date {
+    font-family: $sans;
+    color: $light-font;
+    font-size: 20px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.bars-wrapper {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.beats-bar-holder {
+    margin: 10px 20px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .bars-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .bars-wrapper {
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width: 665px) {
+    .concert-holder {
+        width: 90vw;
+    }
+}

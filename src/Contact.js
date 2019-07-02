@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './images/whitfieldMediaLogo.png';
-import './css/contact.css';
 import { Helmet } from 'react-helmet';
+import './css/contact.css';
 
 class Contact extends React.Component{
     componentDidMount() {

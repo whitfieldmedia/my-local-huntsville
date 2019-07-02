@@ -1,8 +1,8 @@
 import React from 'react';
 import rocketLogo from './images/rocket-logo.png';
-import space1 from './images/us-space1.jpg';
+import space3 from './images/us-space1.jpg';
 import space2 from './images/us-space2.jpg';
-import space3 from './images/us-space3.jpg';
+import space1 from './ashleyPhotos/usa_rocket.png';
 import space4 from './images/us-space4.jpg';
 import vetLogo from './images/vet-logo.png';
 import vet1 from './images/verterans-trailer.png';
@@ -10,8 +10,8 @@ import vet2 from './images/veterans-old-photo.png';
 import vet3 from './images/veteran-jeeps.jpg';
 import vet4 from './images/civil_war1.png';
 import loweLogo from './images/lowe-mill-logo.png';
-import lowe1 from './images/lowe-mill-art1.jpg';
-import lowe2 from './images/mill1.jpg';
+import lowe2 from './images/lowe-mill-art1.jpg';
+import lowe1 from './ashleyPhotos/lowe_mill.png';
 import lowe3 from './images/mill2.jpg';
 import lowe4 from './images/mill3.jpg';
 import artLogo from './images/museum-of-art-logo.png';
@@ -24,10 +24,10 @@ import depot1 from './images/depot1.png';
 import depot2 from './images/depot2.png';
 import depot3 from './images/depot3.png';
 import depot4 from './images/depot-museum.png';
-import './css/museums.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Helmet } from 'react-helmet';
+import './css/museums.css';
 
 
 class Museums extends React.Component {
@@ -149,16 +149,16 @@ class Museums extends React.Component {
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
-                                    <img src={space1} alt="U.S. Space and Rocket Center " /> 
+                                    <img className="museum-image" src={space1} alt="U.S. Space and Rocket Center " /> 
                                 </div>
                                 <div>
-                                    <img src={space2} alt="U.S. Space and Rocket Center" />
+                                    <img className="museum-image" src={space2} alt="U.S. Space and Rocket Center" />
                                 </div>
                                 <div>
-                                    <img src={space3} alt="U.S. Space and Rocket Center" />
+                                    <img className="museum-image" src={space3} alt="U.S. Space and Rocket Center" />
                                 </div>
                                 <div>
-                                    <img src={space4} alt="U.S. Space and Rocket Center" />
+                                    <img className="museum-image" src={space4} alt="U.S. Space and Rocket Center" />
                                 </div>
                             </Carousel>
                         </div>
@@ -201,16 +201,16 @@ class Museums extends React.Component {
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
-                                    <img src={vet1} alt="U.S. Veterans Memorial Museum Jeep with Trailer" />
+                                    <img className="museum-image" src={vet1} alt="U.S. Veterans Memorial Museum Jeep with Trailer" />
                                 </div>
                                 <div>
-                                    <img src={vet2} alt="U.S. Veterans Memorial Museum old" />
+                                    <img className="museum-image" src={vet2} alt="U.S. Veterans Memorial Museum old" />
                                 </div>
                                 <div>
-                                    <img src={vet3} alt="U.S. Veterans Memorial Museum Jeeps" />
+                                    <img className="museum-image" src={vet3} alt="U.S. Veterans Memorial Museum Jeeps" />
                                 </div>
                                 <div>
-                                    <img src={vet4} alt="U.S. Veterans Memorial Museum Truck" />
+                                    <img className="museum-image" src={vet4} alt="U.S. Veterans Memorial Museum Truck" />
                                 </div>
                             </Carousel>
                         </div>
@@ -255,16 +255,16 @@ class Museums extends React.Component {
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
-                                    <img src={lowe1} alt="Lowe Slide 1"/>
+                                    <img className="museum-image" src={lowe1} alt="Lowe Slide 1"/>
                                 </div>
                                 <div>
-                                    <img src={lowe2} alt="Lowe Slide 2"/>
+                                    <img className="museum-image" src={lowe2} alt="Lowe Slide 2"/>
                                 </div>
                                 <div>
-                                    <img src={lowe3} alt="Lowe Slide 3"/>
+                                    <img className="museum-image" src={lowe3} alt="Lowe Slide 3"/>
                                 </div>
                                 <div>
-                                    <img src={lowe4} alt="Lowe Slide 4"/>
+                                    <img className="museum-image" src={lowe4} alt="Lowe Slide 4"/>
                                 </div>
                             </Carousel>
                         </div>
@@ -309,16 +309,16 @@ class Museums extends React.Component {
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
-                                    <img src={art1} alt="U.S. Space and Rocket Center " />
+                                    <img className="museum-image" src={art1} alt="U.S. Space and Rocket Center " />
                                 </div>
                                 <div>
-                                    <img src={art2} alt="U.S. Space and Rocket Center" />
+                                    <img className="museum-image" src={art2} alt="U.S. Space and Rocket Center" />
                                 </div>
                                 <div>
-                                    <img src={art3} alt="U.S. Space and Rocket Center" />
+                                    <img className="museum-image" src={art3} alt="U.S. Space and Rocket Center" />
                                 </div>
                                 <div>
-                                    <img src={art4} alt="U.S. Space and Rocket Center" /> 
+                                    <img className="museum-image" src={art4} alt="U.S. Space and Rocket Center" /> 
                                 </div>
                             </Carousel>
                         </div>
@@ -370,16 +370,16 @@ class Museums extends React.Component {
                         <div className="slideshow-container">
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} transitionTime={350} interval={5000} dynamicHeight>
                                 <div>
-                                    <img src={depot1} alt="Depot Slide"/>
+                                    <img className="museum-image" src={depot1} alt="Depot Slide"/>
                                 </div>
                                 <div>
-                                    <img src={depot2} alt="Depot Slide 2"/>
+                                    <img className="museum-image" src={depot2} alt="Depot Slide 2"/>
                                 </div>
                                 <div>
-                                    <img src={depot3} alt="Depot Slide 3"/>
+                                    <img className="museum-image" src={depot3} alt="Depot Slide 3"/>
                                 </div>
                                 <div>
-                                    <img src={depot4} alt="Depot Slide 4"/>
+                                    <img className="museum-image" src={depot4} alt="Depot Slide 4"/>
                                 </div>
                             </Carousel>
                         </div>

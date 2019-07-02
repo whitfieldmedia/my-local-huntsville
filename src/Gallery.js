@@ -1,6 +1,4 @@
 import React from 'react';
-import './css/gallery.css';
-import { Helmet } from 'react-helmet';
 import animalFountain from './ashleyPhotos/animal_fountain.png';
 import apartments from './ashleyPhotos/apartments.png';
 import banditoBurrito from './ashleyPhotos/bandito_burrito_co.png';
@@ -33,6 +31,8 @@ import washingtonSquare from './ashleyPhotos/washington_square.jpg';
 import welcomeToHsv from './ashleyPhotos/welcome_to_huntsville.png';
 import whiteBuilding from './ashleyPhotos/white_building.png';
 import GridGallery from 'react-grid-gallery';
+import { Helmet } from 'react-helmet';
+import './css/gallery.css';
 
 class Gallery extends React.Component {
     constructor() {

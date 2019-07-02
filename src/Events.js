@@ -1,12 +1,12 @@
 import React from 'react';
-import './css/events.css';
 import moment from 'moment';
-import { getFeed } from './redux/feed';
-import { connect } from 'react-redux';
 import guitar from './ashleyPhotos/guitar_black_white.jpg';
 import wallArt from './ashleyPhotos/wall_art.png';
 import runway from './ashleyPhotos/hsv_runway.png';
 import { Helmet } from 'react-helmet';
+import { getFeed } from './redux/feed';
+import { connect } from 'react-redux';
+import './css/events.css';
 
 class Events extends React.Component{
     constructor() {

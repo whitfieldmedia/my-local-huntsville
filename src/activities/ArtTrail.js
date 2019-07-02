@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/purplecup-logo.png';
+import logo from '../images/purplecup-logo-solid.png';
 import map from '../images/art-trail-huntsville.png';
 import '../css/styles.css';
 
@@ -24,7 +24,7 @@ class ArtTrail extends React.Component{
         return (
             <div className="video-holder">
                     <img src={logo} className="partner-logo" alt="Secret Art Trail ~ Huntsville Alabama"/>
-                    <h2 className="video-header"> Secret Art Trail </h2>
+                    <h2 className="video-header"> Secret Art Walk </h2>
                     <div className="art-map-link" onClick={this.showMap}> View Trail </div>
                     <iframe className="home-video" src="https://player.vimeo.com/video/336352225" title="Secret Art Trail ~ Huntsville Alabama" frameBorder="0" allowFullScreen></iframe>
                 {this.state.show

@@ -1,31 +1,34 @@
 .eats-page {
-    padding-top: 140px;
+  padding-top: 140px;
 }
+
 .eats-video-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
+
 .eats-header {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    color: #313131;
-    text-align: center;
-    font-weight: lighter;
+  font-family: garamond-premier-pro, serif;
+  font-size: 40px;
+  color: #F5F7F6;
+  text-align: center;
+  font-weight: 600;
 }
 
 .eats-partner-wrapper {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-@media only screen and (max-width: 1250px ){
-    .eats-partner-wrapper {
-        grid-template-columns: auto auto;
-    }
+@media only screen and (max-width: 1250px) {
+  .eats-partner-wrapper {
+    grid-template-columns: auto auto;
+  }
 }
-
 @media only screen and (max-width: 850px) {
-    .eats-partner-wrapper {
-        grid-template-columns: auto;
-    }
+  .eats-partner-wrapper {
+    grid-template-columns: auto;
+  }
 }
+
+/*# sourceMappingURL=eats.css.map */

@@ -6,8 +6,8 @@ import weights from './icons/weights.svg';
 import dog from './icons/dog.svg';
 import wine from './icons/wine.svg';
 import bus from './icons/bus.svg';
-import './css/hotels.css';
 import { Helmet } from 'react-helmet';
+import './css/hotels.css';
 
 class Hotels extends React.Component{
     componentDidMount() {

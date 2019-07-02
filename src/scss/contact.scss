@@ -1,0 +1,234 @@
+@import 'assets';
+
+.contact-top {
+    padding-top: 140px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-top-row {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin: 20px auto 30px auto;
+}
+.contact-logo {
+    display: block; 
+    height: 150px;
+    padding-right: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+.contact-column1 {
+    width: auto; 
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.contact-top-column {
+    width: auto; 
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.top-row {
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto; 
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $white;
+    padding: 10px 0;
+}
+
+.header-holder {
+    text-decoration: none;
+    text-align: left;
+    margin-right: 40px;
+}
+.contact-header {
+    font-size: 40px; 
+    font-family: $serif;
+    margin: 0 0 0 0; 
+    padding: 0 0 0 0;
+    font-weight: $semibold;
+    color: $white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.contact-header3 {
+    font-size: 25px; 
+    text-decoration: none;
+    font-family: $serif;
+    margin: 0; 
+    padding: 0 0 10px 15px;
+    font-weight: $medium;
+    color: $white;
+}
+
+.contact-header2 {
+    font-family: $sans;
+    font-size: 25px;
+    color: $white;
+    text-align: center;
+    font-weight: $light;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.contactRow {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contactColumn {
+    width: 40%;
+    min-width: 300px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    align-content: initial;
+    align-items: initial;
+    border-bottom: 1px solid $white;
+}
+
+.input {
+    width: 80%;
+    border: none;
+    height: 30px;
+    font-size: 15px;
+    background: $black;
+    color: $white;
+}
+input::placeholder {
+    color: $white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form_label {
+    padding-top: 7px;
+    padding-right: 15px;
+    justify-self: baseline;
+    align-self: baseline;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 20px;
+    width: auto;
+    color: $green;
+}
+
+.message_row {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    justify-items: baseline;
+    align-content: baseline;
+    align-items: baseline;
+    border-bottom: 1px solid $white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.message_input {
+    width: 90%;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    background: $black;
+    color: $white
+}
+
+
+#form-button {
+    margin: 20px auto 50px auto;
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+    color: $green;
+    background-color: $white;
+    border: 1px solid $white;
+}
+#form-button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    .contact-top-row {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .contact-logo {
+        padding: 0;
+    }
+    .contact-column1 {
+        padding: 0;
+    }
+    .contact-top-column {
+        padding: 0;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+    .top-row {
+        padding: 5px;
+    }
+    .header-holder {
+        margin: 0;
+    }
+    .header3 {
+        font-size: 20px;
+    }
+    .contact-header2 {
+        padding-bottom: 50px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contactColumn {
+        width: 90%;
+    }
+    .message_input {
+        width: 80%;
+    }
+    .contactRow {
+        padding: 0;
+    }
+}

@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import BackgroundSlideshow from 'react-background-slideshow';
 import News from './News';
-import './css/styles.css';
 import background from './ashleyPhotos/welcome_to_huntsville.png';
 import background3 from './ashleyPhotos/diners.png';
 import background2 from './ashleyPhotos/jefferson_st.png';
@@ -13,13 +11,16 @@ import smallBack from './ashleyPhotos/lowe_mill.png';
 import smallBack2 from './ashleyPhotos/usa_rocket.png';
 import smallBack3 from './ashleyPhotos/soldier_statue.png';
 import smallBack4 from './ashleyPhotos/clinton_row.jpg';
-import { Helmet } from 'react-helmet';
-import rightArrow from './icons/right-arrow.png';
+import rightArrow from './icons/next-page-2.svg';
 import street from './ashleyPhotos/jeff_st2.png';
 import food from './ashleyPhotos/food.png';
 import beats from './ashleyPhotos/guitar_black_white2.jpg';
 import nature from './ashleyPhotos/stream.png';
 import museum from './ashleyPhotos/white_building.png';
+import CrushWineFestival from './videos/CrushWineFestival';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import './css/styles.css';
 
 class Home extends React.Component{
   constructor() {
@@ -66,14 +67,18 @@ class Home extends React.Component{
           <h2 className="top-header2"> My Local </h2>
           <h1 className="top-header"> Huntsville </h1>
         </div>
+        <div className="top-container2">
+          <h2 className="top-header3"> North </h2>
+          <h1 className="top-header1"> ALABAMA </h1>
+        </div>
         {/* <a className="weatherwidget-io" title="Weather Widget Huntsville Alabama" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>         */}
         <div className="spacer"></div>
-        <h2 className="home-news-header"> This is Huntsville Alabama. </h2>
-        <div className="spacer"></div>
+        <h2 className="home-news-header"> Huntsville News </h2>
         <div className="home-news-wrapper">
           <News />    
         </div>
-        <div className="line"></div>
+        <div className="spacer"></div>
+        {/* <div className="line"></div> */}
         <div className="main-events-container">
           <div className="main-events-column">
             <Link className="home-event-link" to="/events">
@@ -84,11 +89,10 @@ class Home extends React.Component{
           </div>
           <div className="main-events-column">
             <div className="home-events">
-              <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344874010" frameBorder="0" allowFullScreen></iframe>
+              <CrushWineFestival />
             </div>
           </div>
         </div>
-        <div className="line"></div>
         <div className="streets-eats-beats-container">
           <div className="home-streets-container">
             <div className="home-streets-column">
@@ -99,7 +103,7 @@ class Home extends React.Component{
                 <h2 className="home-streets-header"> Streets </h2>
                 <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
               </Link>
-              <p className="home-streets-par"> Go out on the streets of Huntsville to see what's going on. Find out about new stores, upcoming events, and more! </p>
+              <p className="home-streets-par"> Watch as we go out on the streets of Huntsville to see what's going on, find out about new stores, upcoming events, and more! </p>
             </div>
           </div>
           <div className="home-eats-container">
@@ -127,8 +131,9 @@ class Home extends React.Component{
             </div>
           </div>
         </div>
-        <div className="line1"></div>
-        <h2 className="things-to-do-header"> Things to Do </h2>
+        <div className="spacer"></div>
+        {/* <div className="line1"></div> */}
+        <h2 className="things-to-do-header"> Explore </h2>
         <div className="things-to-do-container">
           <div className="things-to-do-column">
             <Link to="/nature" className="home-nature-link">
@@ -147,7 +152,6 @@ class Home extends React.Component{
             <img src={museum} className="home-museum-image" alt="The Eloise McDonald Propst Guest Center"/>
           </div>
         </div>
-        <div className="line"></div>
         <div className="where-to-stay-container">
           <Link to="/hotels" className="home-hotel-link">
             <h2 className="home-hotel-header"> Where to Stay </h2>
