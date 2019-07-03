@@ -22,7 +22,10 @@ class Streets extends React.Component {
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/streets"/>
                     <meta name="description" content="Huntsville Alabama is awesome. From a secret art walk on the streets to some activities for the family Huntsville won't dissapoint." />
                 </Helmet>
-                <h1 className="streets-header"> Streets </h1>
+                <div className="streets-header-container">
+                    <h1 className="streets-header" id="streets-header"> Streets </h1> <h1 className="streets-header"> Beats & Eats </h1>
+                </div>
+
                 <div className="streets-video-holder">
                     <TrashPandas />
                     <WomanChangeTheWorld />

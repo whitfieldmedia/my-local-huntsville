@@ -143,7 +143,6 @@ class Nav extends React.Component{
           </div>
           <div className="nav-line"></div>
           <div className="nav-row">
-          <Link className="logo" to="/"> My Local Huntsville </Link>
             <ul className="main-nav">
               {/* <li className="logo-link">
                 <Link className="logo-holder" to="/" onClick={this.handleClose}>

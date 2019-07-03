@@ -3,6 +3,7 @@ import Bar805 from './bars/Bar805';
 import Otbx from './bars/Otbx';
 import Poppy from './bars/Poppy';
 import Rhapsody from './videos/Rhapsody';
+import ValueOfArts from './videos/ValueOfArts';
 import bySongkick from './icons/by-songkick-white.svg';
 import moment from 'moment';
 import { connect } from 'react-redux';
@@ -46,9 +47,13 @@ class Beats extends React.Component{
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/beats"/>
                     <meta name="description" content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
                 </Helmet>
-                <h1 className="beats-header"> Beats </h1>
+                <div className="beats-header-container">
+                    <h1 className="beats-header"> Streets </h1> <h1 className="beats-header" id="beats-header"> Beats </h1> <h1 className="beats-header"> & Eats </h1>
+                </div>
+
                 <div className="beats-video-holder">
                     <Rhapsody />
+                    <ValueOfArts />
                 </div>
                 <h1 className="beats-bars-header"> Our Favorite Bars </h1>
                 <div className="bars-wrapper">

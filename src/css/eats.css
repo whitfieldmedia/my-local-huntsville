@@ -7,12 +7,24 @@
   justify-content: center;
 }
 
+.eats-header-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
 .eats-header {
   font-family: garamond-premier-pro, serif;
   font-size: 40px;
   color: #F5F7F6;
   text-align: center;
   font-weight: 600;
+}
+
+#purple {
+  color: #bf00ff;
+  padding-left: 10px;
+  text-decoration: underline;
 }
 
 .eats-partner-wrapper {

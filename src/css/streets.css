@@ -2,6 +2,27 @@
   padding-top: 140px;
 }
 
+.streets-header-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.streets-header {
+  font-family: garamond-premier-pro, serif;
+  font-size: 45px;
+  color: #F5F7F6;
+  text-align: center;
+  font-weight: 600;
+}
+
+#streets-header {
+  color: #bf00ff;
+  padding-right: 10px;
+  text-decoration: underline;
+}
+
 .streets-video-holder {
   display: grid;
   grid-template-columns: auto auto;
@@ -13,14 +34,6 @@
 
 .streets-video-holder iframe {
   padding: 20px;
-}
-
-.streets-header {
-  font-family: garamond-premier-pro, serif;
-  font-size: 45px;
-  color: #F5F7F6;
-  text-align: center;
-  font-weight: 600;
 }
 
 .fav-activities-header {

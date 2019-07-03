@@ -3,6 +3,25 @@
 .streets-page {
     padding-top: 140px;
 }
+.streets-header-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-items: center;
+}
+.streets-header {
+    font-family: $serif;
+    font-size: 45px;
+    color: $white;
+    text-align: center;
+    font-weight: $semibold;
+}
+#streets-header {
+    color: $green;
+    padding-right: 10px;
+    text-decoration: underline;
+}
+
 .streets-video-holder {
     display: grid;
     grid-template-columns: auto auto;
@@ -15,13 +34,7 @@
     padding: 20px;
 }
 
-.streets-header {
-    font-family: $serif;
-    font-size: 45px;
-    color: $white;
-    text-align: center;
-    font-weight: $semibold;
-}
+
 .fav-activities-header {
     font-family: $serif;
     font-size: 40px;
