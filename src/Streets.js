@@ -7,6 +7,7 @@ import WomanChangeTheWorld from './videos/WomanChangeTheWorld';
 import LongestPi from './videos/LongestPi';
 import CrushWineFestival from './videos/CrushWineFestival';
 import { Helmet } from 'react-helmet';
+import sebLogo from './icons/seb_streets_white.svg';
 import './css/streets.css';
 
 class Streets extends React.Component {
@@ -23,7 +24,8 @@ class Streets extends React.Component {
                     <meta name="description" content="Huntsville Alabama is awesome. From a secret art walk on the streets to some activities for the family Huntsville won't dissapoint." />
                 </Helmet>
                 <div className="streets-header-container">
-                    <h1 className="streets-header" id="streets-header"> Streets </h1> <h1 className="streets-header"> Beats & Eats </h1>
+                    <img src={sebLogo} className="seb-logo" alt="Streets Eats & Beats"/>
+                    {/* <h1 className="streets-header" id="streets-header"> Streets </h1> <h1 className="streets-header"> Beats & Eats </h1> */}
                 </div>
 
                 <div className="streets-video-holder">

@@ -9,6 +9,7 @@ import moment from 'moment';
 import { connect } from 'react-redux';
 import { getEvents } from './redux/events';
 import { Helmet } from 'react-helmet';
+import beatsLogo from './icons/seb_beats_white.svg';
 import './css/beats.css';
 
 class Beats extends React.Component{
@@ -48,7 +49,8 @@ class Beats extends React.Component{
                     <meta name="description" content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
                 </Helmet>
                 <div className="beats-header-container">
-                    <h1 className="beats-header"> Streets </h1> <h1 className="beats-header" id="beats-header"> Beats </h1> <h1 className="beats-header"> & Eats </h1>
+                    <img src={beatsLogo} className="seb-logo" alt=""/>
+                    {/* <h1 className="beats-header"> Streets </h1> <h1 className="beats-header" id="beats-header"> Beats </h1> <h1 className="beats-header"> & Eats </h1> */}
                 </div>
 
                 <div className="beats-video-holder">

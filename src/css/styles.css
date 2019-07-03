@@ -703,6 +703,11 @@ body {
   border-radius: 30px;
 }
 
+.seb-logo {
+  width: 200px;
+  height: 200px;
+}
+
 /* SPACERS & LINES */
 .line {
   width: 100vw;

@@ -165,8 +165,8 @@ class Nav extends React.Component{
                 <div className="dropbtn"> PLAY </div>
                 <div className="dropdown-content">
                   <Link className="dropdown-link" to="/streets"> STREETS </Link>
-                  <Link className="dropdown-link" to="/beats"> BEATS </Link>
                   <Link className="dropdown-link" to="/eats"> EATS </Link>
+                  <Link className="dropdown-link" to="/beats"> BEATS </Link>
                   <Link className="dropdown-link" to="/events"> EVENTS </Link>
                 </div>
               </li>
@@ -213,8 +213,8 @@ class Nav extends React.Component{
                 <div className="dropbtn" onClick={this.handleClick4}> PLAY </div>
                 <div className={this.state.dropdown4}>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/streets"> STREETS </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/beats"> BEATS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/eats"> EATS </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/beats"> BEATS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/events"> EVENTS </Link>
                 </div>
               </li>
