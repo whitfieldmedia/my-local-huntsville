@@ -89,6 +89,11 @@ body {
   letter-spacing: 1px;
 }
 
+.tall-video {
+  width: 250px;
+  height: 500px;
+}
+
 .top-header {
   position: relative;
   color: #F5F7F6;
@@ -634,6 +639,27 @@ body {
   padding: 0;
   margin: 0 auto;
   min-width: 400px;
+}
+
+.sbe-video-container {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+.sbe-video-container p {
+  padding-top: 0;
+  margin-top: 0;
+  font-family: gitan-latin, sans-serif;
+  font-size: 16px;
+  color: #F5F7F6;
+  text-decoration: none;
+}
+.sbe-video-container p a {
+  font-family: gitan-latin, sans-serif;
+  font-size: 16px;
+  color: #F5F7F6;
+  text-decoration: none;
 }
 
 .menu-row {
