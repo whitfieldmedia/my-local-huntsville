@@ -74,8 +74,6 @@ class Home extends React.Component{
         </div>
         {/* <a className="weatherwidget-io" title="Weather Widget Huntsville Alabama" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>         */}
         <div className="spacer"></div>
-        <h2 className="home-news-header"> Happy 4th of July! </h2>
-          <July4 />
         <h2 className="home-news-header"> Huntsville News </h2>
         <div className="home-news-wrapper">
           <News />    
