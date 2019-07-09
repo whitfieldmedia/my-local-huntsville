@@ -18,7 +18,6 @@ import beats from './ashleyPhotos/guitar_black_white2.jpg';
 import nature from './ashleyPhotos/stream.png';
 import museum from './ashleyPhotos/white_building.png';
 import CrushWineFestival from './videos/CrushWineFestival';
-import July4 from './videos/July4';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './css/styles.css';

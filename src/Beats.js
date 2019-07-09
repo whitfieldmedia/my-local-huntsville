@@ -3,6 +3,7 @@ import Bar805 from './bars/Bar805';
 import Otbx from './bars/Otbx';
 import Poppy from './bars/Poppy';
 import Rhapsody from './videos/Rhapsody';
+import FarmersMarket from './videos/FarmersMarket';
 import ValueOfArts from './videos/ValueOfArts';
 import bySongkick from './icons/by-songkick-white.svg';
 import moment from 'moment';
@@ -54,6 +55,7 @@ class Beats extends React.Component{
                 </div>
 
                 <div className="beats-video-holder">
+                    <FarmersMarket />
                     <Rhapsody />
                     <ValueOfArts />
                 </div>

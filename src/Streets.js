@@ -6,6 +6,7 @@ import TrashPandas from './videos/TrashPandas';
 import WomanChangeTheWorld from './videos/WomanChangeTheWorld';
 import LongestPi from './videos/LongestPi';
 import CrushWineFestival from './videos/CrushWineFestival';
+import FarmersMarket from './videos/FarmersMarket';
 import { Helmet } from 'react-helmet';
 import sebLogo from './icons/seb_streets_white.svg';
 import './css/streets.css';
@@ -29,6 +30,7 @@ class Streets extends React.Component {
                 </div>
 
                 <div className="streets-video-holder">
+                    <FarmersMarket />
                     <TrashPandas />
                     <WomanChangeTheWorld />
                     <LongestPi />

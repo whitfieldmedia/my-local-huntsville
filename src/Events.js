@@ -3,6 +3,8 @@ import moment from 'moment';
 import guitar from './ashleyPhotos/guitar_black_white.jpg';
 import wallArt from './ashleyPhotos/wall_art.png';
 import runway from './ashleyPhotos/hsv_runway.png';
+import FarmersMarket from './videos/FarmersMarket';
+import CrushWineFestival from './videos/CrushWineFestival';
 import { Helmet } from 'react-helmet';
 import { getFeed } from './redux/feed';
 import { connect } from 'react-redux';
@@ -61,10 +63,11 @@ class Events extends React.Component{
                     <img id="gone" className="event-top-img" src={runway} alt=""/>
                 </div>
                 <div className="festival-event-holder">
-                    <h2 className="festival-header"> The Crush Wine Festival </h2>
-                    <p className="festival-dates"> September 25-29, 2019 </p>
-                    <p className="festival-location"> Big Springs Park </p>
-                    <iframe className="home-video" title="Crush Wine Festival Press Conference" src="https://player.vimeo.com/video/344874010" frameBorder="0" allowFullScreen></iframe>
+                    <CrushWineFestival />
+                    <FarmersMarket />
+                </div>
+                <div className="festival-event-holder">
+
                 </div>
                 <div className="events-page">
                 {this.state.done
