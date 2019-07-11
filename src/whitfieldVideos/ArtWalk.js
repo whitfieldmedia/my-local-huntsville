@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from '../images/purplecup-logo-solid.png';
 import map from '../images/art-trail-huntsville.png';
 import '../css/styles.css';
 
-class ArtTrail extends React.Component{
+class ArtWalk extends React.Component{
     constructor() {
         super();
         this.state = {
@@ -23,19 +22,22 @@ class ArtTrail extends React.Component{
     render() {
         return (
             <div className="video-holder">
-                    <img src={logo} className="partner-logo" alt="Secret Art Trail ~ Huntsville Alabama"/>
-                    <h2 className="video-header"> Secret Art Walk </h2>
+                <iframe className="home-video" src="https://player.vimeo.com/video/336352225?autoplay=1&muted=1" allow="autoplay; fullscreen" title="Secret Art Trail ~ Huntsville Alabama" frameBorder="0" allowFullScreen></iframe>
+                <div className="video-description-container">
+                    <h2 className="video-title"> Secret Art Walk </h2>
+                    <a class="video-from" href="https://vimeo.com/user61613993" target="_blank" rel="noopener noreferrer"> from We Make Ads on Vimeo </a>
                     <div className="art-map-link" onClick={this.showMap}> View Trail </div>
-                    <iframe className="home-video" src="https://player.vimeo.com/video/336352225" title="Secret Art Trail ~ Huntsville Alabama" frameBorder="0" allowFullScreen></iframe>
+                </div>
                 {this.state.show
                 ? <div className="popup-container" id="map-popup"> 
                     <div className="popupCloseButton" onClick={this.closeMap}>X</div>    
                     <img src={map} className="map-photo" alt="Downtown Huntsville Secret Art Trail"/>
                 </div>
                 : null }
+                
             </div>
         )
     }
 }
 
-export default ArtTrail
+export default ArtWalk;

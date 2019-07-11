@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/nav.css';
+// import mlh from './icons/mlh.svg';
+import mlh from './icons/MyLocalHuntsville_Logo2.png';
+import arrow from './icons/baseline-keyboard_arrow_right-24px.svg';
 
 class Nav extends React.Component{
   state = {
@@ -15,8 +18,9 @@ class Nav extends React.Component{
     dropdown4: 'dropdown4-closed',
     isClicked5: false,
     dropdown5: 'dropdown5-closed',
-    isClicked6: false,
-    dropdown6: 'dropdown6-closed'
+    hoverExplore: false,
+    hoverSeb: false,
+    hoverStay: false
   }
 
   handleClick = () => {
@@ -34,20 +38,6 @@ class Nav extends React.Component{
       })
     }
   }
-
-  // handleClick2 = () => {
-  //   if(!this.state.isClicked2) {
-  //     this.setState({
-  //       isClicked2: true,
-  //       dropdown: 'dropdown-open'
-  //     })
-  //   } else {
-  //     this.setState({
-  //       isClicked2: false,
-  //       dropdown: 'dropdown-closed'
-  //     })
-  //   }
-  // }
   handleClick3 = () => {
     if(!this.state.isClicked3) {
       this.setState({
@@ -55,7 +45,6 @@ class Nav extends React.Component{
         dropdown3: 'dropdown3-open',
         dropdown4: 'dropdown4-closed',
         dropdown5: 'dropdown5-closed',
-        dropdown6: 'dropdown6-closed',
       })
     } else {
       this.setState({
@@ -70,7 +59,6 @@ class Nav extends React.Component{
         isClicked4: true,
         dropdown4: 'dropdown4-open',
         dropdown5: 'dropdown5-closed',
-        dropdown6: 'dropdown6-closed',
         dropdown3: 'dropdown3-closed'
       })
     } else {
@@ -85,7 +73,6 @@ class Nav extends React.Component{
       this.setState({
         isClicked5: true,
         dropdown5: 'dropdown5-open',
-        dropdown6: 'dropdown6-closed',
         dropdown4: 'dropdown4-closed',
         dropdown3: 'dropdown3-closed'
       })
@@ -96,22 +83,7 @@ class Nav extends React.Component{
       })
     }
   }
-  // handleClick6 = () => {
-  //   if(!this.state.isClicked6) {
-  //     this.setState({
-  //       isClicked6: true,
-  //       dropdown6: 'dropdown6-open',
-  //       dropdown5: 'dropdown5-closed',
-  //       dropdown4: 'dropdown4-closed',
-  //       dropdown3: 'dropdown3-closed'
-  //     })
-  //   } else {
-  //     this.setState({
-  //       isClicked6: false,
-  //       dropdown6: 'dropdown6-closed'
-  //     })
-  //   }
-  // }
+
   handleClose = () => {
     this.setState({
       isClicked: false,
@@ -129,88 +101,139 @@ class Nav extends React.Component{
       dropdown6: 'dropdown6-closed'
     })
   }
-
+  enterExplore = () => {
+    this.setState({
+      hoverExplore: true,
+      hoverStay: false,
+      hoverSeb: false,
+    })
+  }
+  leaveExplore = () => {
+    this.setState({
+      hoverExplore: false
+    })
+  }
+  enterSeb = () => {
+    this.setState({
+      hoverSeb: true,
+      hoverStay: false,
+      hoverExplore: false,
+    })
+  }
+  leaveSeb = () => {
+    this.setState({
+      hoverSeb: false
+    })
+  }
+  enterStay = () => {
+    this.setState({
+      hoverStay: true,
+      hoverExplore: false,
+      hoverSeb: false
+    })
+  }
+  leaveStay = () => {
+    this.setState({
+      hoverStay: false
+    })
+  }
+  closeHover = () => {
+    this.setState({
+      hoverStay: false,
+      hoverExplore: false,
+      hoverSeb: false
+    })
+  }
   render() {
     return (
       <div>
-        <header className="navbar nav-down" style={{ transform: `translate(0, ${this.state.slide})`, transition: 'transform 200ms linear' }}>
-          <div className="nav-top-row">
+        <header className="navbar">
+          <div className="nav-top-row" onMouseEnter={this.closeHover}>
             <div className="nav-top-column2">
               <a className="top-nav-icon" href="tel:6623907878"> <i className="fas fa-phone"></i></a>
               <a className="top-nav-icon" href="mailto:steve@wemakeads.com"> <i className="far fa-envelope"></i> </a>
               <a className="top-nav-icon" href="https://www.facebook.com/My-Local-Huntsville-663263420788574" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square"></i> </a>
+              <Link to="/contact" className="top-nav-icon"> CONTACT </Link>
             </div>
           </div>
           <div className="nav-line"></div>
-          <div className="nav-row">
-            <ul className="main-nav">
-              {/* <li className="logo-link">
-                <Link className="logo-holder" to="/" onClick={this.handleClose}>
-                  <img className="nav-top-logo" src={logo} alt="Huntsville Alabama"/>
-                </Link>
-              </li> */}
-              <li className="nav-link">
-                <Link className="nav-links" to="/"> HOME </Link>
+            <ul className="main-nav" id="main-nav">
+              <Link onMouseEnter={this.closeHover} to="/"> <img id="mlh-icon" src={mlh} alt=""/> </Link>
+              <li className="dropdown" onMouseEnter={this.enterExplore} >
+                <div className="dropbtn"> EXPLORE NORTH ALABAMA </div>
+                {/* <ul className="dropdown-content">
+                </ul> */}
               </li>
               <li className="dropdown">
-                <div className="dropbtn"> LIVE </div>
-                <div className="dropdown-content">
-                  <Link className="dropdown-link" to="/gallery"> GALLERY </Link>
-                </div>
-              </li>
-              <li className="nav-link">
-                <Link className="nav-links" to="/work"> WORK </Link>
-              </li>
-              <li className="dropdown">
-                <div className="dropbtn"> PLAY </div>
-                <div className="dropdown-content">
+                <div className="dropbtn" onMouseEnter={this.enterSeb}> STREETS EATS & BEATS </div>
+                {/* <ul className="dropdown-content">
                   <Link className="dropdown-link" to="/streets"> STREETS </Link>
                   <Link className="dropdown-link" to="/eats"> EATS </Link>
                   <Link className="dropdown-link" to="/beats"> BEATS </Link>
                   <Link className="dropdown-link" to="/events"> EVENTS </Link>
-                </div>
+                </ul> */}
               </li>
               <li className="dropdown">
-                <div className="dropbtn"> VISIT </div>
-                <div className="dropdown-content"> 
+                <div className="dropbtn" onMouseEnter={this.enterStay}> STAY WITH US </div>
+                {/* <ul className="dropdown-content"> 
                   <Link className="dropdown-link" to="/hotels"> HOTELS </Link>
-                  <Link className="dropdown-link" to="/museums"> MUSEUMS </Link>
-                  <Link className="dropdown-link" to="/nature"> NATURE </Link>
-                </div>
-              </li>
-              <li className="nav-link">
-                <Link className="nav-links" to="/contact"> CONTACT </Link>
+                </ul> */}
               </li>
             </ul>
-          </div>
+            <ul className={this.state.hoverExplore ? "dropdown-row": "dropdown-row-closed"} onMouseEnter={this.enterExplore} onMouseLeave={this.leaveExplore}>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/gallery"> GALLERY <i class="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+              {/* <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/work"> WORK </Link>
+              </li> */}
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/museums"> MUESEUMS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/nature"> NATURE<i class="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/events"> EVENTS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+            </ul>
+            <ul className={this.state.hoverSeb ? "dropdown-row": "dropdown-row-closed" } onMouseEnter={this.enterSeb} onMouseLeave={this.leaveSeb}>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/streets"> STREETS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/eats"> EATS<i class="material-icons"> keyboard_arrow_right </i> </Link>  
+              </li>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/beats"> BEATS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+            </ul>
+            <ul className={this.state.hoverStay ? "dropdown-row" : "dropdown-row-closed"} onMouseEnter={this.enterStay} onMouseLeave={this.leaveStay}>
+              <li>
+                <Link onClick={this.closeHover} id="hotel-link" className="dropdown-link" to="/hotels"> HOTELS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+            </ul>
         </header>
         <header className="navbar2 nav-down2" style={{ transform: `translate(0, ${this.state.slide2})`, transition: 'transform 200ms linear' }}>
             <span className={this.state.class2} onClick={this.handleClick}> {!this.state.isClicked ? <i id="open" className="fas fa-bars"></i> : null }</span>
-            {/* <Link className="logo-holder2" to="/" onClick={this.handleClose}>
-              <img className="nav-top-logo2" src={logo} alt="Huntsville Alabama"/>
-            </Link> */}
             <Link className="logo-holder2" to="/" onClick={this.handleClose}>
-              <h2 className="nav-header2"> My Local </h2> 
-              <h1 className="nav-header"> Huntsville </h1>
+              <img src={mlh} id="mlh-icon-small" alt="My Local Huntsville"/>
             </Link>
             <ul className={this.state.class}>
               <li onClick={this.handleClose}>
                 <p className="nav-x"> X </p>
               </li>
-              <li onClick={this.handleClose} className="nav-link">
-                <Link onClick={this.handleClose} className="nav-links" to="/"> HOME </Link>
-              </li>
               <li className="dropdown">
-                <div className="dropbtn" onClick={this.handleClick3}> LIVE </div>
+                <div className="dropbtn" onClick={this.handleClick3}> EXPLORE NORTH ALABAMA </div>
                 <div className={this.state.dropdown3}>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/gallery"> GALLERY </Link>
+                  <Link onClick={this.handleClose} className="nav-links" to="/work"> WORK </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/museums"> MUSEUMS </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
                 </div>
               </li>
-              <li className="nav-link">
-                <Link onClick={this.handleClose} className="nav-links" to="/work"> WORK </Link>
-              </li>
               <li className="dropdown">
-                <div className="dropbtn" onClick={this.handleClick4}> PLAY </div>
+                <div className="dropbtn" onClick={this.handleClick4}> STREETS EATS & BEATS </div>
                 <div className={this.state.dropdown4}>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/streets"> STREETS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/eats"> EATS </Link>
@@ -219,11 +242,9 @@ class Nav extends React.Component{
                 </div>
               </li>
               <li className="dropdown">
-                <div className="dropbtn" onClick={this.handleClick5}> VISIT </div>
+                <div className="dropbtn" onClick={this.handleClick5}> STAY WITH US </div>
                 <div className={this.state.dropdown5}> 
                   <Link onClick={this.handleClose} className="dropdown-link" to="/hotels"> HOTELS </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/museums"> MUSEUMS </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
                 </div>
               </li>
               <li onClick={this.handleClose} className="nav-link">

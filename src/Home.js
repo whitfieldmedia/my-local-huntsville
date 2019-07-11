@@ -1,6 +1,5 @@
 import React from 'react';
 import BackgroundSlideshow from 'react-background-slideshow';
-import News from './News';
 import background from './ashleyPhotos/welcome_to_huntsville.png';
 import background3 from './ashleyPhotos/diners.png';
 import background2 from './ashleyPhotos/jefferson_st.png';
@@ -11,7 +10,7 @@ import smallBack from './ashleyPhotos/lowe_mill.png';
 import smallBack2 from './ashleyPhotos/usa_rocket.png';
 import smallBack3 from './ashleyPhotos/soldier_statue.png';
 import smallBack4 from './ashleyPhotos/clinton_row.jpg';
-import rightArrow from './icons/next-page-2.svg';
+import rightArrow from './icons/next-page-red2.svg';
 import street from './ashleyPhotos/jeff_st2.png';
 import food from './ashleyPhotos/food.png';
 import beats from './ashleyPhotos/guitar_black_white2.jpg';
@@ -21,6 +20,8 @@ import CrushWineFestival from './videos/CrushWineFestival';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './css/styles.css';
+import banner from './icons/PEARMAN_970x90.jpg';
+import './css/banner.css';
 
 class Home extends React.Component{
   constructor() {
@@ -63,19 +64,16 @@ class Home extends React.Component{
           ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6]} />
           : <BackgroundSlideshow images={[smallBack, smallBack2, smallBack3, smallBack4]} />}
         </div>
-        <div className="top-container">
+        {/* <div className="top-container">
           <h2 className="top-header2"> My Local </h2>
           <h1 className="top-header"> Huntsville </h1>
         </div>
         <div className="top-container2">
           <h2 className="top-header3"> North </h2>
           <h1 className="top-header1"> ALABAMA </h1>
-        </div>
-        {/* <a className="weatherwidget-io" title="Weather Widget Huntsville Alabama" href="https://forecast7.com/en/34d73n86d59/huntsville/?unit=us" data-label_1="HUNTSVILLE" data-label_2="WEATHER" data-theme="original" data-basecolor="#454063" >HUNTSVILLE WEATHER</a>         */}
-        <div className="spacer"></div>
-        <h2 className="home-news-header"> Huntsville News </h2>
-        <div className="home-news-wrapper">
-          <News />    
+        </div> */}
+        <div className="banner-wrapper">
+          <img className="banner" src={banner} alt="ray pearman lincoln"/>
         </div>
         <div className="spacer"></div>
         {/* <div className="line"></div> */}

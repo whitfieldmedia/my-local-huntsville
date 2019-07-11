@@ -602,15 +602,16 @@ body {
 .art-map-link {
   text-align: center;
   font-family: gitan-latin, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #F5F7F6;
+  font-weight: 300;
   margin: 0;
-  padding: 0;
+  padding: 0 0 5px 0;
 }
 
 .art-map-link:hover {
   transform: scale(1.05);
-  color: #bf00ff;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -631,14 +632,40 @@ body {
 }
 
 .home-video {
-  height: 250px;
+  height: 360px;
   width: 100%;
   min-height: 150px;
-  max-width: 400px;
-  max-height: 250px;
+  width: 640px;
   padding: 0;
   margin: 0 auto;
   min-width: 400px;
+}
+
+.video-description-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.video-title {
+  font-family: garamond-premier-pro, serif;
+  color: #F5F7F6;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.video-from {
+  font-family: gitan-latin, sans-serif;
+  color: #F5F7F6;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 10px;
 }
 
 .sbe-video-container {
@@ -680,7 +707,7 @@ body {
 
 .beer-menu:hover {
   transform: scale(1.1);
-  color: #bf00ff;
+  color: #fff;
 }
 
 #bullet-logo {
@@ -712,14 +739,14 @@ body {
 .line {
   width: 100vw;
   height: 3px;
-  background: #bf00ff;
+  background: #fff;
   margin: 20px 0 10px 0;
 }
 
 .line1 {
   width: 100vw;
   height: 1px;
-  background: #bf00ff;
+  background: #fff;
   padding: 0;
   margin: 20px 0 0 0;
 }

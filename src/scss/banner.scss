@@ -1,41 +1,12 @@
 @import 'assets';
 
-.banner-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
+.banner-wrapper {
+    position: relative;
     width: 100vw;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    background: inherit;
+    object-fit: contain;
 }
-
 .banner {
-    width: auto;
     height: auto;
-    max-height: 100px;
-    max-width: 100vw;
+    width: 100%;
     display: block;
-}
-
-@media only screen and (max-width: 520px) {
-    .banner {
-        height: 80px;
-    }
-}
-@media only screen and (max-width: 415px) {
-    .banner {
-        height: 70px;
-    }
-}
-@media only screen and (max-width: 362px) {
-    .banner {
-        height: 65px;
-    }
 }

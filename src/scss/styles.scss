@@ -581,10 +581,11 @@ body {
 .art-map-link {
     text-align: center;
     font-family: $sans;
-    font-size: 20px;
+    font-size: 18px;
     color: $white;
+    font-weight: 300;
     margin: 0;
-    padding: 0;
+    padding: 0 0 5px 0;
 }
   
 .art-map-link:hover {
@@ -608,14 +609,37 @@ body {
     justify-content: center;
 }
 .home-video {
-    height: 250px;
+    height: 360px;
     width: 100%;
     min-height: 150px;
-    max-width: 400px;
-    max-height: 250px;
+    width: 640px;
     padding: 0;
     margin: 0 auto;
     min-width: 400px;
+}
+.video-description-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;   
+}
+.video-title {
+    font-family: $serif;
+    color: $white;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.video-from {
+    font-family: $sans;
+    color: $white;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 10px;
 }
 .sbe-video-container {
     width: auto;

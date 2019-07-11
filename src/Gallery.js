@@ -33,6 +33,7 @@ import whiteBuilding from './ashleyPhotos/white_building.png';
 import GridGallery from 'react-grid-gallery';
 import { Helmet } from 'react-helmet';
 import './css/gallery.css';
+import insta from './icons/instagram.svg'
 
 class Gallery extends React.Component {
     constructor() {
@@ -81,12 +82,13 @@ class Gallery extends React.Component {
             <div className="gallery-page">
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title> Huntsville Alabama Photo Gallery </title>
+                    <title> North Alabama Photo Gallery </title>
                     <meta name="description" content="Huntsville Alabama is a beautiful place and we have partnered with one of the best local photographer/videographer Ashley Davis to provide these awesome photos" />
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/gallery"/>
                 </Helmet>
-                <h1 className="gallery-header"> Huntsville Alabama Photo Gallery </h1>
-                <p className="gallery-thanks"> A big shoutout to Joshua Berry & Ashley Davis for the photos! </p>
+                <h1 className="gallery-header"> North Alabama Photo Gallery </h1>
+                <p className="gallery-thanks"> A big shoutout to Joshua Berry for the photos! </p>
+                <a className="gallery-insta-link" href="https://www.instagram.com/everlongpix/?hl=en" target="_blank" rel="noopener noreferrer"> <img src={insta} className="insta-icon" alt=""/> Follow Joshua for more great pictures! </a>
                 <GridGallery id="grid-gallery" images={this.state.images} enableImageSelection={false} />
                 <div className="gallery-bottom-spacer"></div>
             </div>
