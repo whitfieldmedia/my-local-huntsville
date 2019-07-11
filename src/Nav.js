@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/nav.css';
-// import mlh from './icons/mlh.svg';
 import mlh from './icons/MyLocalHuntsville_Logo2.png';
-import arrow from './icons/baseline-keyboard_arrow_right-24px.svg';
 
 class Nav extends React.Component{
   state = {
@@ -182,35 +180,35 @@ class Nav extends React.Component{
             </ul>
             <ul className={this.state.hoverExplore ? "dropdown-row": "dropdown-row-closed"} onMouseEnter={this.enterExplore} onMouseLeave={this.leaveExplore}>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/gallery"> GALLERY <i class="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/gallery"> GALLERY <i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               {/* <li>
                 <Link onClick={this.closeHover} className="dropdown-link" to="/work"> WORK </Link>
               </li> */}
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/museums"> MUESEUMS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/museums"> MUESEUMS<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/nature"> NATURE<i class="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/nature"> NATURE<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/events"> EVENTS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/events"> EVENTS<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
             </ul>
             <ul className={this.state.hoverSeb ? "dropdown-row": "dropdown-row-closed" } onMouseEnter={this.enterSeb} onMouseLeave={this.leaveSeb}>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/streets"> STREETS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/streets"> STREETS<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/eats"> EATS<i class="material-icons"> keyboard_arrow_right </i> </Link>  
+                <Link onClick={this.closeHover} className="dropdown-link" to="/eats"> EATS<i className="material-icons"> keyboard_arrow_right </i> </Link>  
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/beats"> BEATS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/beats"> BEATS<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
             </ul>
             <ul className={this.state.hoverStay ? "dropdown-row" : "dropdown-row-closed"} onMouseEnter={this.enterStay} onMouseLeave={this.leaveStay}>
               <li>
-                <Link onClick={this.closeHover} id="hotel-link" className="dropdown-link" to="/hotels"> HOTELS<i class="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} id="hotel-link" className="dropdown-link" to="/hotels"> HOTELS<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
             </ul>
         </header>

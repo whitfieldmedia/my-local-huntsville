@@ -16,7 +16,7 @@ import food from './ashleyPhotos/food.png';
 import beats from './ashleyPhotos/guitar_black_white2.jpg';
 import nature from './ashleyPhotos/stream.png';
 import museum from './ashleyPhotos/white_building.png';
-import CrushWineFestival from './videos/CrushWineFestival';
+import CrushWineFestival from './videos/CrushWineFestivalHome';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './css/styles.css';

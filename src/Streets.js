@@ -112,7 +112,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playFarmers} className="thumbnail-container">
                                     <img src={farmersMarketThumbnail} className="video-thumbnail" alt="Mid City Farmers Market"/>
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playTrash} className="thumbnail-container">
                                     <img src={trashPandasThumbnail} className="video-thumbnail" alt="Trash Pandas"/>
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playWoman} className="thumbnail-container">
                                     <img onClick={this.playWoman} src={womanChangeThumbnail} className="video-thumbnail" alt="Woman Can Change the World"/>
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -146,7 +146,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playPi} className="thumbnail-container">
                                     <img src={mcsPiThumbnail} className="video-thumbnail" alt="Mcs Moores School Longest Human Pi Chain"/>
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playCrush} className="thumbnail-container">
                                     <img src={crushThumbnail} className="video-thumbnail" alt="Crush Wine Festival" />
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -168,7 +168,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playHair} className="thumbnail-container">
                                     <img src={hairThumbnail} className="video-thumbnail" alt="Hair Beauty Queen" />
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playCfd} className="thumbnail-container">
                                     <img onClick={this.playCfd} src={cfdThumbnail} className="video-thumbnail" alt="CFD Ribbon Cutting" />
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playArt} className="thumbnail-container">
                                     <img onClick={this.playArt} src={artThumbnail} className="video-thumbnail" alt="Downtown Huntsville Secret Art Walk"/>
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -201,7 +201,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playBotanical} className="thumbnail-container">
                                     <img onClick={this.playBotanical} src={botanicalThumbnail} className="video-thumbnail" alt="Botanical Gardens"/>
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@ class Streets extends React.Component {
                                 <div onClick={this.playBullet} className="thumbnail-container">
                                     <img onClick={this.playBullet} src={bulletThumbnail} className="video-thumbnail" alt="Bullet & Barrel"/>
                                     <div className="thumbnail-hover">
-                                        <i class="material-icons">play_arrow</i>
+                                        <i className="material-icons">play_arrow</i>
                                         <p> Play Video </p>
                                     </div>
                                 </div>

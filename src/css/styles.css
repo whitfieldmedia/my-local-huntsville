@@ -641,6 +641,15 @@ body {
   min-width: 400px;
 }
 
+.home-main-video {
+  max-height: 200px;
+  max-width: 450px;
+  min-width: 300px;
+  min-height: 180px;
+  height: auto;
+  width: auto;
+}
+
 .video-description-container {
   display: flex;
   flex-flow: column;

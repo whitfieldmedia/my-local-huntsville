@@ -2,6 +2,7 @@
 
 .seb-page {
     padding-top: 120px;
+    height: calc(100vh - 120px);
 }
 .seb-row {
     display: flex;
@@ -11,8 +12,8 @@
     display: flex;
     flex-flow: column;
     width: 30%;
-    height: calc(100vh - 120px);
-    overflow-y: scroll;
+    height: 100%;
+    overflow: auto;
     align-content: flex-start;
     align-items: flex-start;
 }
@@ -120,9 +121,11 @@
 .video-thumbnail-container {
     display: flex;
     flex-flow: column;
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
 }
 .video-thumbnail-wrapper {
-    display: flex;
+    display: block;
     flex-flow: column;
     justify-content: flex-start;
     justify-items: flex-start;
@@ -130,6 +133,7 @@
     align-items: center;
     padding: 10px 10px 0 10px;
     width: 300px; 
+    height: auto;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -143,7 +147,7 @@
 }
 .video-thumbnail {
     width: 300px; 
-    height: auto;
+    height: 169px;
     max-width: 100%;
 }
 .video-line {
