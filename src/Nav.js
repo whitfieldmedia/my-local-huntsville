@@ -199,9 +199,9 @@ class Nav extends React.Component{
                 <div className="dropbtn" onClick={this.handleClick3}> EXPLORE NORTH ALABAMA <i className="material-icons"> arrow_drop_down </i> </div>
                 <div className={this.state.dropdown3}>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/gallery"> GALLERY </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/work"> WORK </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/museums"> MUSEUMS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/events"> EVENTS </Link>
                 </div>
               </li>
               <li className="dropdown">
@@ -210,7 +210,6 @@ class Nav extends React.Component{
                   <Link onClick={this.handleClose} className="dropdown-link" to="/streets"> STREETS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/eats"> EATS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/beats"> BEATS </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/events"> EVENTS </Link>
                 </div>
               </li>
               <li className="dropdown">

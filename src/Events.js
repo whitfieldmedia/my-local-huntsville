@@ -1,10 +1,7 @@
 import React from 'react';
 import moment from 'moment';
-import guitar from './ashleyPhotos/guitar_black_white.jpg';
-import wallArt from './ashleyPhotos/wall_art.png';
-import runway from './ashleyPhotos/hsv_runway.png';
-import FarmersMarket from './videos/FarmersMarket';
-import CrushWineFestival from './videos/CrushWineFestival';
+import FarmersMarket from './videos/FarmersMarketEvent';
+import CrushWineFestival from './videos/CrushWineFestivalEvent';
 import { Helmet } from 'react-helmet';
 import { getFeed } from './redux/feed';
 import { connect } from 'react-redux';
@@ -57,11 +54,6 @@ class Events extends React.Component{
                     <meta name="description" content="Stay in the loop and see upcoming events in Huntsville Alabama. There are lots of free events happening in Huntsville don't miss out." />
                 </Helmet>
                 <h1 className="event-header"> Upcoming Events </h1>
-                <div className="event-top-wrapper">
-                    <img className="event-top-img" src={guitar} alt=""/>
-                    <img className="event-top-img" src={wallArt} alt=""/>
-                    <img id="gone" className="event-top-img" src={runway} alt=""/>
-                </div>
                 <div className="festival-event-holder">
                     <CrushWineFestival />
                     <FarmersMarket />

@@ -784,23 +784,11 @@ body {
         padding: 0 0 0 20px;
         margin: 0;
     }
-    // .home-main-video {
-    //     width: 350px;
-    //     height: 250px;
-    // }
+    .sbe-video-container {
+        padding: 0px 20px;
+        width: 100vw;
+    }
 }
-// @media only screen and (max-width: 415px) {
-//     body {
-//         padding-bottom: 70px;
-//     }
-// }
-
-// @media only screen and (max-width: 362px) {
-//     body {
-//         padding-bottom: 65px;
-//     }
-// }
-
 
 @media only screen and (max-width: 450px) {
     .top-header {
@@ -811,12 +799,6 @@ body {
         width: auto;
         max-height: 100px;
         height: auto;
-    }
-}
-@media only screen and (max-width: 420px) {
-    .home-video {
-        width: 90%;
-        min-width: 320px;
     }
 }
 
