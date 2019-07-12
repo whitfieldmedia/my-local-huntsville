@@ -79,9 +79,7 @@ class Home extends React.Component{
             <p className="main-event-par"> Looking for something to do? <br/> Check out upcoming events in Huntsville! </p>
           </div>
           <div className="main-events-column">
-            <div className="home-events">
               <CrushWineFestival />
-            </div>
           </div>
         </div>
         <div className="streets-eats-beats-container">

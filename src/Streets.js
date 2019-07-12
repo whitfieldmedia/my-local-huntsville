@@ -22,6 +22,7 @@ import artThumbnail from './whitfieldVideos/thumbnails/artWalk.png';
 import botanicalThumbnail from './whitfieldVideos/thumbnails/botanicalGardens.png';
 import bulletThumbnail from './whitfieldVideos/thumbnails/bulletBarrel.png';
 import bannerTall from './bannerAd/raypearman_tall.svg';
+import bannerMobile from './bannerAd/rpearman_mobile.svg';
 import './css/streets.css';
 
 class Streets extends React.Component {
@@ -110,6 +111,9 @@ class Streets extends React.Component {
                     </div>
                     <div className="seb-right-column">
                         <div className="video-thumbnail-container">
+                            <div className="mobile-banner">
+                                <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
+                            </div>
                             <div className="video-thumbnail-wrapper">
                                 <div onClick={this.playFarmers} className="thumbnail-container">
                                     <img src={farmersMarketThumbnail} className="video-thumbnail" alt="Mid City Farmers Market"/>

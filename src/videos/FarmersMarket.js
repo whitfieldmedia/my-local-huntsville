@@ -4,7 +4,7 @@ const FarmersMarket = () => {
     return (
         <div className="sbe-video-container">
             <div className="home-video-holder">
-                <iframe title="Mid City Farmer's Market" className="home-video" src="https://player.vimeo.com/video/346715942?title=0&byline=0&portrait=0&autoplay=1&muted=1" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                <iframe title="Mid City Farmer's Market" className="home-video" src="https://player.vimeo.com/video/346715942?autoplay=1&muted=1" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
             </div>
             <div className="video-description-container">
                 <h2 className="video-title"> Mid City Farmer's Market </h2>

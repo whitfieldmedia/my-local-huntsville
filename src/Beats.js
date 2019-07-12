@@ -14,6 +14,7 @@ import poppyThumbnail from './whitfieldVideos/thumbnails/poppy.png';
 import otbxThumbnail from './whitfieldVideos/thumbnails/otbx.png';
 import barThumbnail from './whitfieldVideos/thumbnails/bar-at-805.png';
 import bannerTall from './bannerAd/raypearman_tall.svg';
+import bannerMobile from './bannerAd/rpearman_mobile.svg';
 import './css/streets.css';
 
 class Beats extends React.Component{
@@ -86,6 +87,9 @@ class Beats extends React.Component{
                     </div>
                     <div className="seb-right-column">
                         <div className="video-thumbnail-container">
+                            <div className="mobile-banner">
+                                <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
+                            </div>
                             <div className="video-thumbnail-wrapper">
                                 <div onClick={this.playRhapsody} className="thumbnail-container">
                                     <img onClick={this.playRhapsody} className="video-thumbnail" src={rhapsodyThumbnail} alt="The Rhapsody Jazz Cafe with Kim Scott"/>

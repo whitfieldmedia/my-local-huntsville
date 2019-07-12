@@ -621,13 +621,11 @@ body {
     height: 100%;
 }
 .home-main-video {
-    max-height: 250px;
-    max-width: 95vw;
-    min-width: 300px;
-    min-height: 150px;
-    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
 }
 .video-description-container {
     display: flex;
