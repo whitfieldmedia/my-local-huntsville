@@ -1,6 +1,6 @@
 .seb-page {
   padding-top: 120px;
-  height: calc(100vh - 120px);
+  height: calc(100vh);
 }
 
 .seb-row {
@@ -22,7 +22,7 @@
   display: flex;
   flex-flow: column;
   width: 60%;
-  height: calc(100vh - 120px);
+  height: auto;
   padding-bottom: 80px;
 }
 
@@ -74,6 +74,8 @@
 
 .seb-logo {
   height: 150px;
+  width: 150px;
+  background: none;
 }
 
 .seb-header-container {
@@ -86,6 +88,7 @@
 .seb-header {
   font-family: garamond-premier-pro, serif;
   font-size: 45px;
+  height: auto;
   color: #F5F7F6;
   text-align: center;
   font-weight: 600;
@@ -106,13 +109,10 @@
   align-items: center;
 }
 
-.seb-video-holder iframe {
-  padding: 20px;
-}
-
 .fav-activities-header {
   font-family: garamond-premier-pro, serif;
   font-size: 40px;
+  height: auto;
   color: #F5F7F6;
   font-weight: 600;
   text-align: center;
@@ -126,7 +126,7 @@
 .video-thumbnail-container {
   display: flex;
   flex-flow: column;
-  height: calc(100vh - 120px);
+  height: 100vh;
   overflow-y: scroll;
 }
 
@@ -186,11 +186,6 @@
     height: auto;
   }
 
-  .main-video-container iframe {
-    width: 500px;
-    height: 300px;
-  }
-
   .seb-row {
     flex-flow: column;
   }
@@ -233,29 +228,10 @@
     width: 100vw;
   }
 }
-@media only screen and (max-width: 600px) {
-  .main-video-container iframe {
-    width: 400px;
-    height: 250px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .main-video-container iframe {
-    width: 350px;
-    height: 225px;
-  }
-}
 @media only screen and (max-width: 400px) {
   .seb-right-column {
     width: 100%;
     margin: 0;
-  }
-
-  .main-video-container iframe {
-    width: auto;
-    height: auto;
-    min-width: 300px;
-    min-height: 200px;
   }
 }
 

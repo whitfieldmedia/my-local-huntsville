@@ -632,14 +632,17 @@ body {
   justify-content: center;
 }
 
+.home-video-holder {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
 .home-video {
-  height: 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 180px;
-  width: 640px;
-  padding: 0;
-  margin: 0 auto;
-  min-width: 400px;
+  height: 100%;
 }
 
 .home-main-video {
@@ -676,7 +679,7 @@ body {
   font-weight: 300;
   text-align: center;
   text-decoration: none;
-  padding-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .sbe-home-video-container {
@@ -705,6 +708,9 @@ body {
   height: auto;
   padding: 20px;
   text-align: center;
+  display: block;
+  flex-flow: column;
+  margin-bottom: 40px;
 }
 .sbe-video-container p {
   padding-top: 0;
@@ -760,11 +766,6 @@ body {
 
 #waltons-logo {
   border-radius: 30px;
-}
-
-.seb-logo {
-  width: 200px;
-  height: 200px;
 }
 
 /* SPACERS & LINES */
@@ -847,110 +848,6 @@ body {
     font-size: 40px;
   }
 }
-#eat1 {
-  display: none;
-}
-
-#eat2 {
-  display: none;
-}
-
-#eat3 {
-  display: none;
-}
-
-#eat4 {
-  display: none;
-}
-
-#eat5 {
-  display: none;
-}
-
-#eat6 {
-  display: none;
-}
-
-#bar1 {
-  display: none;
-}
-
-#bar2 {
-  display: none;
-}
-
-#bar3 {
-  display: none;
-}
-
-#bar4 {
-  display: none;
-}
-
-#bar5 {
-  display: none;
-}
-
-#bar6 {
-  display: none;
-}
-
-#bar7 {
-  display: none;
-}
-
-#what1 {
-  display: none;
-}
-
-#what2 {
-  display: none;
-}
-
-#what3 {
-  display: none;
-}
-
-#what4 {
-  display: none;
-}
-
-#what5 {
-  display: none;
-}
-
-#what6 {
-  display: none;
-}
-
-#what7 {
-  display: none;
-}
-
-#what8 {
-  display: none;
-}
-
-#hotel1 {
-  display: none;
-}
-
-#hotel2 {
-  display: none;
-}
-
-#hotel3 {
-  display: none;
-}
-
-#hotel4 {
-  display: none;
-}
-
-#hotel5 {
-  display: none;
-}
-
 @media only screen and (max-width: 775px) {
   .main-events-container {
     display: flex;

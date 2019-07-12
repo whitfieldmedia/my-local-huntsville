@@ -154,7 +154,7 @@ class Beats extends React.Component{
                             </div>                                                                                                                                            
                         </div>
                     </div>
-                    <div class="banner-column">
+                    <div className="banner-column">
                         <img src={bannerTall} alt="rayPearmanBanner"/>
                     </div>
                 </div>
