@@ -10,7 +10,7 @@ import smallBack from './ashleyPhotos/lowe_mill.png';
 import smallBack2 from './ashleyPhotos/usa_rocket.png';
 import smallBack3 from './ashleyPhotos/soldier_statue.png';
 import smallBack4 from './ashleyPhotos/clinton_row.jpg';
-import rightArrow from './icons/next-page-red2.svg';
+import rightArrow from './icons/next-page-white.svg';
 import street from './ashleyPhotos/jeff_st2.png';
 import food from './ashleyPhotos/food.png';
 import beats from './ashleyPhotos/guitar_black_white2.jpg';
@@ -20,7 +20,8 @@ import CrushWineFestival from './videos/CrushWineFestivalHome';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './css/styles.css';
-import banner from './icons/PEARMAN_970x90.jpg';
+import banner from './bannerAd/rpearman_longbanner.svg';
+import mobileBanner from './bannerAd/rpearman_mobile.svg';
 import './css/banner.css';
 
 class Home extends React.Component{
@@ -64,19 +65,11 @@ class Home extends React.Component{
           ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6]} />
           : <BackgroundSlideshow images={[smallBack, smallBack2, smallBack3, smallBack4]} />}
         </div>
-        {/* <div className="top-container">
-          <h2 className="top-header2"> My Local </h2>
-          <h1 className="top-header"> Huntsville </h1>
-        </div>
-        <div className="top-container2">
-          <h2 className="top-header3"> North </h2>
-          <h1 className="top-header1"> ALABAMA </h1>
-        </div> */}
         <div className="banner-wrapper">
           <img className="banner" src={banner} alt="ray pearman lincoln"/>
+          <img className="mobileBanner" src={mobileBanner} alt="Ray Pearman Lincoln"/>
         </div>
         <div className="spacer"></div>
-        {/* <div className="line"></div> */}
         <div className="main-events-container">
           <div className="main-events-column">
             <Link className="home-event-link" to="/events">
@@ -130,7 +123,6 @@ class Home extends React.Component{
           </div>
         </div>
         <div className="spacer"></div>
-        {/* <div className="line1"></div> */}
         <h2 className="things-to-do-header"> Explore </h2>
         <div className="things-to-do-container">
           <div className="things-to-do-column">

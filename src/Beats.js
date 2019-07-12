@@ -6,13 +6,14 @@ import Rhapsody from './videos/Rhapsody';
 import FarmersMarket from './videos/FarmersMarket';
 import ValueOfArts from './videos/ValueOfArts';
 import { Helmet } from 'react-helmet';
-import beatsLogo from './icons/seb_beats_white.svg';
+import beatsLogo from './icons/beatsLogo.svg';
 import farmersThumbnail from './videos/thumbnails/farmersMarket.png';
 import rhapsodyThumbnail from './videos/thumbnails/rhapsody.png';
 import artsThumbnail from './videos/thumbnails/value-of-arts.png';
 import poppyThumbnail from './whitfieldVideos/thumbnails/poppy.png';
 import otbxThumbnail from './whitfieldVideos/thumbnails/otbx.png';
 import barThumbnail from './whitfieldVideos/thumbnails/bar-at-805.png';
+import bannerTall from './bannerAd/raypearman_tall.svg';
 import './css/streets.css';
 
 class Beats extends React.Component{
@@ -35,6 +36,7 @@ class Beats extends React.Component{
         window.scrollTo(0,0);
     }
     findVideo = () => {
+        window.scrollTo(0,50);
         return this.state.videos[this.state.index];
     }
     playRhapsody = () => {
@@ -151,6 +153,9 @@ class Beats extends React.Component{
                                 <div className="video-line"></div>
                             </div>                                                                                                                                            
                         </div>
+                    </div>
+                    <div class="banner-column">
+                        <img src={bannerTall} alt="rayPearmanBanner"/>
                     </div>
                 </div>
             </div>

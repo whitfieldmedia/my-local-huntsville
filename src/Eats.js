@@ -16,7 +16,9 @@ import waltonThumbnail from './whitfieldVideos/thumbnails/waltons.png';
 import straightThumbnail from './whitfieldVideos/thumbnails/straight-to-ale.png';
 import yellowThumbnail from './whitfieldVideos/thumbnails/yellowhammer.png';
 import { Helmet } from 'react-helmet';
-import eatsLogo from './icons/seb_eats_white.svg';
+import eatsLogo from './icons/eatsLogo.svg';
+import bannerTall from './bannerAd/raypearman_tall.svg';
+import bannerMobile from './bannerAd/rpearman_mobile.svg';
 import './css/streets.css'
 
 class Eats extends React.Component{
@@ -40,6 +42,7 @@ class Eats extends React.Component{
         window.scrollTo(0,0);
     }
     findVideo = () => {
+        window.scrollTo(0,50);
         return this.state.videos[this.state.index];
     }
     playUrban = () => {
@@ -94,6 +97,9 @@ class Eats extends React.Component{
                     </div>
                     <div className="seb-right-column">
                         <div className="video-thumbnail-container">
+                            <div className="mobile-banner">
+                                <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
+                            </div>
                             <div className="video-thumbnail-wrapper">
                                 <div onClick={this.playUrban} className="thumbnail-container">
                                     <img onClick={this.playUrban} src={urbanThumbnail} className="video-thumbnail" alt="Urban Cookhouse"/>
@@ -183,6 +189,9 @@ class Eats extends React.Component{
                                 <div className="video-line"></div>
                             </div>                         
                         </div>
+                    </div>
+                    <div className="banner-column">
+                        <img src={bannerTall} alt="rayPearmanBanner"/>
                     </div>
                 </div>
             </div>

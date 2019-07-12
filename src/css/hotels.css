@@ -62,7 +62,7 @@
 .hotel-address-link:hover {
   text-decoration: underline;
   transform: scale(1.05);
-  text-decoration-color: #fff;
+  text-decoration-color: #ffffff;
 }
 
 .hotel-website-link {
@@ -78,7 +78,7 @@
 .hotel-website-link:hover {
   text-decoration: underline;
   transform: scale(1.05);
-  text-decoration-color: #fff;
+  text-decoration-color: #ffffff;
 }
 
 .included-holder {

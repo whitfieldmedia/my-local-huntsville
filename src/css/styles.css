@@ -156,12 +156,13 @@ body {
   grid-template-columns: auto auto;
   justify-content: space-evenly;
   width: 100vw;
+  padding-bottom: 50px;
 }
 
 .main-events-column {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
   width: auto;
@@ -249,7 +250,7 @@ body {
   font-size: 40px;
   color: #F5F7F6;
   font-weight: 500;
-  padding: 70px 0 10px 0;
+  padding: 30px 10px 10px 10px;
   margin: 0;
 }
 
@@ -341,7 +342,7 @@ body {
 .home-beats-container {
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
 }
 
@@ -351,8 +352,8 @@ body {
   max-width: 50vw;
   min-width: 40vw;
   width: auto;
-  justify-content: center;
-  justify-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
   align-content: center;
   align-items: center;
 }
@@ -379,7 +380,7 @@ body {
   font-size: 40px;
   color: #F5F7F6;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding: 30px 10px 10px 10px;
   margin-bottom: 0;
 }
 
@@ -611,7 +612,7 @@ body {
 
 .art-map-link:hover {
   transform: scale(1.05);
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -642,12 +643,13 @@ body {
 }
 
 .home-main-video {
-  max-height: 200px;
-  max-width: 450px;
+  max-height: 250px;
+  max-width: 95vw;
   min-width: 300px;
-  min-height: 180px;
-  height: auto;
-  width: auto;
+  min-height: 150px;
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .video-description-container {
@@ -675,6 +677,27 @@ body {
   text-align: center;
   text-decoration: none;
   padding-bottom: 10px;
+}
+
+.sbe-home-video-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.sbe-home-video-container p {
+  padding-top: 0;
+  margin-top: 0;
+  font-family: gitan-latin, sans-serif;
+  font-size: 16px;
+  color: #F5F7F6;
+  text-decoration: none;
+}
+.sbe-home-video-container p a {
+  font-family: gitan-latin, sans-serif;
+  font-size: 16px;
+  color: #F5F7F6;
+  text-decoration: none;
 }
 
 .sbe-video-container {
@@ -716,7 +739,7 @@ body {
 
 .beer-menu:hover {
   transform: scale(1.1);
-  color: #fff;
+  color: #ffffff;
 }
 
 #bullet-logo {
@@ -748,14 +771,14 @@ body {
 .line {
   width: 100vw;
   height: 3px;
-  background: #fff;
+  background: #ffffff;
   margin: 20px 0 10px 0;
 }
 
 .line1 {
   width: 100vw;
   height: 1px;
-  background: #fff;
+  background: #ffffff;
   padding: 0;
   margin: 20px 0 0 0;
 }

@@ -10,7 +10,7 @@ import FarmersMarket from './videos/FarmersMarket';
 import Cfd from './videos/CFD';
 import HairQueen from './videos/HairQueen';
 import { Helmet } from 'react-helmet';
-import sebLogo from './icons/seb_streets_white.svg';
+import sebLogo from './icons/streetsLogo.svg';
 import trashPandasThumbnail from './videos/thumbnails/trashPandas.png';
 import farmersMarketThumbnail from './videos/thumbnails/farmersMarket.png';
 import womanChangeThumbnail from './videos/thumbnails/womanChange.png';
@@ -21,6 +21,7 @@ import cfdThumbnail from './videos/thumbnails/cfd.png';
 import artThumbnail from './whitfieldVideos/thumbnails/artWalk.png';
 import botanicalThumbnail from './whitfieldVideos/thumbnails/botanicalGardens.png';
 import bulletThumbnail from './whitfieldVideos/thumbnails/bulletBarrel.png';
+import bannerTall from './bannerAd/raypearman_tall.svg';
 import './css/streets.css';
 
 class Streets extends React.Component {
@@ -46,6 +47,7 @@ class Streets extends React.Component {
         window.scrollTo(0,0);
     }
     findVideo = () => {
+        window.scrollTo(0,50);
         return this.state.videos[this.state.index]
     }
     playFarmers = () => {
@@ -220,6 +222,9 @@ class Streets extends React.Component {
                                 <div className="video-line"></div>
                             </div>                                                      
                         </div>
+                    </div>
+                    <div class="banner-column">
+                        <img src={bannerTall} alt="rayPearmanBanner"/>
                     </div>
                 </div>
             </div>

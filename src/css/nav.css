@@ -19,7 +19,7 @@
 }
 
 .navbar2 {
-  background: linear-gradient(to bottom, #1A1A1C 40%, rgba(26, 26, 28, 0.856), transparent);
+  background: linear-gradient(to bottom, #1A1A1C, #1A1A1C, transparent);
   position: fixed;
   z-index: 100;
   width: 100vw;
@@ -71,7 +71,7 @@
   text-decoration: none;
   background: inherit;
   display: block;
-  color: #1A1A1C;
+  color: #F5F7F6;
   font-size: 18px;
   width: 100%;
   padding: 15px 0;
@@ -82,11 +82,16 @@
   align-self: center;
   justify-self: center;
 }
+.dropbtn i {
+  justify-self: center;
+  align-self: center;
+  font-size: 20px;
+}
 
 .dropdown-content {
   display: none;
   background: none;
-  width: 200px;
+  width: auto;
   top: 0;
   height: auto;
   align-self: center;
@@ -118,7 +123,7 @@
 }
 
 .dropdown-link {
-  color: #1A1A1C;
+  color: #F5F7F6;
   display: block;
   text-decoration: none;
   height: auto;
@@ -173,7 +178,7 @@
   align-content: center;
   align-items: center;
   text-align: center;
-  width: 200px;
+  width: auto;
   margin: 0 auto;
   padding: 0;
   height: 100%;
@@ -195,18 +200,22 @@
 
 .open {
   list-style-type: none;
-  display: flex;
+  display: block;
   flex-flow: column;
   position: absolute;
   align-content: center;
   align-items: center;
-  width: 200px;
-  left: 0;
+  width: 100vw;
+  height: auto;
+  min-height: 60vh;
+  max-height: 100vh;
+  right: 0px;
   top: 0px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: scroll;
+  background: #1A1A1C;
 }
 
 .navbar-toggle {
@@ -221,7 +230,7 @@
 .toggle-closed {
   position: absolute;
   top: 25px;
-  left: 50px;
+  right: 50px;
   cursor: pointer;
   color: #F5F7F6;
   font-size: 25px;
@@ -230,7 +239,7 @@
 .toggle-open {
   position: absolute;
   top: 25px;
-  left: 50px;
+  right: 50px;
   cursor: pointer;
   color: #F5F7F6;
   font-size: 25px;
@@ -245,9 +254,24 @@
   font-size: 30px;
   position: relative;
   cursor: pointer;
-  color: #1A1A1C;
+  color: #F5F7F6;
   z-index: 105;
   font-weight: 700;
+  padding-right: 50px;
+  top: 0;
+  text-align: right;
+}
+
+.openLogo {
+  position: absolute;
+  top: 6px;
+  left: 0px;
+}
+
+#mlh-icon-link-open img {
+  width: 150px;
+  height: auto;
+  display: block;
 }
 
 @media screen and (min-width: 1000px) {
@@ -314,7 +338,7 @@
     padding: 0;
     margin: 0;
     height: 3px;
-    background: #fff;
+    background: #ffffff;
     z-index: 110;
   }
 
