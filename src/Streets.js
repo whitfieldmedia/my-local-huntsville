@@ -9,6 +9,16 @@ import CrushWineFestival from './videos/CrushWineFestival';
 import FarmersMarket from './videos/FarmersMarket';
 import Cfd from './videos/CFD';
 import HairQueen from './videos/HairQueen';
+import ArtWalkMobile from './whitfieldVideos/ArtWalkMobile';
+import BulletMobile from './whitfieldVideos/BulletMobile';
+import GardensMobile from './whitfieldVideos/GardensMobile';
+import TrashPandasMobile from './videos/TrashPandasMobile';
+import WomanChangeTheWorldMobile from './videos/WomanChangeTheWorldMobile';
+import LongestPiMobile from './videos/LongestPiMobile';
+import CrushWineFestivalMobile from './videos/CrushWineFestivalEvent';
+import FarmersMarketMobile from './videos/FarmersMarketEvent';
+import CfdMobile from './videos/CFDmobile';
+import HairQueenMobile from './videos/HairQueenMobile';
 import { Helmet } from 'react-helmet';
 import sebLogo from './icons/streetsLogo.svg';
 import trashPandasThumbnail from './videos/thumbnails/trashPandas.png';
@@ -41,6 +51,18 @@ class Streets extends React.Component {
                 <Gardens />,
                 <Bullet />
             ],
+            videosMobile: [
+                <FarmersMarketMobile />,
+                <TrashPandasMobile />,
+                <WomanChangeTheWorldMobile />,
+                <LongestPiMobile />,
+                <CrushWineFestivalMobile />,
+                <HairQueenMobile />,
+                <CfdMobile />,
+                <ArtWalkMobile />,
+                <GardensMobile />,
+                <BulletMobile />
+            ],
             index: 0
         }
     }
@@ -48,8 +70,12 @@ class Streets extends React.Component {
         window.scrollTo(0,0);
     }
     findVideo = () => {
-        window.scrollTo(0,50);
-        return this.state.videos[this.state.index]
+        window.scrollTo(0,0)
+        if(window.innerWidth > 500) {
+            return this.state.videos[this.state.index]
+        } else {
+            return this.state.videosMobile[this.state.index];
+        }
     }
     playFarmers = () => {
         this.setState({ index: 0 })

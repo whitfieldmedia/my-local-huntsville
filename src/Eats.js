@@ -7,6 +7,15 @@ import Yellowhammer from './whitfieldVideos/Yellowhammer';
 import Btr from './whitfieldVideos/Btr';
 import Waltons from './whitfieldVideos/Waltons';
 import UrbanCookhouse from './videos/UrbanCookhouse';
+
+import BrickhouseMobile from './whitfieldVideos/BrickhouseMobile';
+import BrokenEggMobile from './whitfieldVideos/BrokenEggMobile';
+import BootMobile from './whitfieldVideos/BootMobile';
+import StraightMobile from './whitfieldVideos/StraightMobile';
+import YellowhammerMobile from './whitfieldVideos/YellowhammerMobile';
+import BtrMobile from './whitfieldVideos/BtrMobile';
+import WaltonsMobile from './whitfieldVideos/WaltonsMobile';
+import UrbanCookhouseMobile from './videos/UrbanCookhouseMobile';
 import urbanThumbnail from './videos/thumbnails/urban.png';
 import bootThumbnail from './whitfieldVideos/thumbnails/boot.png'
 import brickThumbnail from './whitfieldVideos/thumbnails/brickhouse.png';
@@ -35,6 +44,16 @@ class Eats extends React.Component{
                 <Yellowhammer />,
                 <Btr />
             ],
+            videosMobile: [
+                <UrbanCookhouseMobile />,
+                <WaltonsMobile />,
+                <BrickhouseMobile />,
+                <BrokenEggMobile />,
+                <BootMobile />,
+                <StraightMobile />,
+                <YellowhammerMobile />,
+                <BtrMobile />
+            ],
             index: 0
         }
     }
@@ -43,7 +62,12 @@ class Eats extends React.Component{
     }
     findVideo = () => {
         window.scrollTo(0,50);
-        return this.state.videos[this.state.index];
+        if(window.innerWidth > 500) {
+            return this.state.videos[this.state.index];
+        } else {
+            return this.state.videosMobile[this.state.index];
+        }
+
     }
     playUrban = () => {
         this.setState({ index: 0 })

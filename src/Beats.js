@@ -1,10 +1,16 @@
 import React from 'react';
 import Bar805 from './whitfieldVideos/Bar805';
+import Bar805Mobile from './whitfieldVideos/Bar805Mobile';
 import Otbx from './whitfieldVideos/Otbx';
+import OtbxMobile from './whitfieldVideos/OtbxMobile';
+import PoppyMobile from './whitfieldVideos/PoppyMobile'
 import Poppy from './whitfieldVideos/Poppy';
 import Rhapsody from './videos/Rhapsody';
+import RhapsodyMobile from './videos/RhapsodyMobile';
 import FarmersMarket from './videos/FarmersMarket';
+import FarmersMarketMobile from './videos/FarmersMarketEvent';
 import ValueOfArts from './videos/ValueOfArts';
+import ValueOfArtsMobile from './videos/ValueOfArtsMobile';
 import { Helmet } from 'react-helmet';
 import beatsLogo from './icons/beatsLogo.svg';
 import farmersThumbnail from './videos/thumbnails/farmersMarket.png';
@@ -30,15 +36,28 @@ class Beats extends React.Component{
                 <Otbx />,
                 <Bar805 />
             ],
-            index: 0
+            videosMobile: [
+                <RhapsodyMobile />,
+                <ValueOfArtsMobile />,
+                <FarmersMarketMobile />,
+                <PoppyMobile />,
+                <OtbxMobile />,
+                <Bar805Mobile />
+            ],
+            index: 0,
+            width: window.width
         }
     }
     componentDidMount() {
         window.scrollTo(0,0);
     }
     findVideo = () => {
-        window.scrollTo(0,50);
-        return this.state.videos[this.state.index];
+        window.scrollTo(0,0);
+        if(window.innerWidth > 500) {
+            return this.state.videos[this.state.index];
+        } else {
+            return this.state.videosMobile[this.state.index];
+        }
     }
     playRhapsody = () => {
         this.setState({ index: 0 });
