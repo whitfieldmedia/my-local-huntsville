@@ -7,7 +7,6 @@ import Yellowhammer from './whitfieldVideos/Yellowhammer';
 import Btr from './whitfieldVideos/Btr';
 import Waltons from './whitfieldVideos/Waltons';
 import UrbanCookhouse from './videos/UrbanCookhouse';
-
 import BrickhouseMobile from './whitfieldVideos/BrickhouseMobile';
 import BrokenEggMobile from './whitfieldVideos/BrokenEggMobile';
 import BootMobile from './whitfieldVideos/BootMobile';
@@ -118,105 +117,118 @@ class Eats extends React.Component{
                         <div className="main-video-container">
                             {this.findVideo()}
                         </div>
-                    </div>
-                    <div className="seb-right-column">
-                        <div className="video-thumbnail-container">
-                            <div className="mobile-banner">
-                                <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
+                        <div className="seb-right-column">
+                            <div className="video-thumbnail-container">
+                                <a className="mobile-banner" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
+                                </a>
+                                {this.state.index === 0 ? null :
+                                <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playUrban} className="thumbnail-container">
+                                        <img onClick={this.playUrban} src={urbanThumbnail} className="video-thumbnail" alt="Urban Cookhouse"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Eating Local With Urban Cookhouse </p>
+                                    <div className="video-line"></div>
+                                </div> }
+
+                                {this.state.index === 1 ? null :
+                                <div onClick={this.playWalton} className="video-thumbnail-wrapper">
+                                    <div className="thumbnail-container">
+                                        <img onClick={this.playWalton} src={waltonThumbnail} className="video-thumbnail" alt="Waltons"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Walton's Sourthen Table </p>
+                                    <div className="video-line">  </div>
+                                </div> }
+                                {this.state.index === 2 ? null :
+                                <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playBrickhouse} className="thumbnail-container">
+                                        <img onClick={this.playBrickhouse} src={brickThumbnail} className="video-thumbnail" alt="Brickhouse Sports Cafe"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Brickhouse Sports Cafe </p>
+                                    <div className="video-line"></div>
+                                </div> }
+
+                                {this.state.index === 3 ? null :
+                                <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playEgg} className="thumbnail-container">
+                                        <img onClick={this.playEgg} src={eggThumbnail} className="video-thumbnail" alt="Another Broken Egg"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Another Broken Egg </p>
+                                    <div className="video-line"></div>
+                                </div> }
+
+                                {this.state.index === 4 ? null :        
+                                <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playBoot} className="thumbnail-container">
+                                        <img onClick={this.playBoot} src={bootThumbnail} className="video-thumbnail" alt="Boot Pizzeria"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> The Boot Pizzeria </p>
+                                    <div className="video-line"></div>
+                                </div> }
+                                {this.state.index === 5 ? null :
+                                <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playStraight} className="thumbnail-container">
+                                        <img onClick={this.playStraight} src={straightThumbnail} className="video-thumbnail" alt="Straight To Ale"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Straight to Ale </p>
+                                    <div className="video-line"></div>
+                                </div> }
+
+                                {this.state.index === 6 ? null :
+                                <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playYellow} className="thumbnail-container">
+                                        <img onClick={this.playYellow} src={yellowThumbnail} className="video-thumbnail" alt="Yellowhammer Earth & Stone"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Yellowhammer Earth & Stone </p>
+                                    <div className="video-line"></div>
+                                </div> }
+
+                                {this.state.index === 7 ? null :                                                                                                                                                              
+                                <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playBtr} className="thumbnail-container">
+                                        <img onClick={this.playBtr} src={btrThumbnail} className="video-thumbnail" alt="Below The Radar"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Below the Radar </p>
+                                    <div className="video-line"></div>
+                                </div> }                        
                             </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playUrban} className="thumbnail-container">
-                                    <img onClick={this.playUrban} src={urbanThumbnail} className="video-thumbnail" alt="Urban Cookhouse"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> Eating Local With Urban Cookhouse </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div onClick={this.playWalton} className="video-thumbnail-wrapper">
-                                <div className="thumbnail-container">
-                                    <img onClick={this.playWalton} src={waltonThumbnail} className="video-thumbnail" alt="Waltons"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> Walton's Sourthen Table </p>
-                                <div className="video-line">  </div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playBrickhouse} className="thumbnail-container">
-                                    <img onClick={this.playBrickhouse} src={brickThumbnail} className="video-thumbnail" alt="Brickhouse Sports Cafe"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> Brickhouse Sports Cafe </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playEgg} className="thumbnail-container">
-                                    <img onClick={this.playEgg} src={eggThumbnail} className="video-thumbnail" alt="Another Broken Egg"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> Another Broken Egg </p>
-                                <div className="video-line"></div>
-                            </div>         
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playBoot} className="thumbnail-container">
-                                    <img onClick={this.playBoot} src={bootThumbnail} className="video-thumbnail" alt="Boot Pizzeria"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> The Boot Pizzeria </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playStraight} className="thumbnail-container">
-                                    <img onClick={this.playStraight} src={straightThumbnail} className="video-thumbnail" alt="Straight To Ale"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> Straight to Ale </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playYellow} className="thumbnail-container">
-                                    <img onClick={this.playYellow} src={yellowThumbnail} className="video-thumbnail" alt="Yellowhammer Earth & Stone"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> Yellowhammer Earth & Stone </p>
-                                <div className="video-line"></div>
-                            </div>                                                                                                                                                               
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playBtr} className="thumbnail-container">
-                                    <img onClick={this.playBtr} src={btrThumbnail} className="video-thumbnail" alt="Below The Radar"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
-                                    </div>
-                                </div>
-                                <p className="small-video-header"> Below the Radar </p>
-                                <div className="video-line"></div>
-                            </div>                         
                         </div>
                     </div>
-                    <div className="banner-column">
+                    <a className="banner-column" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
                         <img src={bannerTall} alt="rayPearmanBanner"/>
-                    </div>
+                    </a>
                 </div>
             </div>
         )

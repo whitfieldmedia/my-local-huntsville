@@ -65,10 +65,10 @@ class Home extends React.Component{
           ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6]} />
           : <BackgroundSlideshow images={[smallBack, smallBack2, smallBack3, smallBack4]} />}
         </div>
-        <div className="banner-wrapper">
+        <a className="banner-wrapper" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
           <img className="banner" src={banner} alt="ray pearman lincoln"/>
           <img className="mobileBanner" src={mobileBanner} alt="Ray Pearman Lincoln"/>
-        </div>
+        </a>
         <div className="spacer"></div>
         <div className="main-events-container">
           <div className="main-events-column">

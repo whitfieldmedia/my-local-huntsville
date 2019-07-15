@@ -2,7 +2,7 @@
 
 .seb-page {
     padding-top: 120px;
-    height: calc(100vh);
+    height: auto;
 }
 .seb-row {
     display: flex;
@@ -10,8 +10,8 @@
 }
 .seb-right-column {
     display: flex;
-    flex-flow: column;
-    width: 30%;
+    flex-flow: row wrap;
+    width: 100%;
     height: 100%;
     overflow: auto;
     align-content: flex-start;
@@ -20,9 +20,13 @@
 .seb-left-column {
     display: flex;
     flex-flow: column;
-    width: 60%;
+    width: 80%;
     height: auto;
     padding-bottom: 80px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 .thumbnail-container {
@@ -122,16 +126,21 @@
 }
 .video-thumbnail-container {
     display: flex;
-    flex-flow: column;
-    height: 100vh;
-    overflow-y: scroll;
+    flex-flow: row wrap;
+    height: auto;
+    justify-content: left;
+    justify-items: left;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 .video-thumbnail-wrapper {
     display: block;
-    padding: 10px 10px 50px 10px;
+    padding: 10px 15px 50px 15px;
     width: 300px;
     height: auto;
     margin: 0 auto;
+    justify-self: left;
+    align-self: flex-start;
 }
 .small-video-header {
     font-family: $sans;
@@ -158,18 +167,23 @@
     margin: 0 0 10px 0;
 }
 .banner-column {
-    width: 15%;
+    width: 20%;
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    padding-top: 170px;
     img {
         height: calc(100vh - 150px);
-        margin: 0 auto;
+        margin: 0 20px 0 auto;
         width: auto;
     }
 }
 .mobile-banner {
     display: none;
+}
+.main-video-container {
+    width: 100%;
+    max-width: 700px;
 }
 @media only screen and (max-width: 1120px) {
     .seb-page {

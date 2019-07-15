@@ -103,83 +103,95 @@ class Beats extends React.Component{
                         <div className="main-video-container">
                             {this.findVideo()}
                         </div>
-                    </div>
-                    <div className="seb-right-column">
-                        <div className="video-thumbnail-container">
-                            <div className="mobile-banner">
-                                <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playRhapsody} className="thumbnail-container">
-                                    <img onClick={this.playRhapsody} className="video-thumbnail" src={rhapsodyThumbnail} alt="The Rhapsody Jazz Cafe with Kim Scott"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
+                        <div className="seb-right-column">
+                            <div className="video-thumbnail-container">
+                                <a className="mobile-banner" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
+                                </a>
+                                {this.state.index === 0 
+                                ? null
+                                : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playRhapsody} className="thumbnail-container">
+                                        <img onClick={this.playRhapsody} className="video-thumbnail" src={rhapsodyThumbnail} alt="The Rhapsody Jazz Cafe with Kim Scott"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <p className="small-video-header"> The Rhapsody Jazz Cafe with Kim Scott </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playArts} className="thumbnail-container">
-                                    <img onClick={this.playArts} className="video-thumbnail" src={artsThumbnail} alt="Value of the Arts with Mario Maitland"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
+                                    <p className="small-video-header"> The Rhapsody Jazz Cafe with Kim Scott </p>
+                                    <div className="video-line"></div>
+                                </div> }
+                                {this.state.index === 1
+                                ? null
+                                : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playArts} className="thumbnail-container">
+                                        <img onClick={this.playArts} className="video-thumbnail" src={artsThumbnail} alt="Value of the Arts with Mario Maitland"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <p className="small-video-header"> The Value of the Arts with Mario Maitland </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playFarmers} className="thumbnail-container">
-                                    <img onClick={this.playFarmers} className="video-thumbnail" src={farmersThumbnail} alt="Mid City Farmer's Market"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
+                                    <p className="small-video-header"> The Value of the Arts with Mario Maitland </p>
+                                    <div className="video-line"></div>
+                                </div> }
+                                {this.state.index === 2
+                                ? null 
+                                : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playFarmers} className="thumbnail-container">
+                                        <img onClick={this.playFarmers} className="video-thumbnail" src={farmersThumbnail} alt="Mid City Farmer's Market"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <p className="small-video-header"> Mid City Farmer's Market </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playPoppy} className="thumbnail-container">
-                                    <img onClick={this.playPoppy} className="video-thumbnail" src={poppyThumbnail} alt="The Poppy"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
+                                    <p className="small-video-header"> Mid City Farmer's Market </p>
+                                    <div className="video-line"></div>
+                                </div> }
+                                {this.state.index === 3
+                                ? null 
+                                : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playPoppy} className="thumbnail-container">
+                                        <img onClick={this.playPoppy} className="video-thumbnail" src={poppyThumbnail} alt="The Poppy"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <p className="small-video-header"> The Poppy </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playOtbx} className="thumbnail-container">
-                                    <img onClick={this.playOtbx} className="video-thumbnail" src={otbxThumbnail} alt="Old Town Beer Exchange"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
+                                    <p className="small-video-header"> The Poppy </p>
+                                    <div className="video-line"></div>
+                                </div> }
+                                {this.state.index === 4 
+                                ? null
+                                : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playOtbx} className="thumbnail-container">
+                                        <img onClick={this.playOtbx} className="video-thumbnail" src={otbxThumbnail} alt="Old Town Beer Exchange"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <p className="small-video-header"> Old Town Beer Exchange </p>
-                                <div className="video-line"></div>
-                            </div>
-                            <div className="video-thumbnail-wrapper">
-                                <div onClick={this.playBar805} className="thumbnail-container">
-                                    <img onClick={this.playBar805} className="video-thumbnail" src={barThumbnail} alt="Bar at 805"/>
-                                    <div className="thumbnail-hover">
-                                        <i className="material-icons">play_arrow</i>
-                                        <p> Play Video </p>
+                                    <p className="small-video-header"> Old Town Beer Exchange </p>
+                                    <div className="video-line"></div>
+                                </div> }
+                                {this.state.index === 5
+                                ? null 
+                                : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playBar805} className="thumbnail-container">
+                                        <img onClick={this.playBar805} className="video-thumbnail" src={barThumbnail} alt="Bar at 805"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <p className="small-video-header"> The Bar at 805 </p>
-                                <div className="video-line"></div>
-                            </div>                                                                                                                                            
+                                    <p className="small-video-header"> The Bar at 805 </p>
+                                    <div className="video-line"></div>
+                                </div> }                                                                                                                                           
+                            </div>
                         </div>
                     </div>
-                    <div className="banner-column">
+                    <a className="banner-column" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
                         <img src={bannerTall} alt="rayPearmanBanner"/>
-                    </div>
+                    </a>
                 </div>
             </div>
         )

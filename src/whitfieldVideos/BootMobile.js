@@ -4,7 +4,7 @@ class BootMobile extends React.Component {
     render() {
         return (
             <div className="video-holder">
-                <div class="home-video-holder">
+                <div className="home-video-holder">
                     <iframe className="home-video" src="https://player.vimeo.com/video/326639658" allow="autoplay; fullscreen" title="The Boot Pizzeria Commercial ~ Huntsville Alabama" frameBorder="0" allowFullScreen></iframe>
                 </div>
                 <div className="video-description-container">
