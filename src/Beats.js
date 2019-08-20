@@ -1,4 +1,6 @@
 import React from 'react';
+import BrassTap from './videos/BrassTap';
+import BrassTapMobile from './videos/BrassTapMobile';
 import Bar805 from './whitfieldVideos/Bar805';
 import Bar805Mobile from './whitfieldVideos/Bar805Mobile';
 import Otbx from './whitfieldVideos/Otbx';
@@ -13,6 +15,7 @@ import ValueOfArts from './videos/ValueOfArts';
 import ValueOfArtsMobile from './videos/ValueOfArtsMobile';
 import { Helmet } from 'react-helmet';
 import beatsLogo from './icons/beatsLogo.svg';
+import brassTapThumbnail from './videos/thumbnails/brassTap.png';
 import farmersThumbnail from './videos/thumbnails/farmersMarket.png';
 import rhapsodyThumbnail from './videos/thumbnails/rhapsody.png';
 import artsThumbnail from './videos/thumbnails/value-of-arts.png';
@@ -29,6 +32,7 @@ class Beats extends React.Component{
         this.state = {
             isLoaded: false,
             videos: [
+                <BrassTap />,
                 <Rhapsody />,
                 <ValueOfArts />,
                 <FarmersMarket />,
@@ -37,6 +41,7 @@ class Beats extends React.Component{
                 <Bar805 />
             ],
             videosMobile: [
+                <BrassTapMobile />,
                 <RhapsodyMobile />,
                 <ValueOfArtsMobile />,
                 <FarmersMarketMobile />,
@@ -59,28 +64,32 @@ class Beats extends React.Component{
             return this.state.videosMobile[this.state.index];
         }
     }
-    playRhapsody = () => {
-        this.setState({ index: 0 });
-        this.findVideo()
+    playBrassTap = () => {
+        this.setState({ index: 0 })
+        this.findVideo();
     }
-    playArts = () => {
+    playRhapsody = () => {
         this.setState({ index: 1 });
         this.findVideo()
     }
-    playFarmers = () => {
+    playArts = () => {
         this.setState({ index: 2 });
         this.findVideo()
     }
-    playPoppy = () => {
+    playFarmers = () => {
         this.setState({ index: 3 });
         this.findVideo()
     }
-    playOtbx = () => {
+    playPoppy = () => {
         this.setState({ index: 4 });
         this.findVideo()
     }
-    playBar805 = () => {
+    playOtbx = () => {
         this.setState({ index: 5 });
+        this.findVideo()
+    }
+    playBar805 = () => {
+        this.setState({ index: 6 });
         this.findVideo()
     }
     render() { 
@@ -108,7 +117,20 @@ class Beats extends React.Component{
                                 <a className="mobile-banner" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
                                     <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
                                 </a>
-                                {this.state.index === 0 
+                                {this.state.index === 0
+                                ? null 
+                                : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playBrassTap} className="thumbnail-container">
+                                        <img src={brassTapThumbnail} onClick={this.playBrassTap} className="video-thumbnail" alt="The Brass Tap"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons"> play_arrow </i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> The Brass Tap </p>
+                                    <div className="video-line"></div>
+                                </div> }
+                                {this.state.index === 1 
                                 ? null
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playRhapsody} className="thumbnail-container">
@@ -121,7 +143,7 @@ class Beats extends React.Component{
                                     <p className="small-video-header"> The Rhapsody Jazz Cafe with Kim Scott </p>
                                     <div className="video-line"></div>
                                 </div> }
-                                {this.state.index === 1
+                                {this.state.index === 2
                                 ? null
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playArts} className="thumbnail-container">
@@ -134,7 +156,7 @@ class Beats extends React.Component{
                                     <p className="small-video-header"> The Value of the Arts with Mario Maitland </p>
                                     <div className="video-line"></div>
                                 </div> }
-                                {this.state.index === 2
+                                {this.state.index === 3
                                 ? null 
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playFarmers} className="thumbnail-container">
@@ -147,7 +169,7 @@ class Beats extends React.Component{
                                     <p className="small-video-header"> Mid City Farmer's Market </p>
                                     <div className="video-line"></div>
                                 </div> }
-                                {this.state.index === 3
+                                {this.state.index === 4
                                 ? null 
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playPoppy} className="thumbnail-container">
@@ -160,7 +182,7 @@ class Beats extends React.Component{
                                     <p className="small-video-header"> The Poppy </p>
                                     <div className="video-line"></div>
                                 </div> }
-                                {this.state.index === 4 
+                                {this.state.index === 5
                                 ? null
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playOtbx} className="thumbnail-container">
@@ -173,7 +195,7 @@ class Beats extends React.Component{
                                     <p className="small-video-header"> Old Town Beer Exchange </p>
                                     <div className="video-line"></div>
                                 </div> }
-                                {this.state.index === 5
+                                {this.state.index === 6
                                 ? null 
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playBar805} className="thumbnail-container">
