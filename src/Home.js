@@ -16,7 +16,6 @@ import food from './ashleyPhotos/food.png';
 import beats from './ashleyPhotos/guitar_black_white2.jpg';
 import nature from './ashleyPhotos/stream.png';
 import museum from './ashleyPhotos/white_building.png';
-import CrushWineFestival from './videos/CrushWineFestivalHome';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './css/styles.css';
@@ -79,7 +78,7 @@ class Home extends React.Component{
             <p className="main-event-par"> Looking for something to do? <br/> Check out upcoming events in Huntsville! </p>
           </div>
           <div className="main-events-column">
-              <CrushWineFestival />
+            
           </div>
         </div>
         <div className="streets-eats-beats-container">

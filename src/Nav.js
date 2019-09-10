@@ -146,7 +146,7 @@ class Nav extends React.Component{
                 <div className="dropbtn"> EXPLORE NORTH ALABAMA </div>
               </li>
               <li className="dropdown">
-                <div className="dropbtn" onMouseEnter={this.enterSeb}> STREETS EATS & BEATS </div>
+                <div className="dropbtn" onMouseEnter={this.enterSeb}> THINGS TO DO </div>
               </li>
               <li className="dropdown">
                 <div className="dropbtn" onMouseEnter={this.enterStay}> STAY WITH US </div>
@@ -162,19 +162,19 @@ class Nav extends React.Component{
               <li>
                 <Link onClick={this.closeHover} className="dropdown-link" to="/nature"> NATURE<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
-              <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/events"> EVENTS<i className="material-icons"> keyboard_arrow_right </i> </Link>
-              </li>
             </ul>
             <ul className={this.state.hoverSeb ? "dropdown-row": "dropdown-row-closed" } onMouseEnter={this.enterSeb}>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/streets"> STREETS<i className="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/streets"> ACTIVITIES <i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/eats"> EATS<i className="material-icons"> keyboard_arrow_right </i> </Link>  
+                <Link onClick={this.closeHover} className="dropdown-link" to="/eats"> FOOD <i className="material-icons"> keyboard_arrow_right </i> </Link>  
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/beats"> BEATS<i className="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/beats"> BARS <i className="material-icons"> keyboard_arrow_right </i> </Link>
+              </li>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/events"> EVENTS<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
             </ul>
             <ul className={this.state.hoverStay ? "dropdown-row" : "dropdown-row-closed"} onMouseEnter={this.enterStay}>
@@ -201,15 +201,15 @@ class Nav extends React.Component{
                   <Link onClick={this.handleClose} className="dropdown-link" to="/gallery"> GALLERY </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/museums"> MUSEUMS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/events"> EVENTS </Link>
                 </div>
               </li>
               <li className="dropdown">
                 <div className="dropbtn" onClick={this.handleClick4}> STREETS EATS & BEATS <i className="material-icons"> arrow_drop_down </i> </div>
                 <div className={this.state.dropdown4}>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/streets"> STREETS </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/eats"> EATS </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/beats"> BEATS </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/streets"> ACTIVITIES </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/eats"> FOOD </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/beats"> BARS </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/events"> EVENTS </Link>
                 </div>
               </li>
               <li className="dropdown">

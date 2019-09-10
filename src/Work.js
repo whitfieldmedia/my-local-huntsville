@@ -1,6 +1,4 @@
 import React from 'react';
-import Cfd from './videos/CFD';
-import HairQueen from './videos/HairQueen';
 import { Helmet } from 'react-helmet';
 import './css/work.css';
 
@@ -19,8 +17,7 @@ class Work extends React.Component {
                 </Helmet>
                 <h1 className="work-header"> Work </h1>
                 <div className="work-video-holder">
-                    <Cfd />
-                    <HairQueen />
+                    
                 </div>
             </div>
         )
