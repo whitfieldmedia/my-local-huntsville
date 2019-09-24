@@ -53,6 +53,12 @@ class Events extends React.Component{
                 </Helmet>
                 <h1 className="event-header"> Upcoming Events </h1>
                 <div className="events-page">
+                    <div className="event-holder">
+                        <h2 className="event-container">
+                            <h2 className="event-title"> Downtown Huntsville's Medical District Best Bites! </h2>
+                            <p className="home-event-date"> Thursday, September 26, 2019 </p>
+                        </h2>
+                    </div>
                 {this.state.done
                 ? this.props.feed.items.map((event, index) => (
                     <div className="event-holder" key={index} onClick={(e) => this.handleClick(index, e)}>
