@@ -54,10 +54,16 @@ class Events extends React.Component{
                 <h1 className="event-header"> Upcoming Events </h1>
                 <div className="events-page">
                     <div className="event-holder">
-                        <h2 className="event-container">
+                        <a href="https://www.facebook.com/1442190926/posts/10220131320940241?sfns=mo" target="_blank" rel="noopener noreferrer"  className="event-container">
+                            <h2 className="event-title"> Wine Down Wednesday at Bullet & Barrel </h2>
+                            <p className="home-event-date"> 4-7 Wednesday, September 25 & Wednesday, October 2 2019 </p>
+                        </a>
+                    </div>
+                    <div className="event-holder">
+                        <a href="https://www.facebook.com/events/377892689547101/permalink/388704328465937" target="_blank" rel="noopener noreferrer" className="event-container">
                             <h2 className="event-title"> Downtown Huntsville's Medical District Best Bites! </h2>
                             <p className="home-event-date"> Thursday, September 26, 2019 </p>
-                        </h2>
+                        </a>
                     </div>
                 {this.state.done
                 ? this.props.feed.items.map((event, index) => (
