@@ -213,7 +213,7 @@ body {
 /* STREETS BEATS & EATS */
 .streets-eats-beats-container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   justify-content: center;
   align-content: center;
 }
@@ -233,8 +233,8 @@ body {
   max-width: 60vw;
   min-width: 40vw;
   width: auto;
-  justify-content: center;
-  justify-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
   align-content: center;
   align-items: center;
 }
@@ -248,10 +248,10 @@ body {
 .home-streets-header {
   font-family: garamond-premier-pro, serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: #F5F7F6;
   font-weight: 500;
-  padding: 0px 10px 10px 10px;
+  padding: 30px 10px 10px 10px;
   margin: 0;
 }
 
@@ -273,7 +273,6 @@ body {
   align-content: center;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 25%;
 }
 
 .home-streets-link:hover .right-arrow-icon {
@@ -282,8 +281,7 @@ body {
 
 /* HOME EATS */
 .home-eats-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
   flex-flow: row;
   justify-content: space-evenly;
   align-content: center;
@@ -295,8 +293,8 @@ body {
   max-width: 60vw;
   min-width: 40vw;
   width: auto;
-  justify-content: center;
-  justify-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
   align-content: center;
   align-items: center;
 }
@@ -309,16 +307,15 @@ body {
   align-content: center;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 25%;
 }
 
 .home-eats-header {
   font-family: garamond-premier-pro, serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: #F5F7F6;
   font-weight: 500;
-  padding: 0 0 10px 0;
+  padding: 30px 0 10px 0;
   margin-bottom: 0;
 }
 
@@ -326,6 +323,7 @@ body {
   text-align: center;
   font-family: gitan-latin, sans-serif;
   font-size: 22px;
+  padding: 10px 20px;
   margin: 0;
   color: #F5F7F6;
   font-weight: 400;
@@ -343,8 +341,7 @@ body {
 
 /* HOME BEATS */
 .home-beats-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
   flex-flow: row;
   justify-content: center;
   align-content: center;
@@ -356,8 +353,8 @@ body {
   max-width: 50vw;
   min-width: 40vw;
   width: auto;
-  justify-content: center;
-  justify-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
   align-content: center;
   align-items: center;
 }
@@ -376,16 +373,15 @@ body {
   align-content: center;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 25%;
 }
 
 .home-beats-header {
   font-family: garamond-premier-pro, serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: #F5F7F6;
   font-weight: 500;
-  padding: 0px 10px 10px 10px;
+  padding: 30px 10px 10px 10px;
   margin-bottom: 0;
 }
 
@@ -851,19 +847,6 @@ body {
     font-size: 40px;
   }
 }
-@media only screen and (max-width: 900px) {
-  .home-streets-header {
-    font-size: 35px;
-  }
-
-  .home-beats-header {
-    font-size: 35px;
-  }
-
-  .home-eats-header {
-    font-size: 35px;
-  }
-}
 @media only screen and (max-width: 775px) {
   .main-events-container {
     display: flex;
@@ -880,39 +863,72 @@ body {
     margin: 0 auto;
   }
 
-  .home-streets-header {
-    font-size: 30px;
+  .home-streets-container {
+    flex-flow: column-reverse;
+    position: relative;
   }
 
-  .home-beats-header {
-    font-size: 30px;
+  .home-streets-column {
+    min-width: 300px;
+    max-width: 100vw;
+    width: 600px;
+    margin: 0 auto;
   }
 
-  .home-eats-header {
-    font-size: 30px;
+  .home-street-image {
+    display: block;
+    max-height: 300px;
+    min-height: 100px;
+    min-width: 300px;
+    max-width: 100vw;
+    height: auto;
+    width: auto;
   }
 
-  .right-arrow-icon {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .home-streets-header {
-    font-size: 25px;
+  .home-eats-container {
+    flex-flow: column;
+    position: relative;
+    margin: 0 auto;
   }
 
-  .home-beats-header {
-    font-size: 25px;
+  .home-eats-column {
+    min-width: 300px;
+    max-width: 100vw;
+    width: 600px;
+    margin: 0 auto;
   }
 
-  .home-eats-header {
-    font-size: 25px;
+  .home-eats-image {
+    display: block;
+    max-height: 300px;
+    min-height: 150px;
+    min-width: 300px;
+    max-width: 100vw;
+    height: auto;
+    width: auto;
   }
 
-  .right-arrow-icon {
-    width: 30px;
-    height: 30px;
+  .home-beats-container {
+    flex-flow: column-reverse;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .home-beats-column {
+    min-width: 300px;
+    max-width: 100vw;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .home-beats-image {
+    display: block;
+    max-height: 300px;
+    min-height: 100px;
+    min-width: 300px;
+    max-width: 100vw;
+    height: auto;
+    width: auto;
   }
 }
 @media only screen and (max-width: 600px) {

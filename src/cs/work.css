@@ -1,0 +1,33 @@
+.work-page {
+  padding-top: 140px;
+  min-height: 60vh;
+}
+
+.work-header {
+  font-family: garamond-premier-pro, serif;
+  font-size: 40px;
+  color: #F5F7F6;
+  text-align: center;
+  font-weight: 600;
+}
+
+.work-video-holder {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.work-video-holder iframe {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 880px) {
+  .work-video-holder {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=work.css.map */

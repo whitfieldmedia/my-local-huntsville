@@ -1,8 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 import { Helmet } from 'react-helmet';
-import { getFeed } from './redux/feed';
-import { connect } from 'react-redux';
 import './css/events.css';
 
 class Events extends React.Component{

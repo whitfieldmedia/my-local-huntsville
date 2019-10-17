@@ -1,0 +1,262 @@
+.seb-page {
+  padding-top: 120px;
+  height: auto;
+}
+
+.seb-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.seb-right-column {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.seb-left-column {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  height: auto;
+  padding-bottom: 80px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.thumbnail-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.thumbnail-container .thumbnail-hover {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  display: none;
+}
+.thumbnail-container .thumbnail-hover i {
+  position: relative;
+  font-size: 60px;
+  z-index: 5;
+  color: #F5F7F6;
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+.thumbnail-container .thumbnail-hover p {
+  position: relative;
+  color: #F5F7F6;
+  font-size: 22px;
+  font-family: gitan-latin, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.thumbnail-container:hover img {
+  filter: brightness(30%);
+}
+.thumbnail-container:hover .thumbnail-hover {
+  display: block;
+}
+
+.seb-logo {
+  height: 150px;
+  width: 150px;
+  background: none;
+}
+
+.seb-header-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.seb-header {
+  font-family: garamond-premier-pro, serif;
+  font-size: 45px;
+  height: auto;
+  color: #F5F7F6;
+  text-align: center;
+  font-weight: 600;
+}
+
+#streets-header {
+  color: #ffffff;
+  padding-right: 10px;
+  text-decoration: underline;
+}
+
+.seb-video-holder {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.fav-activities-header {
+  font-family: garamond-premier-pro, serif;
+  font-size: 40px;
+  height: auto;
+  color: #F5F7F6;
+  font-weight: 600;
+  text-align: center;
+}
+
+.seb-things-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.video-thumbnail-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.video-thumbnail-wrapper {
+  display: block;
+  padding: 10px 15px 50px 15px;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  justify-self: left;
+  align-self: flex-start;
+}
+
+.small-video-header {
+  font-family: gitan-latin, sans-serif;
+  font-size: 18px;
+  color: #F5F7F6;
+  text-align: center;
+  display: block;
+  height: auto;
+  padding: 0 0 5px 0;
+  margin: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.video-thumbnail {
+  width: 300px;
+  height: 169px;
+  max-width: 100%;
+}
+
+.video-line {
+  width: 100%;
+  background: #F5F7F6;
+  height: 3px;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.banner-column {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+  align-content: flex-start;
+  padding-top: 50px;
+}
+.banner-column img {
+  height: calc(100vh - 150px);
+  margin: 0 auto;
+  width: auto;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+.main-video-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .seb-page {
+    height: auto;
+  }
+
+  .seb-row {
+    flex-flow: column;
+  }
+
+  .banner-column {
+    position: absolute;
+    top: 120px;
+    right: 0;
+  }
+
+  .seb-left-column {
+    width: 85%;
+  }
+
+  .seb-right-column {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .video-thumbnail-container {
+    height: auto;
+    flex-flow: row wrap;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .banner-column {
+    display: none;
+  }
+  .banner-column img {
+    height: 0;
+  }
+
+  .seb-left-column {
+    width: 100%;
+  }
+
+  .mobile-banner {
+    display: block;
+    position: relative;
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .seb-right-column {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=streets.css.map */

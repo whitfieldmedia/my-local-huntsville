@@ -69,18 +69,6 @@ class Home extends React.Component{
           <img className="mobileBanner" src={mobileBanner} alt="Ray Pearman Lincoln"/>
         </a>
         <div className="spacer"></div>
-        <div className="main-events-container">
-          <div className="main-events-column">
-            <Link className="home-event-link" to="/events">
-              <h2 className="home-events-header"> Upcoming Events </h2>
-              <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/> 
-            </Link>
-            <p className="main-event-par"> Looking for something to do? <br/> Check out upcoming events in Huntsville! </p>
-          </div>
-          <div className="main-events-column">
-            
-          </div>
-        </div>
         <div className="streets-eats-beats-container">
           <div className="home-streets-container">
             <div className="home-streets-column">
@@ -88,19 +76,17 @@ class Home extends React.Component{
             </div>
             <div className="home-streets-column">
               <Link to="/streets" className="home-streets-link">
-                <h2 className="home-streets-header"> Streets </h2>
+                <h2 className="home-streets-header"> Activities </h2>
                 <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
               </Link>
-              <p className="home-streets-par"> Watch as we go out on the streets of Huntsville to see what's going on, find out about new stores, upcoming events, and more! </p>
             </div>
           </div>
           <div className="home-eats-container">
             <div className="home-eats-column">
               <Link to="/eats" className="home-eats-link">
-                <h2 className="home-eats-header"> Eats </h2>
+                <h2 className="home-eats-header"> Food </h2>
                 <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
               </Link>
-              <p className="home-eats-par"> Huntsville Alabama is full of great places to eat and enjoy. Watch as we go to local restaurants try the food and see what they are all about. </p>
             </div>
             <div className="home-eats-column">
               <img src={food} className="home-eats-image" alt="Food"/>
@@ -112,10 +98,9 @@ class Home extends React.Component{
             </div>
             <div className="home-beats-column">
               <Link to="/beats" className="home-beats-link">
-                <h2 className="home-beats-header"> Beats </h2>
+                <h2 className="home-beats-header"> Bars </h2>
                 <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
               </Link>
-              <p className="home-beats-par"> Huntsville's music scene is a one of a kind expeirence. Check out what it has to offer. </p>
             </div>
           </div>
         </div>
