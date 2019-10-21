@@ -20,6 +20,9 @@ import btrThumbnail from './whitfieldVideos/thumbnails/btr.png';
 import waltonThumbnail from './whitfieldVideos/thumbnails/waltons.png';
 import straightThumbnail from './whitfieldVideos/thumbnails/straight-to-ale.png';
 import yellowThumbnail from './whitfieldVideos/thumbnails/yellowhammer.png';
+import BrassTap from './whitfieldVideos/BrassTap';
+import BrassTapMobile from './whitfieldVideos/BrassTapMobile';
+import BrassTapThumbnail from './whitfieldVideos/thumbnails/brassTap.png';
 import { Helmet } from 'react-helmet';
 import bannerTall from './bannerAd/raypearman_tall.svg';
 import bannerMobile from './bannerAd/rpearman_mobile.svg';
@@ -30,6 +33,7 @@ class Eats extends React.Component{
         super();
         this.state = {
             videos: [
+                <BrassTap />,
                 <Waltons />,
                 <Brickhouse />,
                 <BrokenEgg />,
@@ -39,6 +43,7 @@ class Eats extends React.Component{
                 <Btr />
             ],
             videosMobile: [
+                <BrassTapMobile />,
                 <WaltonsMobile />,
                 <BrickhouseMobile />,
                 <BrokenEggMobile />,
@@ -61,32 +66,36 @@ class Eats extends React.Component{
             return this.state.videosMobile[this.state.index];
         }
     }
-    playWalton = () => {
+    playBrassTap = () => {
         this.setState({ index: 0 })
         this.findVideo();
     }
-    playBrickhouse = () => {
+    playWalton = () => {
         this.setState({ index: 1 })
         this.findVideo();
     }
-    playEgg = () => {
+    playBrickhouse = () => {
         this.setState({ index: 2 })
         this.findVideo();
     }
-    playBoot = () => {
+    playEgg = () => {
         this.setState({ index: 3 })
         this.findVideo();
     }
-    playStraight = () => {
+    playBoot = () => {
         this.setState({ index: 4 })
         this.findVideo();
     }
-    playYellow = () => {
+    playStraight = () => {
         this.setState({ index: 5 })
         this.findVideo();
     }
-    playBtr = () => {
+    playYellow = () => {
         this.setState({ index: 6 })
+        this.findVideo();
+    }
+    playBtr = () => {
+        this.setState({ index: 7 })
         this.findVideo();
     }
     render() {
@@ -108,7 +117,20 @@ class Eats extends React.Component{
                                 <a className="mobile-banner" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
                                     <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
                                 </a>
-                                {this.state.index === 0 ? null :
+                                {this.state.index === 0 ? null : 
+                                <div onClick={this.playBrassTap} className="video-thumbnail-wrapper">
+                                    <div className="thumbnail-container">
+                                        <img onClick={this.playBrassTap} className="video-thumbnail" src={BrassTapThumbnail} alt="The Brass Tap"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> The Brass Tap </p>
+                                    <div className="video-line">  </div>
+                                </div>
+                                }
+                                {this.state.index === 1 ? null :
                                 <div onClick={this.playWalton} className="video-thumbnail-wrapper">
                                     <div className="thumbnail-container">
                                         <img onClick={this.playWalton} src={waltonThumbnail} className="video-thumbnail" alt="Waltons"/>
@@ -120,7 +142,7 @@ class Eats extends React.Component{
                                     <p className="small-video-header"> Walton's Sourthen Table </p>
                                     <div className="video-line">  </div>
                                 </div> }
-                                {this.state.index === 1 ? null :
+                                {this.state.index === 2 ? null :
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playBrickhouse} className="thumbnail-container">
                                         <img onClick={this.playBrickhouse} src={brickThumbnail} className="video-thumbnail" alt="Brickhouse Sports Cafe"/>
@@ -133,7 +155,7 @@ class Eats extends React.Component{
                                     <div className="video-line"></div>
                                 </div> }
 
-                                {this.state.index === 2 ? null :
+                                {this.state.index === 3 ? null :
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playEgg} className="thumbnail-container">
                                         <img onClick={this.playEgg} src={eggThumbnail} className="video-thumbnail" alt="Another Broken Egg"/>
@@ -146,7 +168,7 @@ class Eats extends React.Component{
                                     <div className="video-line"></div>
                                 </div> }
 
-                                {this.state.index === 3 ? null :        
+                                {this.state.index === 4 ? null :        
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playBoot} className="thumbnail-container">
                                         <img onClick={this.playBoot} src={bootThumbnail} className="video-thumbnail" alt="Boot Pizzeria"/>
@@ -158,7 +180,7 @@ class Eats extends React.Component{
                                     <p className="small-video-header"> The Boot Pizzeria </p>
                                     <div className="video-line"></div>
                                 </div> }
-                                {this.state.index === 4 ? null :
+                                {this.state.index === 5 ? null :
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playStraight} className="thumbnail-container">
                                         <img onClick={this.playStraight} src={straightThumbnail} className="video-thumbnail" alt="Straight To Ale"/>
@@ -171,7 +193,7 @@ class Eats extends React.Component{
                                     <div className="video-line"></div>
                                 </div> }
 
-                                {this.state.index === 5 ? null :
+                                {this.state.index === 6 ? null :
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playYellow} className="thumbnail-container">
                                         <img onClick={this.playYellow} src={yellowThumbnail} className="video-thumbnail" alt="Yellowhammer Earth & Stone"/>
@@ -184,7 +206,7 @@ class Eats extends React.Component{
                                     <div className="video-line"></div>
                                 </div> }
 
-                                {this.state.index === 6 ? null 
+                                {this.state.index === 7 ? null 
                                 :                                                                  
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playBtr} className="thumbnail-container">

@@ -10,13 +10,13 @@
     height: 100%;
     overflow: auto;
     min-height: 100vh;
-    padding-top: 140px;
+    padding-top: 175px;
 }
 
 .museum-wrapper {
     display: flex;
-    flex-flow: column wrap;
-    height: auto;
+    flex-flow: column;
+    height: 400px;
     width: auto;
     margin: auto;
     background: $background-hover;
