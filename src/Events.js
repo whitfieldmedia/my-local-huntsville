@@ -1,5 +1,5 @@
 import React from 'react';
-import moment from 'moment';
+import newsletter from './images/huntsville_newsletter.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
@@ -35,6 +35,11 @@ class Events extends React.Component{
                             </p>
                         </div>
                     </div>
+                </div>
+                <div className="newsletter-container">
+                    <a className="newsletter-wrapper" href="https://www.downtownhuntsville.org" target="_blank" rel="noopener noreferrer">
+                        <img src={newsletter} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter" />
+                    </a>
                 </div>
             </div>
         )
