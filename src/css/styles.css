@@ -791,6 +791,19 @@ body {
   padding: 25px;
 }
 
+.home-video-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+}
+
+.website-video {
+  max-width: 100vw;
+}
+
 @media only screen and (max-width: 1300px) {
   .mid-wrapper {
     grid-template-columns: 50% 50%;
@@ -833,6 +846,10 @@ body {
     padding: 20px 0px;
     width: 100vw;
   }
+
+  .home-video-container {
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 450px) {
   .top-header {
@@ -846,9 +863,18 @@ body {
     height: auto;
   }
 }
+@media only screen and (max-width: 400px) {
+  .home-video-container {
+    margin: -20px auto;
+  }
+}
 @media only screen and (max-width: 320px) {
   .top-header {
     font-size: 40px;
+  }
+
+  .home-video-container {
+    margin: -50px auto;
   }
 }
 @media only screen and (max-width: 900px) {
