@@ -3,7 +3,7 @@
 }
 
 .events-page {
-  min-height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
@@ -125,7 +125,7 @@
   width: 100vw;
   height: auto;
   overflow-x: hidden;
-  margin-top: -60%;
+  padding-bottom: 100px;
 }
 
 .newsletter-wrapper {
@@ -140,9 +140,9 @@
 }
 
 .huntsville-newsletter {
-  width: auto;
   height: auto;
   max-width: 100vw;
+  width: 800px;
 }
 
 @media only screen and (max-width: 950px) {
