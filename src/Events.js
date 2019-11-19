@@ -27,6 +27,21 @@ class Events extends React.Component{
                 <div className="events-page">
                     <div className="event-holder">
                         <div className="event-container">
+                            <h2 className="event-title"> Botanical Gardens - Galaxy Of Lights </h2>
+                            <p className="event-date">
+                                Walking Nights November 15-18 & 21-26 5:30 - 8:00 p.m.
+                            </p>
+                            <p className="event-date">
+                                Driving Nights November 29 - January 4* 5:30 - 9:00 p.m.
+                            </p>
+                            <a className="event-link" href="http://hsvbg.org/galaxy/" target="_blank" rel="noopener noreferrer">
+                                Get Tickets
+                            </a>
+                            <iframe className="event-video" title="Botanical Gardens - Galaxy of Lights" src="https://player.vimeo.com/video/374181200" width="640" height="480" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                        </div>  
+                    </div>
+                    {/* <div className="event-holder">
+                        <div className="event-container">
                             <h2 className="event-title"> Halloween Costume Party with Dave Anderson! </h2>
                             <p className="event-date">
                                 Tuesday, October 29, 2019
@@ -40,7 +55,7 @@ class Events extends React.Component{
                                 </a>
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="newsletter-container">
                     <a className="newsletter-wrapper" href="https://www.downtownhuntsville.org" target="_blank" rel="noopener noreferrer">

@@ -26,16 +26,15 @@
 
 .event-holder {
   position: relative;
-  width: 45%;
+  width: auto;
+  max-width: 1000px;
   min-width: 300px;
   height: auto;
-  padding: 5px;
-  margin: 5px;
 }
 
 .event-container {
   background: #f9f9f9;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 10px;
   width: 100%;
   box-shadow: 0px 0px 3px #676767;
@@ -44,6 +43,18 @@
   height: auto;
   text-decoration: none;
   color: #4a4a4a;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-video {
+  max-width: 100%;
+  margin: 15px 0;
+  padding: 0;
+  width: 640px;
+  height: 360px;
 }
 
 .event-title {
@@ -90,6 +101,8 @@
   font-family: gitan-latin, sans-serif;
   color: #212121;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .event-popup-container img {
@@ -145,10 +158,32 @@
   width: 800px;
 }
 
+@media only screen and (max-width: 1375px) {
+  .event-video {
+    width: 550px;
+    height: 310px;
+  }
+}
 @media only screen and (max-width: 950px) {
   .events-page {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .events-container {
+    max-width: 100%;
+  }
+
+  .event-holder {
+    max-width: 90vw;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .event-video {
+    width: 410px;
+    height: 230px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -158,6 +193,27 @@
 
   .event-top-wrapper {
     grid-template-columns: auto auto;
+  }
+
+  .event-date {
+    font-size: 18px;
+  }
+
+  .event-title {
+    font-size: 25px;
+  }
+
+  .event-link {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .event-date {
+    font-size: 16px;
+  }
+
+  .event-title {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 460px) {
@@ -171,10 +227,19 @@
     width: 150%;
     max-width: 120vw;
   }
+
+  .event-video {
+    width: 340px;
+    height: 191.25px;
+  }
+
+  .event-date {
+    max-width: 300px;
+  }
 }
 @media only screen and (max-width: 350px) {
   .event-container {
-    padding: 5px;
+    padding: 0px;
   }
 }
 
