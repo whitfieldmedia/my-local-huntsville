@@ -1,11 +1,5 @@
 import React from 'react';
-import newsletter from './images/huntsville_newsletter1.png';
-import newsletter2 from './images/huntsville_newsletter2.png';
-import newsletter3 from './images/huntsville_newsletter3.png';
-import newsletter4 from './images/huntsville_newsletter4.png';
-import newsletter5 from './images/huntsville_newsletter5.png';
-import newsletter6 from './images/huntsville_newsletter6.png';
-import newsletter7 from './images/huntsville_newsletter7.png';
+import newsletter from './images/hunstville_newsletter_november.svg';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
@@ -60,12 +54,6 @@ class Events extends React.Component{
                 <div className="newsletter-container">
                     <a className="newsletter-wrapper" href="https://www.downtownhuntsville.org" target="_blank" rel="noopener noreferrer">
                         <img src={newsletter} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter" />
-                        <img src={newsletter2} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter"/>
-                        <img src={newsletter3} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter"/>
-                        <img src={newsletter4} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter"/>
-                        <img src={newsletter5} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter"/>
-                        <img src={newsletter6} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter"/>
-                        <img src={newsletter7} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter"/>
                     </a>
                 </div>
             </div>
