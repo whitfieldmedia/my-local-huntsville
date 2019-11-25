@@ -34,6 +34,48 @@ class Events extends React.Component{
                             <iframe className="event-video" title="Botanical Gardens - Galaxy of Lights" src="https://player.vimeo.com/video/374181200" width="640" height="480" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                         </div>  
                     </div>
+                    <div className="event-column">
+                        <div className="event-holder"> 
+                            <div className="event-container">
+                                <h2 className="event-title"> 
+                                    Mimosa Day @ The Boot Pizzeria 
+                                </h2>
+                                <p className="event-date"> 
+                                    Saturday November 30 11 a.m. 
+                                </p>
+                                <a className="event-link" href="https://www.facebook.com/events/970834553297435/">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                        <div className="event-holder"> 
+                            <div className="event-container">
+                                <h2 className="event-title"> 
+                                    Pass the pasta game
+                                </h2>
+                                <p className="event-date"> 
+                                    Wednesday December 18 6 p.m. 
+                                </p>
+                                <a className="event-link" href="https://www.facebook.com/events/476901732929638/">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                        <div className="event-holder"> 
+                            <div className="event-container">
+                                <h2 className="event-title"> 
+                                    Christmas Vacation Brain Blast Trivia
+                                </h2>
+                                <p className="event-date"> 
+                                    Thursday December 19 7 p.m. 
+                                </p>
+                                <a className="event-link" href="https://www.facebook.com/events/763320024113700/">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* <div className="event-holder">
                         <div className="event-container">
                             <h2 className="event-title"> Halloween Costume Party with Dave Anderson! </h2>
