@@ -38,19 +38,6 @@ class Events extends React.Component{
                         <div className="event-holder"> 
                             <div className="event-container">
                                 <h2 className="event-title"> 
-                                    First Day Hike
-                                </h2>
-                                <p className="event-date"> 
-                                    Wednesday January 1, 2020 10 a.m. - 11:30 a.m.
-                                </p>
-                                <a className="event-link" href="https://www.facebook.com/events/589163615225618/">
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
-                        <div className="event-holder"> 
-                            <div className="event-container">
-                                <h2 className="event-title"> 
                                     Pass the pasta game
                                 </h2>
                                 <p className="event-date"> 
@@ -70,6 +57,19 @@ class Events extends React.Component{
                                     Thursday December 19 7 p.m. 
                                 </p>
                                 <a className="event-link" href="https://www.facebook.com/events/763320024113700/">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                        <div className="event-holder"> 
+                            <div className="event-container">
+                                <h2 className="event-title"> 
+                                    First Day Hike
+                                </h2>
+                                <p className="event-date"> 
+                                    Wednesday January 1, 2020 10 a.m. - 11:30 a.m.
+                                </p>
+                                <a className="event-link" href="https://www.facebook.com/events/589163615225618/">
                                     Learn More
                                 </a>
                             </div>
