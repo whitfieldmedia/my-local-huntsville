@@ -1,5 +1,5 @@
 import React from 'react';
-import newsletter from './images/downtown_huntsville_newsletter.png';
+import newsletter from './images/downtown_huntsville_newletter_december.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
@@ -38,12 +38,12 @@ class Events extends React.Component{
                         <div className="event-holder"> 
                             <div className="event-container">
                                 <h2 className="event-title"> 
-                                    Mimosa Day @ The Boot Pizzeria 
+                                    First Day Hike
                                 </h2>
                                 <p className="event-date"> 
-                                    Saturday November 30 11 a.m. 
+                                    Wednesday January 1, 2020 10 a.m. - 11:30 a.m.
                                 </p>
-                                <a className="event-link" href="https://www.facebook.com/events/970834553297435/">
+                                <a className="event-link" href="https://www.facebook.com/events/589163615225618/">
                                     Learn More
                                 </a>
                             </div>
