@@ -1,5 +1,5 @@
 import React from 'react';
-import newsletter from './images/downtown_huntsville_newletter_december.png';
+import newsletter from './images/downtown_huntsville_newsletter_december_week3.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
