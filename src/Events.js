@@ -1,5 +1,5 @@
 import React from 'react';
-import newsletter from './images/newsletter_1-1.png';
+import newsletter from './images/newsletter_1-2.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
@@ -13,13 +13,17 @@ class Events extends React.Component{
             <div className="events-container">
                 <Helmet>
                     <meta charSet="utf-8"/>
-                    <title> Upcoming Events in Huntsville Alabama </title>
-                    <link rel="canonical" href="https://www.mylocalhuntsville.com/events"/>
-                    <meta name="description" content="Stay in the loop and see upcoming events in Huntsville Alabama. There are lots of free events happening in Huntsville don't miss out." />
+                    <title> 
+                        Upcoming Events in Huntsville | My Local Huntsville 
+                    </title>
+                    <link rel="canonical" 
+                        href="https://www.mylocalhuntsville.com/events"/>
+                    <meta name="description" 
+                        content="Stay in the loop and see upcoming events in Huntsville Alabama. There are lots of free events happening in Huntsville don't miss out." />
                 </Helmet>
                 <h1 className="event-header"> Upcoming Events </h1>
                 <div className="events-page">
-                    <div className="event-holder">
+                    {/* <div className="event-holder">
                         <div className="event-container">
                             <h2 className="event-title"> Botanical Gardens - Galaxy Of Lights </h2>
                             <p className="event-date">
@@ -33,8 +37,8 @@ class Events extends React.Component{
                             </a>
                             <iframe className="event-video" title="Botanical Gardens - Galaxy of Lights" src="https://player.vimeo.com/video/374181200" width="640" height="480" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                         </div>  
-                    </div>
-                    <div className="event-column">
+                    </div> */}
+                    {/* <div className="event-column">
                         <div className="event-holder"> 
                             <div className="event-container">
                                 <h2 className="event-title"> 
@@ -74,7 +78,7 @@ class Events extends React.Component{
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* <div className="event-holder">
                         <div className="event-container">

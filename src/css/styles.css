@@ -65,30 +65,6 @@ body {
   align-items: flex-start;
 }
 
-.top-header2 {
-  color: #F5F7F6;
-  text-align: right;
-  padding: 0 35px 0 35px;
-  margin: 0;
-  line-height: 40px;
-  font-family: "Coustard", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-.top-header3 {
-  color: #F5F7F6;
-  text-align: right;
-  padding: 0 35px 0 35px;
-  margin: 0;
-  line-height: 40px;
-  font-family: "Coustard", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
 .tall-video {
   width: 250px;
   height: 500px;
@@ -97,7 +73,7 @@ body {
 .top-header {
   position: relative;
   color: #F5F7F6;
-  font-family: bebas-neue, sans-serif;
+  font-family: "bebas-neue", sans-serif;
   text-align: right;
   font-weight: 700;
   background: 0;
@@ -111,7 +87,7 @@ body {
 .top-header1 {
   position: relative;
   color: #F5F7F6;
-  font-family: bebas-neue, sans-serif;
+  font-family: "bebas-neue", sans-serif;
   text-align: right;
   font-weight: 700;
   background: 0;
@@ -134,7 +110,7 @@ body {
 }
 
 .home-news-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 45px;
   color: #F5F7F6;
@@ -171,7 +147,7 @@ body {
 }
 
 .home-events-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 40px;
   color: #F5F7F6;
@@ -203,7 +179,7 @@ body {
 
 .main-event-par {
   text-align: center;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 22px;
   padding: 0 20px;
   color: #F5F7F6;
@@ -246,7 +222,7 @@ body {
 }
 
 .home-streets-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 50px;
   color: #F5F7F6;
@@ -257,7 +233,7 @@ body {
 
 .home-streets-par {
   text-align: center;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 22px;
   color: #F5F7F6;
   padding: 10px 20px;
@@ -313,7 +289,7 @@ body {
 }
 
 .home-eats-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 50px;
   color: #F5F7F6;
@@ -324,7 +300,7 @@ body {
 
 .home-eats-par {
   text-align: center;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 22px;
   margin: 0;
   color: #F5F7F6;
@@ -380,7 +356,7 @@ body {
 }
 
 .home-beats-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 50px;
   color: #F5F7F6;
@@ -391,7 +367,7 @@ body {
 
 .home-beats-par {
   text-align: center;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 22px;
   padding: 10px 20px;
   margin: 0;
@@ -427,7 +403,7 @@ body {
 
 /* THINGS TO DO */
 .things-to-do-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 45px;
   color: #F5F7F6;
@@ -464,7 +440,7 @@ body {
 }
 
 .home-nature-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 40px;
   color: #F5F7F6;
@@ -492,7 +468,7 @@ body {
 }
 
 .home-museums-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 40px;
   color: #F5F7F6;
@@ -539,7 +515,7 @@ body {
 }
 
 .home-hotel-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   text-align: center;
   font-size: 45px;
   color: #F5F7F6;
@@ -550,7 +526,7 @@ body {
 
 .home-hotel-par {
   text-align: center;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 22px;
   padding: 10px 20px;
   margin: 0;
@@ -598,7 +574,7 @@ body {
 .video-header {
   text-align: center;
   font-size: 30px;
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   font-weight: 600;
   color: #F5F7F6;
   margin: 10px 0 0 0;
@@ -607,7 +583,7 @@ body {
 
 .art-map-link {
   text-align: center;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 18px;
   color: #F5F7F6;
   font-weight: 300;
@@ -666,7 +642,7 @@ body {
 }
 
 .video-title {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   color: #F5F7F6;
   font-size: 35px;
   text-align: center;
@@ -676,7 +652,7 @@ body {
 }
 
 .video-from {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   color: #F5F7F6;
   font-size: 18px;
   font-weight: 300;
@@ -694,13 +670,13 @@ body {
 .sbe-home-video-container p {
   padding-top: 0;
   margin-top: 0;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 16px;
   color: #F5F7F6;
   text-decoration: none;
 }
 .sbe-home-video-container p a {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 16px;
   color: #F5F7F6;
   text-decoration: none;
@@ -718,13 +694,13 @@ body {
 .sbe-video-container p {
   padding-top: 0;
   margin-top: 0;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 16px;
   color: #F5F7F6;
   text-decoration: none;
 }
 .sbe-video-container p a {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 16px;
   color: #F5F7F6;
   text-decoration: none;
@@ -740,7 +716,7 @@ body {
 .beer-menu {
   text-decoration: none;
   text-align: center;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 20px;
   color: #F5F7F6;
   margin: 5px 10px;

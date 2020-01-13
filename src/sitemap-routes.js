@@ -14,5 +14,6 @@ export default (
         <Route path="/hotels"/>
         <Route path="/museums"/>
         <Route path="/nature"/>
+        <Route path="/living-in-huntsville" />
     </Route>
 )

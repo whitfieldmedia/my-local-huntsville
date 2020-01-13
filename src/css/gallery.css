@@ -9,7 +9,7 @@
 }
 
 .gallery-header {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   font-size: 45px;
   color: #F5F7F6;
   font-weight: 600;
@@ -21,7 +21,7 @@
 }
 
 .gallery-thanks {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 30px;
   color: #F5F7F6;
   font-weight: 300;
@@ -36,7 +36,7 @@
 }
 
 .gallery-insta-link {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 30px;
   color: #F5F7F6;
   font-weight: 300;

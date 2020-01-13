@@ -1,7 +1,7 @@
 @import 'assets';
 
 .footerWrapper {
-    height: 60px;
+    height: auto;
     width: 100vw;
 }
 .footer-text {
@@ -12,7 +12,7 @@
 }
 
 .footer {
-    height: 80px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -22,6 +22,20 @@
     align-items: center;
     background: #090909;
     border-top: 3px solid $green;
+    padding-bottom: 50px;
+}
+.footer-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+}
+.footer-logo {
+    width: auto;
+    height: 100px;
 }
 .footer-icon {
     margin-left: 20px;
@@ -45,6 +59,16 @@
 .footerText {
     padding-left: 10px;
     font-size: 20px;
+}
+.disclaimer {
+    font-size: 16px;
+    color: $white;
+    font-family: $serif;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
 }
 
 @media only screen and (max-width: 661px) {

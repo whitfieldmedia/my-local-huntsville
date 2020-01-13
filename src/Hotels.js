@@ -18,9 +18,11 @@ class Hotels extends React.Component{
             <div className="hotel-page">
                 <Helmet>
                     <meta charSet="utf-8"/>
-                    <title> Hotels in Huntsville Alabama </title>
-                    <link rel="canonical" href="https://www.mylocalhuntsville.com/hotels"/>
-                    <meta name="description" content="Visiting Huntsville Alabama? We have partnered with Hilton to provide you the best stay while you're in town." />
+                    <title> Best Hotels in Huntsville Alabama </title>
+                    <link rel="canonical" 
+                        href="https://www.mylocalhuntsville.com/hotels"/>
+                    <meta name="description" 
+                        content="Visiting Huntsville Alabama? We have partnered with Hilton to provide you the best stay while you're in town." />
                 </Helmet>
                 <div className="hotel-mid">
                     <div className="video-wrapper">

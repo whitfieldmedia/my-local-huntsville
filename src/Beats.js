@@ -72,9 +72,13 @@ class Beats extends React.Component{
             <div className="seb-page">
                 <Helmet>
                     <meta charSet="utf-8"/>
-                    <title> Beats in Huntsville, Alabama </title>
-                    <link rel="canonical" href="https://www.mylocalhuntsville.com/beats"/>
-                    <meta name="description" content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
+                    <title> 
+                        Best Bars in Huntsville | My Local Huntsville 
+                    </title>
+                    <link rel="canonical" 
+                        href="https://www.mylocalhuntsville.com/beats"/>
+                    <meta name="description" 
+                        content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
                 </Helmet>
                 <div className="seb-row">
                     <div className="seb-left-column">

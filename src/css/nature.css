@@ -14,7 +14,7 @@
 
 .nature-header2 {
   text-align: center;
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   font-size: 40px;
   font-weight: 600;
   color: #F5F7F6;
@@ -22,7 +22,7 @@
 
 .directions {
   font-size: 20px;
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   text-align: center;
   margin: auto;
   position: relative;
@@ -48,7 +48,7 @@
 }
 
 .about {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 20px;
   width: 45vw;
   margin: auto 2.5vw;
@@ -56,7 +56,7 @@
 }
 
 .about-right {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 20px;
   width: 45vw;
   margin: auto 2.5vw;

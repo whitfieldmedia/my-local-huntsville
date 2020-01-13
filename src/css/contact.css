@@ -71,7 +71,7 @@
 
 .contact-header {
   font-size: 40px;
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   font-weight: 600;
@@ -83,7 +83,7 @@
 .contact-header3 {
   font-size: 25px;
   text-decoration: none;
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   margin: 0;
   padding: 0 0 10px 15px;
   font-weight: 500;
@@ -91,7 +91,7 @@
 }
 
 .contact-header2 {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 25px;
   color: #F5F7F6;
   text-align: center;
@@ -179,7 +179,8 @@ input:focus {
   width: 120px;
   font-size: 15px;
   color: #ffffff;
-  background-color: #F5F7F6;
+  background-color: #212121;
+  border-radius: 10px;
   border: 1px solid #F5F7F6;
 }
 

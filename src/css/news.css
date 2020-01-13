@@ -32,7 +32,7 @@
 }
 
 .news-title {
-  font-family: garamond-premier-pro, serif;
+  font-family: "garamond-premier-pro", serif;
   font-size: 25px;
   font-weight: 500;
   color: #212121;
@@ -47,7 +47,7 @@
 }
 
 .news-description {
-  font-family: gitan-latin, sans-serif;
+  font-family: "gitan-latin", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #4a4a4a;

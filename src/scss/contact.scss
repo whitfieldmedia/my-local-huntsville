@@ -181,7 +181,8 @@ input:focus {
     width: 120px;
     font-size: 15px;
     color: $green;
-    background-color: $white;
+    background-color: $dark-font;
+    border-radius: 10px;
     border: 1px solid $white;
 }
 #form-button:hover {

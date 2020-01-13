@@ -168,6 +168,12 @@ class Nav extends React.Component{
                   <i className="material-icons"> keyboard_arrow_right </i>
                 </Link>
               </li>
+              <li>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/living-in-huntsville">
+                  LIVING IN HUNTSVILLE
+                  <i className="material-icons"> keyboard_arrow_right </i>
+                </Link>
+              </li>
             </ul>
             <ul className={this.state.hoverSeb ? "dropdown-row": "dropdown-row-closed" } onMouseEnter={this.enterSeb}>
               <li>
@@ -205,6 +211,7 @@ class Nav extends React.Component{
                   <Link onClick={this.handleClose} className="dropdown-link" to="/museums"> MUSEUMS </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/nature"> NATURE </Link>
                   <Link onClick={this.handleClose} className="dropdown-link" to="/events"> EVENTS </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/living-in-huntsville"> LIVING IN HUNTSVILLE </Link>
                 </div>
               </li>
               <li className="dropdown">

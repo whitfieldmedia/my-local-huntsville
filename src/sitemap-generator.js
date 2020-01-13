@@ -13,10 +13,4 @@ function generateSitemap() {
             .save('./public/sitemap.xml')
     )
 }
-generateSitemap()
-
-// (
-//     new Sitemap(router)
-//         .build('https://www.mylocalhuntsville.com', { limitCountPaths: 5000 })
-//         .save('./sitemap.xml', '/static/')
-// )
+generateSitemap();
