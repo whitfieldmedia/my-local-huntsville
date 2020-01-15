@@ -76,7 +76,7 @@ class Beats extends React.Component{
                         Best Bars in Huntsville | My Local Huntsville 
                     </title>
                     <link rel="canonical" 
-                        href="https://www.mylocalhuntsville.com/beats"/>
+                        href="https://www.mylocalhuntsville.com/bars"/>
                     <meta name="description" 
                         content="Looking to have a fun night in Huntsville? Here are the best bars that have live music and upcoming concerts." />
                 </Helmet>

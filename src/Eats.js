@@ -95,7 +95,7 @@ class Eats extends React.Component{
                 <Helmet>
                     <meta charSet="utf-8"/>
                     <title> Best Food in Huntsville | My Local Huntsville </title>
-                    <link rel="canonical" href="https://www.mylocalhuntsville.com/eats" />
+                    <link rel="canonical" href="https://www.mylocalhuntsville.com/food" />
                     <meta name="description" content="Huntsville Alabama has a ton of good places to eat. Whether you want some breakfast or are looking to watch a football game with some good wings and beer we have you covered." />
                 </Helmet>
                 <div className="seb-row">

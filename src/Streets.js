@@ -60,9 +60,9 @@ class Streets extends React.Component {
                     <meta charSet="utf-8" />
                     <title> Best Activities in Huntsville | My Local Huntsville </title>
                     <link rel="canonical" 
-                        href="https://www.mylocalhuntsville.com/streets"/> 
+                        href="https://www.mylocalhuntsville.com/activities"/> 
                     <meta name="description" 
-                        content="Huntsville Alabama is awesome. From a secret art walk on the streets to some activities for the family Huntsville won't dissapoint." />
+                        content="Huntsville Alabama is awesome. From a secret art walk on the streets to some activities for the family Huntsville won't disappoint." />
                 </Helmet>
                 <div className="seb-row">
                     <div className="seb-left-column">
