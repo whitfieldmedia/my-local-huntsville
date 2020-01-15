@@ -94,7 +94,7 @@ class Home extends React.Component{
               <img src={street} className="home-street-image" alt="Jefferson Street"/>
             </div>
             <div className="home-streets-column">
-              <Link to="/streets" className="home-streets-link">
+              <Link to="/activities" className="home-streets-link">
                 <h2 className="home-streets-header"> Activities </h2>
                 <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
               </Link>
@@ -102,7 +102,7 @@ class Home extends React.Component{
           </div>
           <div className="home-eats-container">
             <div className="home-eats-column">
-              <Link to="/eats" className="home-eats-link">
+              <Link to="/food" className="home-eats-link">
                 <h2 className="home-eats-header"> Food </h2>
                 <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
               </Link>
@@ -116,7 +116,7 @@ class Home extends React.Component{
               <img src={beats} className="home-beats-image" alt="Person playing guitar"/>
             </div>
             <div className="home-beats-column">
-              <Link to="/beats" className="home-beats-link">
+              <Link to="/bars" className="home-beats-link">
                 <h2 className="home-beats-header"> Bars </h2>
                 <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
               </Link>

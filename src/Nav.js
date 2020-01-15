@@ -177,13 +177,13 @@ class Nav extends React.Component{
             </ul>
             <ul className={this.state.hoverSeb ? "dropdown-row": "dropdown-row-closed" } onMouseEnter={this.enterSeb}>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/streets"> ACTIVITIES <i className="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/activities"> ACTIVITIES <i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/eats"> FOOD <i className="material-icons"> keyboard_arrow_right </i> </Link>  
+                <Link onClick={this.closeHover} className="dropdown-link" to="/food"> FOOD <i className="material-icons"> keyboard_arrow_right </i> </Link>  
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/beats"> BARS <i className="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/bars"> BARS <i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
             </ul>
             <ul className={this.state.hoverStay ? "dropdown-row" : "dropdown-row-closed"} onMouseEnter={this.enterStay}>
@@ -215,11 +215,11 @@ class Nav extends React.Component{
                 </div>
               </li>
               <li className="dropdown">
-                <div className="dropbtn" onClick={this.handleClick4}> STREETS EATS & BEATS <i className="material-icons"> arrow_drop_down </i> </div>
+                <div className="dropbtn" onClick={this.handleClick4}> THINGS TO DO <i className="material-icons"> arrow_drop_down </i> </div>
                 <div className={this.state.dropdown4}>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/streets"> ACTIVITIES </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/eats"> FOOD </Link>
-                  <Link onClick={this.handleClose} className="dropdown-link" to="/beats"> BARS </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/activities"> ACTIVITIES </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/food"> FOOD </Link>
+                  <Link onClick={this.handleClose} className="dropdown-link" to="/bars"> BARS </Link>
                 </div>
               </li>
               <li className="dropdown">

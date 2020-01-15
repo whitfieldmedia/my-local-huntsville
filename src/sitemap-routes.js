@@ -7,9 +7,9 @@ export default (
         <Route path="/contact"/>
         <Route path="/gallery"/>
         <Route path="/work"/>
-        <Route path="/streets"/>
-        <Route path="/beats"/>
-        <Route path="/eats"/>
+        <Route path="/activities"/>
+        <Route path="/bars"/>
+        <Route path="/food"/>
         <Route path="/events"/>
         <Route path="/hotels"/>
         <Route path="/museums"/>
