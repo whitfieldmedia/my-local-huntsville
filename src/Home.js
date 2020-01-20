@@ -78,6 +78,15 @@ class Home extends React.Component{
             height="360" 
             allowFullScreen>
           </iframe>
+          <iframe className="website-video" 
+            title="My Local Huntsville Ad" 
+            src="https://player.vimeo.com/video/368617064" 
+            width="640" 
+            height="360" 
+            frameBorder="0" 
+            allow="autoplay; fullscreen" 
+            allowFullScreen>
+          </iframe>
           {/* <iframe className="website-video" 
             title="My Local Huntsville Ad" 
             src="https://player.vimeo.com/video/368617064" 
