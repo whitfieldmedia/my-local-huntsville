@@ -7,7 +7,7 @@
     height: auto;
     width: 100vw;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
     margin: auto;
@@ -26,28 +26,28 @@
 
 .event-holder {
     position: relative;
-    width: auto;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 500px;
     min-width: 300px;
     height: auto;
-    padding: 10px;
+    margin: 5px 10px;
 }
 
 .event-container {
     background: #f9f9f9;
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
-    width: 100%;
+    width: 98%;
     box-shadow: 0px 0px 3px #676767;
-    max-width: 1000px;
+    max-width: 500px;
     min-width: 300px;
     height: auto;
     text-decoration: none;
     color: $light-font;
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 } 
 .event-video {
     max-width: 100%;
@@ -60,7 +60,7 @@
 .event-title {
     font-family: $serif;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: $dark-font;
     padding: 0;
     margin: 0;
@@ -85,20 +85,21 @@
     font-family: $sans;
     text-align: center;
     position: relative;
-    color: $light-font;
+    text-decoration: none;
+    color: $blue;
     text-align: center;
 
 }
 .event-link:hover {
-    font-size: 21px;
-    color: $dark-font;
+    transform: scale(1.03);
+    color: $blue2;
 }
 
 .event-date {
     font-size: 20px;
     font-family: $sans;
     color: $dark-font;
-    text-align: center;
+    text-align: left;
     margin: 0;
     padding: 0;
 }

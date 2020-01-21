@@ -2,13 +2,16 @@ import React from 'react';
 import ArtWalk from './whitfieldVideos/ArtWalk';
 import Bullet from './whitfieldVideos/Bullet';
 import Gardens from './whitfieldVideos/Gardens';
+import Lotus from './whitfieldVideos/LotusLoft';
 import ArtWalkMobile from './whitfieldVideos/ArtWalkMobile';
 import BulletMobile from './whitfieldVideos/BulletMobile';
 import GardensMobile from './whitfieldVideos/GardensMobile';
+import LotusMobile from './whitfieldVideos/LotusLoftMobile';
 import { Helmet } from 'react-helmet';
 import artThumbnail from './whitfieldVideos/thumbnails/artWalk.png';
 import botanicalThumbnail from './whitfieldVideos/thumbnails/botanicalGardens.png';
 import bulletThumbnail from './whitfieldVideos/thumbnails/bulletBarrel.png';
+import lotusThumbnail from './whitfieldVideos/thumbnails/lotusThumbnail.png';
 import bannerTall from './bannerAd/raypearman_tall.svg';
 import bannerMobile from './bannerAd/rpearman_mobile.svg';
 import './css/streets.css';
@@ -18,11 +21,13 @@ class Streets extends React.Component {
         super();
         this.state = {
             videos: [
+                <Lotus />,
                 <ArtWalk />,
                 <Gardens />,
                 <Bullet />
             ],
             videosMobile: [
+                <LotusMobile />,
                 <ArtWalkMobile />,
                 <GardensMobile />,
                 <BulletMobile />
@@ -41,16 +46,20 @@ class Streets extends React.Component {
             return this.state.videosMobile[this.state.index];
         }
     }
-    playArt = () => {
+    playLotus = () => {
         this.setState({ index: 0 })
         this.findVideo()
     }
-    playBotanical = () => {
+    playArt = () => {
         this.setState({ index: 1 })
         this.findVideo()
     }
-    playBullet = () => {
+    playBotanical = () => {
         this.setState({ index: 2 })
+        this.findVideo()
+    }
+    playBullet = () => {
+        this.setState({ index: 3 })
         this.findVideo()
     }
     render() {
@@ -76,6 +85,19 @@ class Streets extends React.Component {
                                 </a>
                                 {this.state.index === 0 ? null
                                 : <div className="video-thumbnail-wrapper">
+                                    <div onClick={this.playLotus} className="thumbnail-container">
+                                        <img onClick={this.playLotus} src={lotusThumbnail} className="video-thumbnail" alt="Lotus Loft Huntsville, Alabama"/>
+                                        <div className="thumbnail-hover">
+                                            <i className="material-icons">play_arrow</i>
+                                            <p> Play Video </p>
+                                        </div>
+                                    </div>
+                                    <p className="small-video-header"> Lotus Loft </p>
+                                    <div className="video-line"></div>
+                                </div>
+                                }
+                                {this.state.index === 1 ? null
+                                : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playArt} className="thumbnail-container">
                                         <img onClick={this.playArt} src={artThumbnail} className="video-thumbnail" alt="Downtown Huntsville Secret Art Walk"/>
                                         <div className="thumbnail-hover">
@@ -87,7 +109,7 @@ class Streets extends React.Component {
                                     <div className="video-line"></div>
                                 </div> }
 
-                                {this.state.index === 1 ? null
+                                {this.state.index === 2 ? null
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playBotanical} className="thumbnail-container">
                                         <img onClick={this.playBotanical} src={botanicalThumbnail} className="video-thumbnail" alt="Botanical Gardens"/>
@@ -100,7 +122,7 @@ class Streets extends React.Component {
                                     <div className="video-line"></div>
                                 </div> }
 
-                                {this.state.index === 2 ? null :
+                                {this.state.index === 3 ? null :
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playBullet} className="thumbnail-container">
                                         <img onClick={this.playBullet} src={bulletThumbnail} className="video-thumbnail" alt="Bullet & Barrel"/>
