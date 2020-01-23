@@ -392,7 +392,7 @@
   }
 
   .dropdown-link {
-    font-size: 25px;
+    font-size: 18px;
     color: #F5F7F6;
     position: relative;
     text-decoration: none;
@@ -405,8 +405,8 @@
     flex-flow: row;
   }
   .dropdown-link .material-icons {
-    padding-top: 12px;
-    font-size: 25px;
+    padding-top: 8px;
+    font-size: 18px;
     justify-self: baseline;
     align-self: baseline;
   }

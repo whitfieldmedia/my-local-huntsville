@@ -388,7 +388,7 @@
     }
 
     .dropdown-link {
-        font-size: 25px;
+        font-size: 18px;
         color: $white;
         position: relative;
         text-decoration: none;
@@ -400,8 +400,8 @@
         display: flex;
         flex-flow: row;
         .material-icons {
-            padding-top: 12px;
-            font-size: 25px;
+            padding-top: 8px;
+            font-size: 18px;
             justify-self: baseline;
             align-self: baseline;
         }
