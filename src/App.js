@@ -6,7 +6,6 @@ import Contact from './Contact';
 import Hotels from './Hotels';
 import Nature from './Nature';
 import Footer from './Footer';
-import News from './News';
 import Beats from './Beats';
 import Eats from './Eats';
 import Streets from './Streets';
@@ -27,7 +26,6 @@ class App extends React.Component{
           <Route path="/contact" component={Contact} />
           <Route path="/hotels" component={Hotels} />
           <Route path="/nature" component={Nature} />
-          <Route path="/news" component={News} />
           <Route path="/bars" component={Beats} />
           <Route path="/food" component={Eats} />
           <Route path="/activities" component={Streets} />

@@ -163,16 +163,12 @@
 
 @media only screen and (max-width: 950px) {
     .events-page {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        flex-flow: column;
     }
-    .events-container {
-        max-width: 100%;
-    }
-    .event-holder {
-        max-width: 90vw;
+    .event-container {
+        width: 100%;
     }
 }
 
@@ -229,7 +225,9 @@
 
 @media only screen and (max-width: 350px) {
     .event-container {
-        padding: 0px;
+        padding: 10px;
+        width: 80%;
+        min-width: 280px;
     }
 }
 
