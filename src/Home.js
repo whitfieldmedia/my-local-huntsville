@@ -1,15 +1,4 @@
 import React from 'react';
-import BackgroundSlideshow from 'react-background-slideshow';
-import background from './ashleyPhotos/welcome_to_huntsville.png';
-import background3 from './ashleyPhotos/diners.png';
-import background2 from './ashleyPhotos/jefferson_st.png';
-import background1 from './ashleyPhotos/big_springs_park.png';
-import background5 from './ashleyPhotos/pond.png';
-import background6 from './ashleyPhotos/street_exposure.png';
-import smallBack from './ashleyPhotos/lowe_mill.png';
-import smallBack2 from './ashleyPhotos/usa_rocket.png';
-import smallBack3 from './ashleyPhotos/soldier_statue.png';
-import smallBack4 from './ashleyPhotos/clinton_row.jpg';
 import rightArrow from './icons/next-page-white.svg';
 import street from './ashleyPhotos/jeff_st2.png';
 import food from './ashleyPhotos/food.png';
@@ -59,11 +48,7 @@ class Home extends React.Component{
           <link rel="canonical" href="https://www.mylocalhuntsville.com/"/>
           <meta name="description" content="My Local Huntsville is a all around guide to Huntsville Alabama. Whether you are in town visiting or a local we keep up to date with whats happening and the best things to do in Huntsville Alabama." />
         </Helmet>
-        <div className="top-wrapper">
-          {this.state.isBig
-          ?  <BackgroundSlideshow images={[background,background1,background2,background3,background5,background6]} />
-          : <BackgroundSlideshow images={[smallBack, smallBack2, smallBack3, smallBack4]} />}
-        </div>
+        <div className="top-wrapper"></div>
         <a className="banner-wrapper" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
           <img className="banner" src={banner} alt="ray pearman lincoln"/>
           <img className="mobileBanner" src={mobileBanner} alt="Ray Pearman Lincoln"/>

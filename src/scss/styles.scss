@@ -24,159 +24,24 @@ body {
     justify-items: center;
     align-content: center;
     align-items: center;
-    min-height: 75vh;
     height: auto;
+    max-height: 85vh;
+    min-height: 75vh;
     width: 100vw;
     filter: brightness(60%);
-}
-.top-container {
-    position: absolute;
-    height: 75vh;
-    width: 100vw;
-    overflow-x: hidden;
-    background: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    overflow-y: hidden;
-    justify-content: flex-end;
-    justify-items: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
-    flex-flow: column;
-    z-index: 5;
-}
-.top-container2 {
-    position: absolute;
-    height: 75vh;
-    width: 100vw;
-    overflow-x: hidden;
-    background: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
-    justify-items: flex-end;
-    align-content: flex-start;
-    align-items: flex-start;
-}
-
-.tall-video {
-    width: 250px;
-    height: 500px;
-}
-.top-header {
-    position: relative;
-    color: $white;
-    font-family: $bebas;
-    text-align: right;
-    font-weight: $bold;
-    background: 0;
-    padding: 0 30px 0 35px;
-    margin: 0;
-    font-size: 70px;
-    line-height: 65px;
-    letter-spacing: 3px;
-}
-.top-header1 {
-    position: relative;
-    color: $white;
-    font-family: $bebas;
-    text-align: right;
-    font-weight: $bold;
-    background: 0;
-    padding: 0 30px 0 35px;
-    margin: 0;
-    font-size: 70px;
-    line-height: 65px;
-    letter-spacing: 3px;
-}
-
-.weatherwidget-io {
-    position: relative;
-    height: auto;
-    width: 100%;
+    overflow: hidden;
+    background: url('../images/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
-/* HOME NEWS */
-.home-news-wrapper {
-    width: 100%;
-}
-.home-news-header {
-    font-family: $serif;
-    text-align: center;
-    font-size: 45px;
-    color: $white;
-    font-weight: $semibold;
-    padding: 0;
-    margin: 0;
-}
-
-/* HOME EVENTS */
-.home-events {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-}
-.main-events-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    width: 100vw;
-    padding-bottom: 50px;
-}
-.main-events-column {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    width: auto;
-    max-width: 60vw;
-    padding: 10px;
-}
-.home-events-header {
-    font-family: $serif;
-    text-align: center;
-    font-size: 40px;
-    color: $white;
-    font-weight: $medium;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-}
 .right-arrow-icon {
     width: 50px;
     height: 50px;
     padding: 0;
     margin: 0;
-}
-.home-event-link {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.home-event-link:hover .right-arrow-icon {
-    transform: scale(1.1);
-}
-
-.main-event-par {
-    text-align: center;
-    font-family: $sans;
-    font-size: 22px;
-    padding: 0 20px;
-    color: $white;
-    font-weight: $normal;
 }
 
 
@@ -314,9 +179,7 @@ body {
     justify-content: center;
     align-content: center;
 }
-// .home-beats-container div:nth-last-child(1) {
-//     border-left: 1px solid $white;
-// }
+
 .home-beats-column {
     display: flex;
     flex-flow: column;
@@ -771,15 +634,12 @@ body {
         grid-template-columns: 50% 50%;
     }
 }
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 950px) {
     .top-wrapper {
-        margin-top: 30px;
-    }
-    .top-header2 {
-        display: none;
-    }
-    .top-header {
-        display: none;
+        min-height: 70vh;
+        max-height: 75vh;
+        background-position: right center;
     }
 }
 
@@ -788,6 +648,7 @@ body {
         grid-template-columns: 100%;
     }
 }
+
 
 @media only screen and (max-width: 650px) {
     .website-video {
@@ -868,6 +729,14 @@ body {
     }
     .home-beats-image {
         border-radius: 25px;
+    }
+    .top-wrapper {
+        background: url('../images/heroTall.png');
+        min-height: 85vh;
+        max-height: 90vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
