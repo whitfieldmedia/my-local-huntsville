@@ -22,50 +22,18 @@ class Events extends React.Component{
                         content="Stay in the loop and see upcoming events in Huntsville Alabama. There are lots of free events happening in Huntsville don't miss out." />
                 </Helmet>
                 <h1 className="event-header"> Upcoming Events </h1>
+
                 <div className="events-page">
-                    <div className="event-holder"> 
-                        <div className="event-container">
-                            <h2 className="event-title"> 
-                                Live Music
-                            </h2>
-                            <p className="event-date"> 
-                            Friday January 24, 2020 at 6 PM
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/The+Boot+Pizzeria/@34.6280551,-86.5687295,17z/data=!3m1!4b1!4m5!3m4!1s0x88620d5bbf285627:0x368dbec70ccff0c3!8m2!3d34.6280507!4d-86.5665408"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                The Boot Pizzeria
-                            </a>
-                            <a className="event-link" 
-                                href="https://www.facebook.com/events/495557954429159/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder"> 
-                        <div className="event-container">
-                            <h2 className="event-title"> 
-                                Yoga at the Garden
-                            </h2>
-                            <p className="event-date"> 
-                                Sunday, January 26, 2020 at 2:00 PM - 3:00 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Huntsville+Botanical+Garden/@34.7075,-86.6362262,17z/data=!3m1!4b1!4m5!3m4!1s0x88626c6e9ec1e7c5:0x9cecb08319fc29da!8m2!3d34.7074956!4d-86.6340375"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Huntsville Botanical Garden
-                            </a>
-                            <a className="event-link"
-                                href="https://www.facebook.com/events/739216676573552/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Learn More
-                            </a>
-                        </div>
+                    <div className="event-video-container">
+                        <iframe title="Beaks and Barks Huntsville Botanical Garden" 
+                            className="event-video"
+                            src="https://player.vimeo.com/video/386534701" 
+                            width="640" 
+                            height="360" 
+                            frameBorder="0" 
+                            allow="autoplay; fullscreen" 
+                            allowFullScreen>
+                        </iframe>
                     </div>
                     <div className="event-holder"> 
                         <div className="event-container">

@@ -1,5 +1,10 @@
 .events-container {
-  padding-top: 120px;
+  padding: 120px 0 0 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .events-page {
@@ -50,12 +55,19 @@
   align-items: flex-start;
 }
 
+.event-video-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+}
+
 .event-video {
-  max-width: 100%;
-  margin: 15px 0;
+  margin: 15px auto;
   padding: 0;
-  width: 640px;
-  height: 360px;
 }
 
 .event-title {
@@ -118,12 +130,6 @@
   display: none;
 }
 
-.event-video-holder {
-  width: 450px;
-  max-width: 100vw;
-  height: auto;
-}
-
 /* CRUSH WINE FESTIVAL */
 .festival-event-holder {
   display: flex;
@@ -160,12 +166,6 @@
   width: 800px;
 }
 
-@media only screen and (max-width: 1375px) {
-  .event-video {
-    width: 550px;
-    height: 310px;
-  }
-}
 @media only screen and (max-width: 950px) {
   .events-page {
     align-items: center;
@@ -176,11 +176,9 @@
   .event-container {
     width: 100%;
   }
-}
-@media only screen and (max-width: 625px) {
+
   .event-video {
-    width: 410px;
-    height: 230px;
+    max-width: 90%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -225,13 +223,13 @@
     max-width: 120vw;
   }
 
-  .event-video {
-    width: 340px;
-    height: 191.25px;
-  }
-
   .event-date {
     max-width: 300px;
+  }
+
+  .event-video {
+    width: 100vw;
+    height: 56.25vw;
   }
 }
 @media only screen and (max-width: 350px) {
