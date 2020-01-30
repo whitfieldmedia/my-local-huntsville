@@ -1,5 +1,5 @@
 import React from 'react';
-import newsletter from './images/Newsletter_1-4.png';
+import newsletter from './images/newsletter1-5.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
