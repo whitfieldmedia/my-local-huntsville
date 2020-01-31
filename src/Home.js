@@ -85,7 +85,7 @@ class Home extends React.Component{
           </div>
         </div>
         <div className="streets-eats-beats-container">
-          <div className="home-streets-container">
+          <Link to="/activities" className="home-streets-container">
             <div className="home-streets-column">
               <img src={street} className="home-street-image" alt="Jefferson Street"/>
             </div>
@@ -95,8 +95,8 @@ class Home extends React.Component{
                 <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
               </Link>
             </div>
-          </div>
-          <div className="home-eats-container">
+          </Link>
+          <Link to="/food" className="home-eats-container">
             <div className="home-eats-column">
               <Link to="/food" className="home-eats-link">
                 <h2 className="home-eats-header"> Food </h2>
@@ -106,8 +106,8 @@ class Home extends React.Component{
             <div className="home-eats-column">
               <img src={food} className="home-eats-image" alt="Food"/>
             </div>
-          </div>
-          <div className="home-beats-container">
+          </Link>
+          <Link to="/bars" className="home-beats-container">
             <div className="home-beats-column">
               <img src={beats} className="home-beats-image" alt="Person playing guitar"/>
             </div>
@@ -117,7 +117,7 @@ class Home extends React.Component{
                 <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
               </Link>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="spacer"></div>
         <h2 className="things-to-do-header"> Explore </h2>

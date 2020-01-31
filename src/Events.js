@@ -35,28 +35,6 @@ class Events extends React.Component{
                             allowFullScreen>
                         </iframe>
                     </div>
-                    <div className="event-holder"> 
-                        <div className="event-container">
-                            <h2 className="event-title"> 
-                                Advanced Pistol 2
-                            </h2>
-                            <p className="event-date"> 
-                                Tuesday, January 28, 2020 at 5:30 PM – 8:30 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Bullet+and+Barrel+Indoor+Shooting+Range+and+Training+Facility/@34.6906816,-86.5952085,17z/data=!3m1!4b1!4m5!3m4!1s0x88626df1260d9461:0x5d953fe1a8db0303!8m2!3d34.6906772!4d-86.5930198"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Bullet and Barrel
-                            </a>
-                            <a className="event-link" 
-                                href="https://www.facebook.com/events/540753683145618/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
                     <div className="event-holder">
                         <div className="event-container">
                             <h2 className="event-title">
