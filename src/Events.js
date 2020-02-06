@@ -1,5 +1,5 @@
 import React from 'react';
-import newsletter from './images/newsletter1-5.png';
+import newsletter from './images/february_newsletter.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
@@ -34,95 +34,6 @@ class Events extends React.Component{
                             allow="autoplay; fullscreen" 
                             allowFullScreen>
                         </iframe>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                JJ Grey
-                            </h2>
-                            <p className="event-date">
-                                Friday January 31 at 8 PM
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" 
-                                href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/jj-grey/3318622/?eventId=3318622&eventName=JJ+Grey&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=01%2f31%2f2020+20%3a00%3a00&city=Huntsville&stateProvince=AL&performerId=12021&performerName=JJ+Grey&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" 
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Tig Notaro
-                            </h2>
-                            <p className="event-date">
-                                Saturday February 1 at 8 PM
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" 
-                                href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/tig-notaro/3318631/?eventId=3318631&eventName=Tig+Notaro&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=02%2f01%2f2020+20%3a00%3a00&city=Huntsville&stateProvince=AL&performerId=31522&performerName=Tig+Notaro&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" 
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title"> 
-                                Marvel Universe Trivia
-                            </h2>
-                            <p className="event-date">
-                                Monday, February 3, 2020 at 6 PM – 7:30 PM
-                                <br/>
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Old+Town+Beer+Exchange/@34.7334093,-86.5871641,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b53dce4f20d:0x8ce6cabd51033e84!8m2!3d34.7334049!4d-86.5849754"
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                    Old Town Beer Exchange
-                            </a>
-                            <a className="event-link" 
-                                href="https://www.facebook.com/events/2292796704351606/" 
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                Learn More 
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder"> 
-                        <div className="event-container">
-                            <h2 className="event-title"> 
-                                Valentine cookies decorating
-                            </h2>
-                            <p className="event-date"> 
-                                Wednesday, February 5, 2020 at 6 PM
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/The+Boot+Pizzeria/@34.6280551,-86.5687295,17z/data=!3m1!4b1!4m5!3m4!1s0x88620d5bbf285627:0x368dbec70ccff0c3!8m2!3d34.6280507!4d-86.5665408"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                The Boot Pizzeria
-                            </a>
-                            <a className="event-link" 
-                                href="https://www.facebook.com/events/558016738084818/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Learn More
-                            </a>
-                        </div>
                     </div>
                     <div className="event-holder">
                         <div className="event-container">
