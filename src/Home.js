@@ -1,10 +1,11 @@
 import React from 'react';
-import rightArrow from './icons/next-page-white.svg';
+import rightArrow2 from './icons/next-page-white2.svg';
 import street from './ashleyPhotos/jeff_st2.png';
 import food from './ashleyPhotos/food.png';
 import beats from './ashleyPhotos/guitar_black_white2.jpg';
 import nature from './ashleyPhotos/stream.png';
 import museum from './ashleyPhotos/white_building.png';
+import hotel from './images/hotel_cover.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './css/styles.css';
@@ -84,67 +85,49 @@ class Home extends React.Component{
             </iframe>
           </div>
         </div>
-        <div className="streets-eats-beats-container">
-          <Link to="/activities" className="home-streets-container">
-            <div className="home-streets-column">
-              <img src={street} className="home-street-image" alt="Jefferson Street"/>
-            </div>
-            <div className="home-streets-column">
-              <Link to="/activities" className="home-streets-link">
-                <h2 className="home-streets-header"> Activities </h2>
-                <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
-              </Link>
-            </div>
+        <div className="home-what-wrapper">
+          <Link to="/activities" className="home-what-container">
+            <img src={street} className="home-what-img" alt="Jerfferson Street - Huntsville, Al"/>
+            <h2 className="home-what-header">
+              Activities
+              <img src={rightArrow2} className="home-what-arrow" alt="Find Activities in Huntsville."/>
+            </h2>
           </Link>
-          <Link to="/food" className="home-eats-container">
-            <div className="home-eats-column">
-              <Link to="/food" className="home-eats-link">
-                <h2 className="home-eats-header"> Food </h2>
-                <img src={rightArrow} className="right-arrow-icon" alt="right arrow"/>
-              </Link>
-            </div>
-            <div className="home-eats-column">
-              <img src={food} className="home-eats-image" alt="Food"/>
-            </div>
+          <Link to="/food" className="home-what-container">
+            <img src={food} className="home-what-img" alt="Food - Huntsville, Al"/>
+            <h2 className="home-what-header">
+              Food
+              <img src={rightArrow2} className="home-what-arrow" alt="Find Activities in Huntsville."/>
+            </h2>
           </Link>
-          <Link to="/bars" className="home-beats-container">
-            <div className="home-beats-column">
-              <img src={beats} className="home-beats-image" alt="Person playing guitar"/>
-            </div>
-            <div className="home-beats-column">
-              <Link to="/bars" className="home-beats-link">
-                <h2 className="home-beats-header"> Bars </h2>
-                <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
-              </Link>
-            </div>
+          <Link to="/bars" className="home-what-container">
+            <img src={beats} className="home-what-img" id="home-bar-img" alt="Live Music - Huntsville, Al"/>
+            <h2 className="home-what-header">
+              Bars & Breweries
+              <img src={rightArrow2} className="home-what-arrow" alt="Find Activities in Huntsville."/>
+            </h2>
           </Link>
-        </div>
-        <div className="spacer"></div>
-        <h2 className="things-to-do-header"> Explore </h2>
-        <div className="things-to-do-container">
-          <div className="things-to-do-column">
-            <Link to="/nature" className="home-nature-link">
-              <h2 className="home-nature-header"> Nature </h2>
-              <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
-            </Link>
-            <div className="spacer"></div>
-            <img src={nature} className="home-nature-image" alt="Stream"/>
-          </div>
-          <div className="things-to-do-column">
-            <Link to="/museums" className="home-museum-link">
-              <h2 className="home-museums-header"> Museums </h2>
-              <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
-            </Link>
-            <div className="spacer"></div>
-            <img src={museum} className="home-museum-image" alt="The Eloise McDonald Propst Guest Center"/>
-          </div>
-        </div>
-        <div className="where-to-stay-container">
-          <Link to="/hotels" className="home-hotel-link">
-            <h2 className="home-hotel-header"> Where to Stay </h2>
-            <img src={rightArrow} className="right-arrow-icon" alt="Right Arrow"/>
+          <Link to="/nature" className="home-what-container">
+            <img src={nature} className="home-what-img" alt="Stream in Huntsville, Al"/>
+            <h2 className="home-what-header">
+              Nature
+              <img src={rightArrow2} className="home-what-arrow" alt="Find Activities in Huntsville."/>
+            </h2>
           </Link>
-          <p className="home-hotel-par"> Visiting Huntsville? Let us help you find the perfect place to stay. </p>
+          <Link to="/museums" className="home-what-container">
+            <img src={museum} className="home-what-img" alt="The Eloise McDonald Propst Guest Center"/>
+            <h2 className="home-what-header">
+              Museums
+              <img src={rightArrow2} className="home-what-arrow" alt="Find Activities in Huntsville."/>
+            </h2>
+          </Link>
+          <Link to="/hotels" className="home-what-container">
+            <img src={hotel} className="home-what-img" alt="Hotels in Huntsville, Al"/>
+            <h2 className="home-what-header">
+              Hotels
+              <img src={rightArrow2} className="home-what-arrow" alt="Find Activities in Huntsville."/>
+            </h2>
+          </Link>
         </div>
       </div>
     )
