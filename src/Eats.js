@@ -1,13 +1,11 @@
 import React from 'react';
 import BrokenEgg from './whitfieldVideos/BrokenEgg';
 import Boot from './whitfieldVideos/Boot';
-import Straight from './whitfieldVideos/Straight';
 import Yellowhammer from './whitfieldVideos/Yellowhammer';
 import Btr from './whitfieldVideos/Btr';
 import Waltons from './whitfieldVideos/Waltons';
 import BrokenEggMobile from './whitfieldVideos/BrokenEggMobile';
 import BootMobile from './whitfieldVideos/BootMobile';
-import StraightMobile from './whitfieldVideos/StraightMobile';
 import YellowhammerMobile from './whitfieldVideos/YellowhammerMobile';
 import BtrMobile from './whitfieldVideos/BtrMobile';
 import WaltonsMobile from './whitfieldVideos/WaltonsMobile';
@@ -15,7 +13,6 @@ import bootThumbnail from './whitfieldVideos/thumbnails/boot.png'
 import eggThumbnail from './whitfieldVideos/thumbnails/brokenEgg.png';
 import btrThumbnail from './whitfieldVideos/thumbnails/btr.png';
 import waltonThumbnail from './whitfieldVideos/thumbnails/waltons.png';
-import straightThumbnail from './whitfieldVideos/thumbnails/straight-to-ale.png';
 import yellowThumbnail from './whitfieldVideos/thumbnails/yellowhammer.png';
 import BrassTap from './whitfieldVideos/BrassTap';
 import BrassTapMobile from './whitfieldVideos/BrassTapMobile';
@@ -34,7 +31,6 @@ class Eats extends React.Component{
                 <Waltons />,
                 <BrokenEgg />,
                 <Boot />,
-                <Straight />,
                 <Yellowhammer />,
                 <Btr />
             ],
@@ -43,7 +39,6 @@ class Eats extends React.Component{
                 <WaltonsMobile />,
                 <BrokenEggMobile />,
                 <BootMobile />,
-                <StraightMobile />,
                 <YellowhammerMobile />,
                 <BtrMobile />
             ],
@@ -77,16 +72,12 @@ class Eats extends React.Component{
         this.setState({ index: 3 })
         this.findVideo();
     }
-    playStraight = () => {
+    playYellow = () => {
         this.setState({ index: 4 })
         this.findVideo();
     }
-    playYellow = () => {
-        this.setState({ index: 5 })
-        this.findVideo();
-    }
     playBtr = () => {
-        this.setState({ index: 6 })
+        this.setState({ index: 5 })
         this.findVideo();
     }
     render() {
@@ -159,20 +150,8 @@ class Eats extends React.Component{
                                     <p className="small-video-header"> The Boot Pizzeria </p>
                                     <div className="video-line"></div>
                                 </div> }
-                                {this.state.index === 4 ? null :
-                                <div className="video-thumbnail-wrapper">
-                                    <div onClick={this.playStraight} className="thumbnail-container">
-                                        <img onClick={this.playStraight} src={straightThumbnail} className="video-thumbnail" alt="Straight To Ale"/>
-                                        <div className="thumbnail-hover">
-                                            <i className="material-icons">play_arrow</i>
-                                            <p> Play Video </p>
-                                        </div>
-                                    </div>
-                                    <p className="small-video-header"> Straight to Ale </p>
-                                    <div className="video-line"></div>
-                                </div> }
 
-                                {this.state.index === 5 ? null :
+                                {this.state.index === 4 ? null :
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playYellow} className="thumbnail-container">
                                         <img onClick={this.playYellow} src={yellowThumbnail} className="video-thumbnail" alt="Yellowhammer Earth & Stone"/>
@@ -185,7 +164,7 @@ class Eats extends React.Component{
                                     <div className="video-line"></div>
                                 </div> }
 
-                                {this.state.index === 6 ? null 
+                                {this.state.index === 5 ? null 
                                 :                                                                  
                                 <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playBtr} className="thumbnail-container">
