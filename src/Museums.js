@@ -82,7 +82,7 @@ class Museums extends React.Component {
                     <meta charSet="utf-8" />
                     <title> Museums in Huntsville Alabama </title>
                     <link rel="canonical" href="https://www.mylocalhuntsville.com/museums"/>
-                    <meta name="description" content="Huntsville known as Rocket City has some awesome museums! If you're interesed in what museums to go to while you're in town check out our top choices." />
+                    <meta name="description" content="Huntsville known as Rocket City has some awesome museums! If you're interested in what museums to go to while you're in town check out our top choices." />
                 </Helmet>
                 <div className="museum-container">
                     <div className="museum-wrapper">
@@ -184,7 +184,7 @@ class Museums extends React.Component {
                             <div className="contact">
                                 <h3 className="museum-header3"> Contact </h3>
                                 <a className="tickets ticket-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/U.S.+Space+%26+Rocket+Center/@34.7111455,-86.6561125,17z/data=!3m1!4b1!4m5!3m4!1s0x88626c10a5eae5d7:0x3e32325e196cc12e!8m2!3d34.7111411!4d-86.6539238"> 
-                                    1 Tranquility Base, <br/> Huntsvillle, AL 35805
+                                    1 Tranquility Base, <br/> Huntsville, AL 35805
                                 </a> 
                                 <a className="tickets ticket-link" href="tel:18006377223"> 1 (800) 637-7223 </a>
                                 <a className="tickets ticket-link" href="mailto:social@spacecamp.com"> social@spacecamp.com </a>

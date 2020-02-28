@@ -191,7 +191,10 @@
   padding-top: 50px;
 }
 .banner-column img {
-  height: calc(100vh - 150px);
+  max-height: calc(100vh - 150px);
+  max-width: 200px;
+  height: auto;
+  min-width: 150px;
   margin: 0 auto;
   width: auto;
 }
@@ -234,7 +237,7 @@
     flex-flow: row wrap;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
   .banner-column {
     display: none;
   }
@@ -249,7 +252,14 @@
   .mobile-banner {
     display: block;
     position: relative;
+    width: 80vw;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .mobile-banner {
     width: 100vw;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 400px) {

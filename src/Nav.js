@@ -160,7 +160,7 @@ class Nav extends React.Component{
                 <Link onClick={this.closeHover} className="dropdown-link" to="/gallery"> GALLERY <i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               <li>
-                <Link onClick={this.closeHover} className="dropdown-link" to="/museums"> MUESEUMS<i className="material-icons"> keyboard_arrow_right </i> </Link>
+                <Link onClick={this.closeHover} className="dropdown-link" to="/museums"> MUSEUMS<i className="material-icons"> keyboard_arrow_right </i> </Link>
               </li>
               <li>
                 <Link onClick={this.closeHover} className="dropdown-link" to="/nature"> NATURE<i className="material-icons"> keyboard_arrow_right </i> </Link>

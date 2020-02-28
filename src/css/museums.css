@@ -266,11 +266,6 @@
   margin: 30px auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  .museum-container {
-    background-image: url("../ashleyPhotos/soldier_statue.png");
-  }
-}
 @media only screen and (max-width: 750px) {
   .museum-container {
     display: flex;
