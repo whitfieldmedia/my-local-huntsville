@@ -19,9 +19,9 @@ class Hotels extends React.Component{
                 <Helmet>
                     <meta charSet="utf-8"/>
                     <title> Best Hotels in Huntsville Alabama </title>
-                    <link rel="canonical" 
+                    <link rel="canonical"
                         href="https://www.mylocalhuntsville.com/hotels"/>
-                    <meta name="description" 
+                    <meta name="description"
                         content="Visiting Huntsville Alabama? We have partnered with Hilton to provide you the best stay while you're in town." />
                 </Helmet>
                 <div className="hotel-mid">
@@ -55,10 +55,10 @@ class Hotels extends React.Component{
                                     </div>
                                     <div className="icon-holder">
                                         <img src={dog} className="icon" alt="dog - My Local Huntsville" />
-                                        <h4 className="hotel-header4"> Pets Allowed </h4>
+                                        <h4 className="hotel-header4"> Pet Friendly Rooms </h4>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                     </div>
 
@@ -169,11 +169,11 @@ class Hotels extends React.Component{
                                 </div>
                                 <button className="button">
                                     <a className="button-link" target="_blank" rel="noopener noreferrer" href="https://hamptoninn3.hilton.com/en/hotels/alabama/hampton-inn-madison-huntsville-airport-HSVMSHX/index.html">
-                                        Find a Room 
+                                        Find a Room
                                     </a>
                                 </button>
                             </div>
-                        </div>       
+                        </div>
                     </div>
 
                     <div className="video-wrapper">
@@ -206,6 +206,42 @@ class Hotels extends React.Component{
                             </div>
                         </div>
                     </div>
+
+                    <div className="video-wrapper">
+                        <div className="hotel-row">
+                            <iframe className="hotel-video" src="https://player.vimeo.com/video/393772315" title="Hampton Inn Huntsville Reasearch Park - My Local Huntsville - Huntsville Alabama" allowFullScreen frameBorder="0"></iframe>
+                            <div className="video-column">
+                                <h2 className="hotel-header2"> Home2 Suites Decatur Ingalls Harbor </h2>
+                                <a className="hotel-website-link" href="https://www.hilton.com/en/hotels/dcuwsht-home2-suites-decatur-ingalls-harbor/?SEO_id=GMB-HT-DCUWSHT" target="_blank" rel="noopener noreferrer"> Find a Room </a>
+                                <a className="link-row" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/807+Island+Way+NW,+Decatur,+AL+35601/@34.6230861,-86.9947222,17z/data=!4m5!3m4!1s0x886285c33296d32d:0x4aa155a4d32fd8d1!8m2!3d34.6230861!4d-86.9925335">
+                                    <p className="hotel-address-link"> 807 Island Way NW, Decatur, Alabama 35601 </p>
+                                </a>
+                                <div className="included-holder">
+                                    <div className="icon-holder">
+                                        <img src={coffee} className="icon" alt="hot cup of coffee - My Local Hunstville"/>
+                                        <h4 className="hotel-header4"> Breakfast </h4>
+                                    </div>
+                                    <div className="icon-holder">
+                                        <img src={wifi} className="icon" alt="wifi - My Local Hunstville" />
+                                        <h4 className="hotel-header4"> Wifi </h4>
+                                    </div>
+                                    <div className="icon-holder">
+                                        <img src={swim} className="icon" alt="swimming - My Local Hunstville" />
+                                        <h4 className="hotel-header4"> Pool </h4>
+                                    </div>
+                                    <div className="icon-holder">
+                                        <img src={weights} className="icon" alt="weights - My Local Hunstville" />
+                                        <h4 className="hotel-header4"> Fitness </h4>
+                                    </div>
+                                    <div className="icon-holder">
+                                        <img src={dog} className="icon" alt="dog - My Local Huntsville" />
+                                        <h4 className="hotel-header4"> Pet Friendly Rooms </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         )

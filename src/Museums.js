@@ -29,7 +29,6 @@ import { Carousel } from 'react-responsive-carousel';
 import { Helmet } from 'react-helmet';
 import './css/museums.css';
 
-
 class Museums extends React.Component {
     constructor() {
         super();

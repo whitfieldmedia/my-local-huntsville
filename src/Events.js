@@ -13,110 +13,17 @@ class Events extends React.Component{
             <div className="events-container">
                 <Helmet>
                     <meta charSet="utf-8"/>
-                    <title> 
-                        Upcoming Events in Huntsville | My Local Huntsville 
+                    <title>
+                        Upcoming Events in Huntsville | My Local Huntsville
                     </title>
-                    <link rel="canonical" 
+                    <link rel="canonical"
                         href="https://www.mylocalhuntsville.com/events"/>
-                    <meta name="description" 
+                    <meta name="description"
                         content="Stay in the loop and see upcoming events in Huntsville Alabama. There are lots of free events happening in Huntsville don't miss out." />
                 </Helmet>
                 <h1 className="event-header"> Upcoming Events </h1>
 
                 <div className="events-page">
-                    <div className="event-video-container">
-                        <iframe title="Beaks and Barks Huntsville Botanical Garden" 
-                            className="event-video"
-                            src="https://player.vimeo.com/video/386534701" 
-                            width="640" 
-                            height="360" 
-                            frameBorder="0" 
-                            allow="autoplay; fullscreen" 
-                            allowFullScreen>
-                        </iframe>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Chris Janson
-                            </h2>
-                            <p className="event-date">
-                                Friday, February 28 at 7:30
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/chris-janson/3318618/?eventId=3318618&eventName=Chris+Janson&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=02%2f28%2f2020+19%3a30%3a00&city=Huntsville&stateProvince=AL&performerId=34461&performerName=Chris+Janson&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder"> 
-                        <div className="event-container">
-                            <h2 className="event-title"> 
-                                Beaks and Barks
-                            </h2>
-                            <p className="event-date"> 
-                                Daily, until February 29 at 9 AM - 5 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Huntsville+Botanical+Garden/@34.7075,-86.6362262,17z/data=!3m1!4b1!4m5!3m4!1s0x88626c6e9ec1e7c5:0x9cecb08319fc29da!8m2!3d34.7074956!4d-86.6340375"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Huntsville Botanical Garden
-                            </a>
-                            <a className="event-link" 
-                                href="https://www.facebook.com/events/592601271501661/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Skillet
-                            </h2>
-                            <p className="event-date">
-                                Saturday, February 29 at 7:30 PM
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/skillet/3359771/?eventId=3359771&eventName=Skillet&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=02%2f29%2f2020+19%3a30%3a00&city=Huntsville&stateProvince=AL&performerId=6592&performerName=Skillet&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder"> 
-                        <div className="event-container">
-                            <h2 className="event-title"> 
-                                Downtown Tri
-                            </h2>
-                            <p className="event-date"> 
-                                Sunday, March 1, 2020 at 1 PM – 4 PM
-                            </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Old+Town+Beer+Exchange/@34.7334093,-86.5871641,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b53dce4f20d:0x8ce6cabd51033e84!8m2!3d34.7334049!4d-86.5849754"
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                    Old Town Beer Exchange
-                            </a>
-                            <a className="event-link" 
-                                href="https://www.facebook.com/events/445807316308711/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
                     <div className="event-holder">
                         <div className="event-container">
                             <h2 className="event-title">
@@ -125,9 +32,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Thursday March 5 at 7:30 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -144,9 +51,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Friday March 6 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -155,21 +62,21 @@ class Events extends React.Component{
                             </a>
                         </div>
                     </div>
-                    <div className="event-holder"> 
+                    <div className="event-holder">
                         <div className="event-container">
-                            <h2 className="event-title"> 
+                            <h2 className="event-title">
                                 Hew Tyler at The Boot Pizzeria
                             </h2>
-                            <p className="event-date"> 
+                            <p className="event-date">
                                 Saturday, March 7, 2020 at 6 PM – 9 PM
                             </p>
-                            <a className="event-link" 
+                            <a className="event-link"
                                 href="https://www.google.com/maps/place/The+Boot+Pizzeria/@34.6280551,-86.5687295,17z/data=!3m1!4b1!4m5!3m4!1s0x88620d5bbf285627:0x368dbec70ccff0c3!8m2!3d34.6280507!4d-86.5665408"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 The Boot Pizzeria
                             </a>
-                            <a className="event-link" 
+                            <a className="event-link"
                                 href="https://www.facebook.com/events/564927887685607/"
                                 target="_blank"
                                 rel="noopener noreferrer">
@@ -177,21 +84,21 @@ class Events extends React.Component{
                             </a>
                         </div>
                     </div>
-                    <div className="event-holder"> 
+                    <div className="event-holder">
                         <div className="event-container">
-                            <h2 className="event-title"> 
+                            <h2 className="event-title">
                                 S. Patrick’s cookies decorating
                             </h2>
-                            <p className="event-date"> 
+                            <p className="event-date">
                                 Wednesday, March 11, 2020 at 6 PM
                             </p>
-                            <a className="event-link" 
+                            <a className="event-link"
                                 href="https://www.google.com/maps/place/The+Boot+Pizzeria/@34.6280551,-86.5687295,17z/data=!3m1!4b1!4m5!3m4!1s0x88620d5bbf285627:0x368dbec70ccff0c3!8m2!3d34.6280507!4d-86.5665408"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 The Boot Pizzeria
                             </a>
-                            <a className="event-link" 
+                            <a className="event-link"
                                 href="https://www.facebook.com/events/573999253165211/"
                                 target="_blank"
                                 rel="noopener noreferrer">
@@ -207,9 +114,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Friday March 13 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -226,9 +133,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Sunday March 15 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -245,9 +152,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Thursday March 19 at 7:30 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -264,9 +171,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Friday March 20 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -283,9 +190,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Wednesday March 25 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -302,9 +209,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Friday March 27 at 7:30 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -321,9 +228,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Saturday March 28 at 7:30 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -340,9 +247,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Saturday April 11 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -359,9 +266,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Monday April 13 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -378,9 +285,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Tuesday April 14 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -397,9 +304,9 @@ class Events extends React.Component{
                             <p className="event-date">
                                 Tuesday April 21 at 8 PM
                             </p>
-                            <a className="event-link" 
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911" 
-                                target="_blank" 
+                            <a className="event-link"
+                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
+                                target="_blank"
                                 rel="noopener noreferrer">
                                     Mars Music Hall at Von Braun Center
                             </a>
@@ -410,9 +317,9 @@ class Events extends React.Component{
                     </div>
                 </div>
                 <div className="newsletter-container">
-                    <a className="newsletter-wrapper" 
-                        href="https://www.downtownhuntsville.org" 
-                        target="_blank" 
+                    <a className="newsletter-wrapper"
+                        href="https://www.downtownhuntsville.org"
+                        target="_blank"
                         rel="noopener noreferrer">
                         <img src={newsletter} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter" />
                     </a>
@@ -422,4 +329,4 @@ class Events extends React.Component{
     }
 }
 
-export default Events;    
+export default Events;
