@@ -67,7 +67,7 @@
 }
 .learn-more {
     position: relative;
-    height: auto; 
+    height: auto;
     width: 200px;
     margin: auto;
     cursor: pointer;
@@ -121,19 +121,20 @@
     background: $background-hover;
     overflow-y: scroll;
     overflow: auto;
-    overscroll-behavior: contain;
+    scroll-behavior: smooth;
 }
 
  .popupCloseButton {
     background-color: $white;
-    border: 3px solid #999;
-    border-radius: 50px;
+    border: 3px solid $light-font;
+    color: $light-font;
+    border-radius: 50%;
     cursor: pointer;
     display: inline-block;
-    font-family: $serif;
+    font-family: sans-serif;
     font-weight: bold;
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 3vw;
     font-size: 25px;
     line-height: 30px;
@@ -141,6 +142,10 @@
     height: 30px;
     text-align: center;
     z-index: 500;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .popupCloseButton:hover {
@@ -200,7 +205,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
     text-align: left;
     max-width: 200px;
@@ -212,7 +217,7 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
     text-align: center;
 }
@@ -231,7 +236,7 @@
 .contact {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
     text-align: center;
     width: auto;
@@ -265,7 +270,7 @@
 
 @media only screen and (max-width: 750px) {
     .museum-container {
-        display: flex; 
+        display: flex;
         flex-flow: row wrap;
     }
 }
@@ -282,7 +287,7 @@
         padding-right: 20px;
     }
     .hours {
-        padding-left: 20px; 
+        padding-left: 20px;
         padding-right: 20px;
     }
     .contact {

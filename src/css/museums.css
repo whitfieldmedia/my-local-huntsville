@@ -125,19 +125,20 @@
   background: #e8e8e8;
   overflow-y: scroll;
   overflow: auto;
-  overscroll-behavior: contain;
+  scroll-behavior: smooth;
 }
 
 .popupCloseButton {
   background-color: #F5F7F6;
-  border: 3px solid #999;
-  border-radius: 50px;
+  border: 3px solid #4a4a4a;
+  color: #4a4a4a;
+  border-radius: 50%;
   cursor: pointer;
   display: inline-block;
-  font-family: "garamond-premier-pro", serif;
+  font-family: sans-serif;
   font-weight: bold;
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 3vw;
   font-size: 25px;
   line-height: 30px;
@@ -145,6 +146,10 @@
   height: 30px;
   text-align: center;
   z-index: 500;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .popupCloseButton:hover {
