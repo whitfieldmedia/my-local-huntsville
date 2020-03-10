@@ -27,66 +27,6 @@ class Events extends React.Component{
                     <div className="event-holder">
                         <div className="event-container">
                             <h2 className="event-title">
-                                Muscadine Bloodline
-                            </h2>
-                            <p className="event-date">
-                                Thursday March 5 at 7:30 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/muscadine-bloodline/3371313/?eventId=3371313&eventName=Muscadine+Bloodline&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=03%2f05%2f2020+19%3a30%3a00&city=Huntsville&stateProvince=AL&performerId=55364&performerName=Muscadine+Bloodline&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Tommy Emmanuel
-                            </h2>
-                            <p className="event-date">
-                                Friday March 6 at 8 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/tommy-emmanuel/3365198/?eventId=3365198&eventName=Tommy+Emmanuel&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=03%2f06%2f2020+20%3a00%3a00&city=Huntsville&stateProvince=AL&performerId=11979&performerName=Tommy+Emmanuel&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Hew Tyler at The Boot Pizzeria
-                            </h2>
-                            <p className="event-date">
-                                Saturday, March 7, 2020 at 6 PM – 9 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/The+Boot+Pizzeria/@34.6280551,-86.5687295,17z/data=!3m1!4b1!4m5!3m4!1s0x88620d5bbf285627:0x368dbec70ccff0c3!8m2!3d34.6280507!4d-86.5665408"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                The Boot Pizzeria
-                            </a>
-                            <a className="event-link"
-                                href="https://www.facebook.com/events/564927887685607/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
                                 S. Patrick’s cookies decorating
                             </h2>
                             <p className="event-date">
