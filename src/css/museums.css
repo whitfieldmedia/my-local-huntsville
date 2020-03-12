@@ -33,7 +33,7 @@
 }
 
 .title2 {
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   font-size: 23px;
   font-weight: 500;
   cursor: pointer;
@@ -44,7 +44,7 @@
 }
 
 .smallPar {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   color: #4a4a4a;
   text-align: left;
   font-weight: 400;
@@ -87,7 +87,7 @@
   border: none;
   background: #1A1A1C;
   color: #F5F7F6;
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 18px;
   height: auto;
   padding: 5px 8px;
@@ -157,7 +157,7 @@
 }
 
 .museum-header2 {
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   font-size: 40px;
   font-weight: 500;
   color: #212121;
@@ -167,7 +167,7 @@
 }
 
 .museum-header3 {
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   font-size: 35px;
   margin: 20px 0;
   font-weight: lighter;
@@ -193,7 +193,7 @@
 }
 
 .museum-par {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #4a4a4a;
@@ -227,7 +227,7 @@
 }
 
 .open-par {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #4a4a4a;
@@ -248,7 +248,7 @@
 }
 
 .tickets {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
   color: #4a4a4a;
   font-weight: 400;

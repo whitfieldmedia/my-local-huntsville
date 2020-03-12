@@ -68,7 +68,7 @@
   position: relative;
   color: #F5F7F6;
   font-size: 22px;
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -94,7 +94,7 @@
 }
 
 .seb-header {
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   font-size: 45px;
   height: auto;
   color: #F5F7F6;
@@ -118,7 +118,7 @@
 }
 
 .fav-activities-header {
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   font-size: 40px;
   height: auto;
   color: #F5F7F6;
@@ -154,7 +154,7 @@
 }
 
 .small-video-header {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 18px;
   color: #F5F7F6;
   text-align: center;

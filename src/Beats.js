@@ -65,9 +65,6 @@ class Beats extends React.Component{
         this.findVideo()
     }
     render() { 
-        if(this.state.isLoaded) {
-            console.log(this.props.events.resultsPage.results.event.map(res => res));
-        }
         return(
             <div className="seb-page">
                 <Helmet>

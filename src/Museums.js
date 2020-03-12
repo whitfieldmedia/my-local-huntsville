@@ -74,7 +74,6 @@ class Museums extends React.Component {
         this.setState({ open5: false })
     }
     render() {
-        console.log(this.state)
         return (
             <div>
                 <Helmet>

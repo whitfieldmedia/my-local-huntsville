@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import newsletter from './images/newsletter_march-2.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
@@ -53,7 +53,7 @@ class Events extends React.Component{
                                 href="https://www.facebook.com/events/573999253165211/"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ class Events extends React.Component{
                                     Huntsville Botanical Garden
                             </a>
                             <a className="event-link" href="https://hsvbg.org/event/clap-for-classics-8/2020-03-13/?fbclid=IwAR0rxvqip3O6127CseOcls5IQWDlDy8WyR_UGg_6zg-mcVe9K5On69DRuxc" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ class Events extends React.Component{
                                     The Bar at 805
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/559562394598309/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ class Events extends React.Component{
                                     The Brass Tap
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/2595027414120087/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -152,7 +152,7 @@ class Events extends React.Component{
                                     Yellowhammer Brewing
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/635505210605999/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -172,7 +172,7 @@ class Events extends React.Component{
                                     The Brass Tap
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/1471800452985605/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -192,7 +192,7 @@ class Events extends React.Component{
                                     Below The Radar
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/1534528973384709/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -212,7 +212,7 @@ class Events extends React.Component{
                                     The Poppy
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/211440590023368/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -232,7 +232,7 @@ class Events extends React.Component{
                                     The Bar at 805
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/2610915679144301/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -292,7 +292,7 @@ class Events extends React.Component{
                                     The Poppy
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/839352523203965/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -332,7 +332,7 @@ class Events extends React.Component{
                                     Yellowhammer Brewing
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/483985782276768/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -372,7 +372,7 @@ class Events extends React.Component{
                                     The Brass Tap
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/1471800452985605/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -392,7 +392,7 @@ class Events extends React.Component{
                                     The Bar at 805
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/199554011480559/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -412,7 +412,7 @@ class Events extends React.Component{
                                     Huntsville Botanical Garden
                             </a>
                             <a className="event-link" href="https://hsvbg.org/event/clap-for-classics-8/2020-03-13/?fbclid=IwAR0rxvqip3O6127CseOcls5IQWDlDy8WyR_UGg_6zg-mcVe9K5On69DRuxc" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -452,7 +452,7 @@ class Events extends React.Component{
                                     Yellowhammer Brewing
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/880339432422300/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -472,7 +472,7 @@ class Events extends React.Component{
                                     The Bar at 805
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/192179765456087/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -512,7 +512,7 @@ class Events extends React.Component{
                                     The Poppy
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/628271854627908/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -532,7 +532,7 @@ class Events extends React.Component{
                                     Yellowhammer Brewing
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/2623380981233223/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -611,7 +611,7 @@ class Events extends React.Component{
                                     Yellowhammer Brewing
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/500608020850328/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -631,7 +631,7 @@ class Events extends React.Component{
                                     The Bar at 805
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/638393873615424/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -651,7 +651,7 @@ class Events extends React.Component{
                                     Huntsville Botanical Garden
                             </a>
                             <a className="event-link" href="https://hsvbg.org/zimsculpt/?fbclid=IwAR0enlxBmhswALAH0oF1jly6zLYjw_rA7g2Gmk0hU7VYH8GDgnlT3r38JjI" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -790,7 +790,7 @@ class Events extends React.Component{
                                     Huntsville Botanical Garden
                             </a>
                             <a className="event-link" href="https://hsvbg.org/event/clap-for-classics-8/2020-03-13/?fbclid=IwAR0rxvqip3O6127CseOcls5IQWDlDy8WyR_UGg_6zg-mcVe9K5On69DRuxc" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -851,7 +851,7 @@ class Events extends React.Component{
                                     Chapman Mountain Nature Preserve
                             </a>
                             <a className="event-link" href="https://www.facebook.com/events/207784100593927/" target="_blank" rel="noopener noreferrer">
-                                Learn More
+                                Event Details
                             </a>
                         </div>
                     </div>
@@ -901,7 +901,9 @@ class Events extends React.Component{
                         href="https://www.downtownhuntsville.org"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <img src={newsletter} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter" />
+                        <Suspense fallback={<div> Loading... </div> }>
+                            <img src={newsletter} className="huntsville-newsletter" alt="Downtown Huntsville's Newsletter" />
+                        </Suspense>
                     </a>
                 </div>
             </div>

@@ -105,6 +105,7 @@
     text-decoration: none;
     color: $blue;
     text-align: center;
+    margin: 5px 0;
 
 }
 .event-link:hover {
@@ -117,7 +118,7 @@
     font-family: $sans;
     color: $dark-font;
     text-align: left;
-    margin: 0;
+    margin: 5px 0;
     padding: 0;
 }
 .event-popup-container img {

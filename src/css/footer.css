@@ -4,7 +4,7 @@
 }
 
 .footer-text {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #F5F7F6;
@@ -68,7 +68,7 @@
 .disclaimer {
   font-size: 16px;
   color: #F5F7F6;
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
 }
 .disclaimer a {
   text-decoration: none;

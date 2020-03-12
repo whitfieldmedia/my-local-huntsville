@@ -24,7 +24,7 @@
 .event-header {
   text-align: center;
   font-size: 40px;
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   color: #F5F7F6;
   font-weight: 600;
 }
@@ -76,7 +76,7 @@
 }
 
 .event-title {
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   font-size: 30px;
   font-weight: 600;
   color: #212121;
@@ -94,7 +94,7 @@
 
 .event-info {
   font-size: 20px;
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   text-align: left;
   margin: auto;
   position: relative;
@@ -102,12 +102,13 @@
 
 .event-link {
   font-size: 20px;
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   text-align: center;
   position: relative;
   text-decoration: none;
-  color: #278adb;
+  color: #E60508;
   text-align: center;
+  margin: 5px 0;
 }
 
 .event-link:hover {
@@ -117,10 +118,10 @@
 
 .event-date {
   font-size: 20px;
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   color: #212121;
   text-align: left;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
 }
 

@@ -31,7 +31,7 @@
 
 .hotel-header2 {
   font-size: 25px;
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   color: #212121;
   font-weight: 500;
   text-align: center;
@@ -41,7 +41,7 @@
 
 .hotel-header4 {
   font-size: 20px;
-  font-family: "garamond-premier-pro", serif;
+  font-family: "EB Garamond", serif;
   color: #212121;
   font-weight: 500;
   margin-top: 0;
@@ -50,7 +50,7 @@
 }
 
 .hotel-address-link {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
   color: #4a4a4a;
   text-decoration: none;
@@ -66,7 +66,7 @@
 }
 
 .hotel-website-link {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
   text-decoration: none;
   text-align: center;
