@@ -9,8 +9,6 @@ import hotel from './images/hotel_cover.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './css/styles.css';
-import banner from './bannerAd/rpearman_longbanner.svg';
-import mobileBanner from './bannerAd/rpearman_mobile.svg';
 import './css/banner.css';
 
 class Home extends React.Component{
@@ -50,10 +48,6 @@ class Home extends React.Component{
           <meta name="description" content="My Local Huntsville is a all around guide to Huntsville Alabama. Whether you are in town visiting or a local we keep up to date with whats happening and the best things to do in Huntsville Alabama." />
         </Helmet>
         <div className="top-wrapper"></div>
-        <a className="banner-wrapper" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
-          <img className="banner" src={banner} alt="ray pearman lincoln"/>
-          <img className="mobileBanner" src={mobileBanner} alt="Ray Pearman Lincoln"/>
-        </a>
         <div className="home-video-container">
           <div className="home-video-wrapper">
             <h3 className="home-header3">

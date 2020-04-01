@@ -12,8 +12,6 @@ import barThumbnail from './whitfieldVideos/thumbnails/bar-at-805.png';
 import BrassTap from './whitfieldVideos/BrassTap';
 import BrassTapMobile from './whitfieldVideos/BrassTapMobile';
 import BrassTapThumbnail from './whitfieldVideos/thumbnails/brassTap.png';
-import bannerTall from './bannerAd/raypearman_tall.svg';
-import bannerMobile from './bannerAd/rpearman_mobile.svg';
 import './css/streets.css';
 
 class Beats extends React.Component{
@@ -84,9 +82,6 @@ class Beats extends React.Component{
                         </div>
                         <div className="seb-right-column">
                             <div className="video-thumbnail-container">
-                                <a className="mobile-banner" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
-                                </a>
                                 {this.state.index === 0 ? null : 
                                 <div onClick={this.playBrassTap} className="video-thumbnail-wrapper">
                                     <div className="thumbnail-container">
@@ -139,9 +134,6 @@ class Beats extends React.Component{
                             </div>
                         </div>
                     </div>
-                    <a className="banner-column" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
-                        <img src={bannerTall} alt="rayPearmanBanner"/>
-                    </a>
                 </div>
             </div>
         )

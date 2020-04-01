@@ -12,8 +12,6 @@ import artThumbnail from './whitfieldVideos/thumbnails/artWalk.png';
 import botanicalThumbnail from './whitfieldVideos/thumbnails/botanicalGardens.png';
 import bulletThumbnail from './whitfieldVideos/thumbnails/bulletBarrel.png';
 import lotusThumbnail from './whitfieldVideos/thumbnails/lotusThumbnail.png';
-import bannerTall from './bannerAd/raypearman_tall.svg';
-import bannerMobile from './bannerAd/rpearman_mobile.svg';
 import './css/streets.css';
 
 class Streets extends React.Component {
@@ -80,9 +78,6 @@ class Streets extends React.Component {
                         </div>
                         <div className="seb-right-column">
                             <div className="video-thumbnail-container">
-                                <a className="mobile-banner" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src={bannerMobile} alt="Ray Pearman Lincoln "/>
-                                </a>
                                 {this.state.index === 0 ? null
                                 : <div className="video-thumbnail-wrapper">
                                     <div onClick={this.playLotus} className="thumbnail-container">
@@ -137,12 +132,7 @@ class Streets extends React.Component {
                             </div>
                         </div>
                     </div>
-
-                    <a className="banner-column" href="https://www.raypearman.com/" target="_blank" rel="noopener noreferrer">
-                        <img src={bannerTall} alt="rayPearmanBanner"/>
-                    </a>
                 </div>
-
             </div>
         )
     }
