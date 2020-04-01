@@ -97,13 +97,13 @@ class Eats extends React.Component{
                                 {this.state.index === 0 ? null : 
                                 <div onClick={this.playDickys} className="video-thumbnail-wrapper">
                                     <div className="thumbnail-container">
-                                        <img onClick={this.playDickys} className="video-thumbnail" src={DickysThumbnail} alt="The Brass Tap"/>
+                                        <img onClick={this.playDickys} className="video-thumbnail" src={DickysThumbnail} alt="Dickey's Barbecue Pit"/>
                                         <div className="thumbnail-hover">
                                             <i className="material-icons">play_arrow</i>
                                             <p> Play Video </p>
                                         </div>
                                     </div>
-                                    <p className="small-video-header"> Dicky's Barbecue </p>
+                                    <p className="small-video-header"> Dickey's Barbecue </p>
                                     <div className="video-line">  </div>
                                 </div>
                                 }
