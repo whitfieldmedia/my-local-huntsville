@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import newsletter from './images/newsletter_april-2.png';
+import newsletter from './images/newsletter_april-4.png';
 import { Helmet } from 'react-helmet';
 import './css/events.css';
 
