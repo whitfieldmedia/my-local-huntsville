@@ -34,104 +34,6 @@ class Events extends React.Component{
                 </Helmet>
                 <h1 className="event-header"> Upcoming Events </h1>
                 <div className="events-page">
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Chase Rice
-                            </h2>
-                            <p className="event-date">
-                                Saturday April 11 at 8 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/chase-rice/3406674/?eventId=3406674&eventName=Chase+Rice&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=04%2f11%2f2020+20%3a00%3a00&city=Huntsville&stateProvince=AL&performerId=30802&performerName=Chase+Rice&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Theory of a Deadman
-                            </h2>
-                            <p className="event-date">
-                                Monday April 13 at 8 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/theory-of-a-deadman/3360067/?eventId=3360067&eventName=Theory+of+a+Deadman&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=04%2f13%2f2020+20%3a00%3a00&city=Huntsville&stateProvince=AL&performerId=7059&performerName=Theory+of+a+Deadman&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Victor Wooten
-                            </h2>
-                            <p className="event-date">
-                                Tuesday April 14 at 8 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/victor-wooten/3318632/?eventId=3318632&eventName=Victor+Wooten&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=04%2f14%2f2020+20%3a00%3a00&city=Huntsville&stateProvince=AL&performerId=7684&performerName=Victor+Wooten&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                Huntsville Heart Walk
-                            </h2>
-                            <p className="event-date">
-                                Saturday April 18, 8 AM - 11 AM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Madison+County+Courthouse/@34.7302349,-86.5874137,17z/data=!4m8!1m2!2m1!1scourthouse+square+huntsville+al!3m4!1s0x88626b5423ec2145:0x37ed8cc3ac352146!8m2!3d34.7301931!4d-86.5853818"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Courthouse Square, Downtown Huntsville 
-                            </a>
-                            <a className="event-link" href="https://www2.heart.org/site/TR;jsessionid=00000000.app325a?fr_id=4889&pg=entry&NONCE_TOKEN=D622385EC160B9ED218B5346B63814DA" target="_blank" rel="noopener noreferrer">
-                                Register and/or donate
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="event-holder">
-                        <div className="event-container">
-                            <h2 className="event-title">
-                                The Revivalists
-                            </h2>
-                            <p className="event-date">
-                                Tuesday April 21 at 8 PM
-                            </p>
-                            <a className="event-link"
-                                href="https://www.google.com/maps/place/Mars+Music+Hall/@34.7287337,-86.5931798,17z/data=!3m1!4b1!4m5!3m4!1s0x88626b281ce0cd05:0x4e0126a3ed3c3291!8m2!3d34.7287293!4d-86.5909911"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    Mars Music Hall at Von Braun Center
-                            </a>
-                            <a className="event-link" href="https://tickets-center.com/tickets/v/mars-music-hall-at-von-braun-center/24998/e/the-revivalists/3346132/?eventId=3346132&eventName=The+Revivalists&venueName=Mars+Music+Hall+at+Von+Braun+Center&venueId=24998&eventDateTime=04%2f21%2f2020+20%3a00%3a00&city=Huntsville&stateProvince=AL&performerId=30653&performerName=The+Revivalists&cid=0&nid=0&accid=0&wsvar=0-0+%5brdmclid%7c63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc%5d&rdmclid=63cc65a0-f342-47ed-a4d6-f2cb03f2fcbc&vx=0" target="_blank" rel="noopener noreferrer">
-                                Get Tickets
-                            </a>
-                        </div>
-                    </div>
 
                     <div className="event-holder">
                         <div className="event-container">
@@ -152,7 +54,6 @@ class Events extends React.Component{
                             </a>
                         </div>
                     </div>
-
 
                     <div className="event-holder">
                         <div className="event-container">
